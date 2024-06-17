@@ -14,7 +14,9 @@ export const Header = () => {
             <section
                 className={'py-10 flex justify-between'}>
                 <a href="#">
-                    Sola Kabuta (Sho.la)
+                    <h1>
+                        Sola Kabuta <span className={'text-xs'}>(Sho.la)</span>
+                    </h1>
                 </a>
                     <DropdownMenu>
                         <DropdownMenuTrigger className={'uppercase'}>Menu</DropdownMenuTrigger>
