@@ -6,7 +6,7 @@ export const Work = () => {
         <section>
             <div
                 className={'flex justify-between pt-44'}>
-                <h2 className={'font-black text-7xl py-20 text_anim'}>
+                <h2 className={'font-black text-7xl py-20 text_anim transition hover:-translate-x-6 ease-in-out duration-700'}>
                     Work.
                 </h2>
             </div>
@@ -22,7 +22,7 @@ export const Work = () => {
                 </div>
             </div>
             <Link
-                className={''}
+                className={'flex justify-end py-20'}
                 href='more'>See more</Link>
         </section>
     );

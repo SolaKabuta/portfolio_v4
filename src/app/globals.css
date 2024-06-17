@@ -25,7 +25,7 @@ section {
 }
 
 .img {
-  @apply hover:scale-110 duration-500 ease-in-out transition delay-500
+  @apply hover:scale-110 duration-700 ease-in-out transition
 }
 
 .text_anim {
