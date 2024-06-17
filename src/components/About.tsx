@@ -4,13 +4,13 @@ import portrait2 from '../../public/portrait2.jpg'
 export const About = () => {
     return (
         <section>
-            <div className={'flex justify-between gap-20 pt-44'}>
+            <div className={'flex justify-between pt-44'}>
 
                 <div className={''}>
                     <h3 className={'font-black text-7xl py-20 text_anim'}>
                         About <span className={'text_anim'}>me.</span>
                     </h3>
-                    <p className={'py-20'}>
+                    <p className={'py-20 w-[500px]'}>
                         <span className={'py-10'}>My name is Sola</span> <br/><br/>
                         <span className={'text-third_color font-bold hover:text-red-600 transition duration-300 ease-in-out'}>(pronounced « <span className={'duration-300 transition ease-in-out'}>sho . la</span> »)</span> <br/> <br/>
 
@@ -56,7 +56,7 @@ export const About = () => {
                     </p>
                 </div>
                 <Image
-                    className={'scale-50'}
+                    className={'scale-50 pr-44'}
                     src={portrait2}
                     alt={'portrait of Sola Kabuta smiling in a chair'}/>
 

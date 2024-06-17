@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      scale: {
+        '30': '.3',
+      },
       colors: {
         main_color: '#F5E6E8',
         second_color: '#7189FF',

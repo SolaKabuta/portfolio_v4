@@ -22,7 +22,7 @@ export const Work = () => {
             </div>
             <a
                 className={'flex justify-end py-20'}
-                href="#see more">See more</a>
+                href="#">See more</a>
         </section>
     );
 };

@@ -6,14 +6,12 @@ export const Hero = () => {
         <section>
             {/* IMAGES */}
             <main className={'flex justify-between place-items-center py-56'}>
-                <div className={'box'}>
                     <Image
                         className={'img'}
                         src={'/portrait1.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}/>
-                </div>
                 <div className={'box box_middle'}>
                     <Image
                         className={'img'}
@@ -21,14 +19,12 @@ export const Hero = () => {
                         alt={'portrait of Sola'}
                         />
                 </div>
-                <div className={'box'}>
                     <Image
                         className={'img'}
                         src={'/portrait3.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}/>
-                </div>
             </main>
             {/* TEXTS */}
             <div className={'flex justify-between place-items-end py-20'}>
