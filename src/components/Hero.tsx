@@ -5,10 +5,10 @@ export const Hero = () => {
     return (
         <section>
             {/* IMAGES */}
-            <main className={'flex justify-between place-items-center py-20'}>
+            <main className={'flex justify-between place-items-center py-56'}>
                 <div className={'box'}>
                     <Image
-                        className={'hover:scale-110 hover:duration-500 ease-in-out transition delay-500'}
+                        className={'img'}
                         src={'/portrait1.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
@@ -16,14 +16,14 @@ export const Hero = () => {
                 </div>
                 <div className={'box box_middle'}>
                     <Image
-                        className={'hover:scale-110 hover:duration-500 ease-in-out transition delay-500'}
+                        className={'img'}
                         src={portrait2}
                         alt={'portrait of Sola'}
                         />
                 </div>
                 <div className={'box'}>
                     <Image
-                        className={'hover:scale-110 hover:duration-500 ease-in-out transition delay-500'}
+                        className={'img'}
                         src={'/portrait3.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
@@ -32,16 +32,18 @@ export const Hero = () => {
             </main>
             {/* TEXTS */}
             <div className={'flex justify-between place-items-end py-20'}>
-                <p className={'font-black text-5xl'}>
+                <p className={'font-black text-7xl'}>
                     WEB DEVELOPER <br/>
                     & WEB DESIGNER. <br/>
                     <span className={'text-xl font-light'}>(+ LAZY PHOTOGRAPHER )</span>
                 </p>
                 <p className={'text-right'}>
-                    Each pixel holds a story, each line of code a puzzle begging to be solved. <br/>
+                    Each pixel holds a story, <br/>
+                    each line of code a puzzle begging to be solved. <br/>
                     I'm a developer who sees design as the brushstroke, <br/>
                     and a designer who finds elegance in the logic. <br/>
-                    Come explore my creations, and let's build something amazing together.
+                    Come explore my creations, <br/>
+                    and let's build something amazing together.
                 </p>
             </div>
         </section>

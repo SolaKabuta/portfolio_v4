@@ -19,12 +19,12 @@ export const Header = () => {
                     <DropdownMenu>
                         <DropdownMenuTrigger className={'uppercase'}>Menu</DropdownMenuTrigger>
                         <DropdownMenuContent className={'bg-second_color text-main_color border-0'}>
-                            <DropdownMenuLabel>Home</DropdownMenuLabel>
+                            <DropdownMenuLabel><a href="#">Home</a></DropdownMenuLabel>
                             <DropdownMenuSeparator />
-                            <DropdownMenuItem>Work</DropdownMenuItem>
-                            <DropdownMenuItem>Playground</DropdownMenuItem>
-                            <DropdownMenuItem>Photography</DropdownMenuItem>
-                            <DropdownMenuItem>Contact</DropdownMenuItem>
+                            <DropdownMenuItem><a href="">Work</a></DropdownMenuItem>
+                            <DropdownMenuItem><a href="">Playground</a></DropdownMenuItem>
+                            <DropdownMenuItem><a href="">Photography</a></DropdownMenuItem>
+                            <DropdownMenuItem><a href="">Contact</a></DropdownMenuItem>
                         </DropdownMenuContent>
                     </DropdownMenu>
 
