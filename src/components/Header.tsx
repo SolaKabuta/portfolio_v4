@@ -1,12 +1,13 @@
 import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from "@/components/ui/sheet"
 import Link from "next/link";
+
 
 
 export const Header = () => {
@@ -19,17 +20,18 @@ export const Header = () => {
                         Sola Kabuta <span className={'text-xs'}>(Sho.la)</span>
                     </h1>
                 </a>
-                    <DropdownMenu>
-                        <DropdownMenuTrigger className={'uppercase transition hover:translate-x-3 ease-in-out duration-700'}>Menu</DropdownMenuTrigger>
-                        <DropdownMenuContent className={'bg-second_color text-main_color border-0'}>
-                            <DropdownMenuLabel><a href="/">Home</a></DropdownMenuLabel>
-                            <DropdownMenuSeparator />
-                            <DropdownMenuItem><Link href={'#work'}>Work</Link></DropdownMenuItem>
-                            <DropdownMenuItem><a href="#about">About</a></DropdownMenuItem>
-                            <DropdownMenuItem><Link href={'more/photography'}>Photography</Link></DropdownMenuItem>
-                            <DropdownMenuItem><a href="">Contact</a></DropdownMenuItem>
-                        </DropdownMenuContent>
-                    </DropdownMenu>
+                <Sheet>
+                    <SheetTrigger className={'uppercase transition hover:translate-x-3 ease-in-out duration-700'}>Menu</SheetTrigger>
+                    <SheetContent>
+                        <SheetHeader>
+                            <SheetTitle className={'Titles'}><a href={'/'}>Home</a></SheetTitle>
+                            <SheetTitle className={'Titles'}><Link href={'#work'}>Work</Link></SheetTitle>
+                            <SheetTitle className={'Titles'}><a href={'#about'}>About</a></SheetTitle>
+                            <SheetTitle className={'Titles'}><a href={'#contact'}>Contact</a></SheetTitle>
+                        </SheetHeader>
+                    </SheetContent>
+                </Sheet>
+
 
             </section>
         </header>

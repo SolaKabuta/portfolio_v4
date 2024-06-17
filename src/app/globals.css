@@ -11,7 +11,7 @@
   }
 
 section {
-  @apply max-w-[1400px] px-2 m-auto
+  @apply max-w-[1400px] px-1 m-auto
 }
 
 .box {
@@ -32,6 +32,16 @@ section {
   @apply hover:text-third_color duration-700 transition ease-in-out
 }
 
+.Titles {
+  font-size: 60px;
+  line-height: 100px;
+  font-weight: 800;
+  transition: 0.7s;
+}
+
+.Titles:hover {
+  color: #F5E6E8;
+}
   @layer base {
     * {
       @apply border-border;

@@ -18,6 +18,7 @@ export const Footer = () => {
                 <div className={'flex justify-between text-main_color py-5'}>
                     <a href="#">sola kabuta portfolio</a>
                     <p>LAST UPDATE on JUNE 2024</p>
+                    <p>DESIGNED & DEVELOPED BY sola kabuta</p>
                 </div>
             </section>
         </footer>
