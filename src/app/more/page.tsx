@@ -11,7 +11,7 @@ export default function more () {
     return <main className={'bg-third_color h-screen grid place-items-center'}>
         <section>
             <DropdownMenu>
-                <DropdownMenuTrigger className={'uppercase'}>Menu</DropdownMenuTrigger>
+                <DropdownMenuTrigger className={'uppercase flex justify-end'}>Menu</DropdownMenuTrigger>
                 <DropdownMenuContent className={'bg-second_color text-main_color border-0'}>
                     <DropdownMenuLabel><a href="/">Home</a></DropdownMenuLabel>
                     <DropdownMenuSeparator/>

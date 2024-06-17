@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export const Work = () => {
@@ -20,9 +21,9 @@ export const Work = () => {
                     <p className={'py-4 px-4'}>Martine Henderyckx</p>
                 </div>
             </div>
-            <a
-                className={'flex justify-end py-20'}
-                href="#">See more</a>
+            <Link
+                className={''}
+                href='more'>See more</Link>
         </section>
     );
 };
