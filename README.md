@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio
+This is my personal portfolio website built with NextJS, showcasing my skills and experience as a web developer. <br/>
+It's still in the development phase.
 
-## Getting Started
+### Technologies:
 
-First, run the development server:
+Frontend:
+- [NextJS](https://reactjs.org/) : A JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/): A superset of JavaScript that adds optional static typing.
+- [Shadcn/ui](https://ui.shadcn.com/): Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Build Tools:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Figma](https://www.figma.com/): The design tool where napkin sketches become digital masterpieces (and everything in between).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Description:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This portfolio website is still under development, but it will eventually include:
 
-## Learn More
+- Descriptions of my skills and experience
+- Showcases of my web development projects
+- Links to my social media profiles and contact information
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I'm using NextJS to create a dynamic and interactive user experience.
+TypeScript ensures code clarity and maintainability.
+Tailwind CSS provides a utility-first approach to styling, making development efficient.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+In a near future I'd like to:
 
-## Deploy on Vercel
+- Add smoother animations/transitions
+- Add projects
+- Design and build responsive
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Stay tuned!
+
+As I continue to develop this portfolio, I'll be adding more content and functionality. <br/>
+Feel free to reach out if you have any questions or feedback.
+
+#### Screenshots:
+
+![](./src/assets/projects/screenshots/Sola/portfolio_landing.gif)
+
+[//]: # (![]&#40;./screenshot.jpg&#41;)
+[//]: # (![]&#40;./screenshot.jpg&#41;)
