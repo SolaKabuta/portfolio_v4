@@ -7,14 +7,16 @@ export const About = () => {
             <div className={'flex justify-between items-start pt-44'}>
 
                 <div className={''}>
-                    <h3 className={'font-black text-7xl py-20 text_anim transition hover:-translate-x-6 ease-in-out duration-700'}>
+                    <h3
+                        id={'about'}
+                        className={'font-black text-7xl py-20 text_anim transition hover:-translate-x-6 ease-in-out duration-700'}>
                         About <span className={'text_anim'}>me.</span>
                     </h3>
-                    <p className={'py-20 w-[500px]'}>
+                    <p className={'py-20 w-[500px] transition hover:-translate-x-6 ease-in-out duration-700 text-justify'}>
                         <span className={'py-10'}>My name is Sola</span> <br/><br/>
                         <span className={'text-third_color font-bold hover:text-red-600 transition duration-300 ease-in-out'}>(pronounced « <span className={'duration-300 transition ease-in-out'}>sho . la</span> »)</span> <br/> <br/>
 
-                        I Am a web developer based in bruxelles belgium. <br/>
+                        I Am a web developer based in bruxelles (belgium). <br/>
                         Before I delved into the world of coding, I stirred creativity in unconventional realms. <br/>
                         As a former bartender specializing in crafting intricate cocktails, I found artistry in
                         mixology, <br/>
@@ -38,7 +40,7 @@ export const About = () => {
                     <p className={'py-5'}>
                         experience :
                     </p>
-                    <p className={'py-10'}>
+                    <p className={'py-10 transition hover:-translate-x-6 ease-in-out duration-700'}>
                         from february to april 2024 <br/>
                         <a
                             className={'font-bold underline'}
@@ -46,7 +48,7 @@ export const About = () => {
                         </a> <br/>
                         web developer intern <br/>
                     </p>
-                    <p className={'py-10'}>
+                    <p className={'py-10 transition hover:-translate-x-6 ease-in-out duration-700'}>
                         from august 2023 to april 2024 <br/>
                         <a
                             className={'font-bold underline'}

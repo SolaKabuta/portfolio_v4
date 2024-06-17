@@ -1,4 +1,5 @@
 import {Header} from "@/components/Header";
+import Link from "next/link";
 
 
 export default function more () {
@@ -16,12 +17,14 @@ export default function more () {
                     <span className={'font-light text-sm'}>(stylish name for side projects)</span>
                 </h5>
                 </a>
-                <a href="">
-                    <h6 className={'font-black text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
-                        Photography <br/>
-                        <span className={'font-light text-sm'}>(Yes developers can do art stuff too)</span>
-                    </h6>
-                </a>
+                <Link
+                    href='more/photography'>
+                    <h6
+                    className={'font-black text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
+                    Photography <br/>
+                    <span className={'font-light text-sm'}>(Yes developers can do art stuff too)</span>
+                </h6>
+                </Link>
             </div>
         </section>
     </main>

@@ -1,6 +1,6 @@
 export default function MorePlayground () {
     return <div>
-        <p className={'absolute z-50 text-7xl backdrop-blur font-black grid place-items-center left-0 right-0 h-screen'}>Coming soon</p>
+        <p className={'absolute z-50 text-7xl backdrop-blur font-black grid place-items-center left-0 right-0 h-screen transition hover:-translate-x-6 ease-in-out duration-700'}>Coming soon</p>
         <section className={'py-56'}>
             <p className={'font-bold text-6xl'}>Leo.</p>
             <p className={'py-5'}>Art direction / Photography </p>

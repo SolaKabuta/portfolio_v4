@@ -4,11 +4,11 @@ export const Footer = () => {
         <footer className={'bg-second_color w-full h-[370px] sticky right-0 left-0 -bottom-full'}>
             <section>
                 <div className={'flex justify-between items-center pt-44 text-main_color'}>
-                    <h5 className={'font-black text-6xl'}>Get in touch.</h5>
+                    <h5 className={'font-black text-6xl text_anim'}>Get in touch.</h5>
                     <ul className={'flex gap-10'}>
-                        <li><a href="mailto:solakabuta@gmail.com" target={'_blank'}>email</a></li>
-                        <li><a href="https://www.linkedin.com/in/sola-kabuta/" target={'_blank'}>Linkedin</a></li>
-                        <li><a href="https://github.com/SolaKabuta" target={'_blank'}>github</a></li>
+                        <li><a className={'text_anim'} href="mailto:solakabuta@gmail.com" target={'_blank'}>email</a></li>
+                        <li><a className={'text_anim'} href="https://www.linkedin.com/in/sola-kabuta/" target={'_blank'}>Linkedin</a></li>
+                        <li><a className={'text_anim'} href="https://github.com/SolaKabuta" target={'_blank'}>github</a></li>
                     </ul>
                 </div>
             </section>
