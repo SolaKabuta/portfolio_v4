@@ -1,0 +1,34 @@
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
+
+export const Header = () => {
+    return (
+        <header>
+            <section
+                className={'py-10 flex justify-between'}>
+                <a href="#">
+                    Sola Kabuta (Sho.la)
+                </a>
+                    <DropdownMenu>
+                        <DropdownMenuTrigger className={'uppercase'}>Menu</DropdownMenuTrigger>
+                        <DropdownMenuContent className={'bg-second_color text-main_color border-0'}>
+                            <DropdownMenuLabel>Home</DropdownMenuLabel>
+                            <DropdownMenuSeparator />
+                            <DropdownMenuItem>Work</DropdownMenuItem>
+                            <DropdownMenuItem>Playground</DropdownMenuItem>
+                            <DropdownMenuItem>Photography</DropdownMenuItem>
+                            <DropdownMenuItem>Contact</DropdownMenuItem>
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+
+            </section>
+        </header>
+    );
+};
