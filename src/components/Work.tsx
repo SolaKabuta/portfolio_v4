@@ -5,7 +5,7 @@ export const Work = () => {
         <section>
             <div
                 className={'flex justify-between pt-44'}>
-                <h2 className={'font-black text-7xl py-20'}>
+                <h2 className={'font-black text-7xl py-20 text_anim'}>
                     Work.
                 </h2>
             </div>

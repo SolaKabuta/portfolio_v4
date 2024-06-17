@@ -7,12 +7,12 @@ export const About = () => {
             <div className={'flex justify-between gap-20 pt-44'}>
 
                 <div className={''}>
-                    <h3 className={'font-black text-7xl py-20'}>
-                        About me.
+                    <h3 className={'font-black text-7xl py-20 text_anim'}>
+                        About <span className={'text_anim'}>me.</span>
                     </h3>
                     <p className={'py-20'}>
                         <span className={'py-10'}>My name is Sola</span> <br/><br/>
-                        <span className={'text-third_color font-bold'}>(pronounced « sho . la »)</span> <br/> <br/>
+                        <span className={'text-third_color font-bold hover:text-red-600 transition duration-300 ease-in-out'}>(pronounced « <span className={'duration-300 transition ease-in-out'}>sho . la</span> »)</span> <br/> <br/>
 
                         I Am a web developer based in bruxelles belgium. <br/>
                         Before I delved into the world of coding, I stirred creativity in unconventional realms. <br/>
@@ -33,6 +33,8 @@ export const About = () => {
                         technology,
                         design, and innovation through the world of coding.
                     </p>
+
+                    {/* EXPERIENCE */}
                     <p className={'py-5'}>
                         experience :
                     </p>
