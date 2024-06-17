@@ -38,12 +38,12 @@ export const Hero = () => {
                     <span className={'text-xl font-light'}>(+ LAZY PHOTOGRAPHER )</span>
                 </p>
                 <p className={'text-right'}>
-                    Each pixel holds a story, <br/>
-                    each line of code a puzzle begging to be solved. <br/>
-                    I'm a developer who sees design as the brushstroke, <br/>
-                    and a designer who finds elegance in the logic. <br/>
-                    Come explore my creations, <br/>
-                    and let's build something amazing together.
+                    <span className={'text_anim'}>Each pixel holds a story,</span> <br/>
+                    <span className={'text_anim'}>each line of code a puzzle begging to be solved.</span> <br/>
+                    <span className={'text_anim'}>I'm a developer who sees design as the brushstroke,</span> <br/>
+                    <span className={'text_anim'}>and a designer who finds elegance in the logic.</span> <br/>
+                    <span className={'text_anim'}>Come explore my creations,</span> <br/>
+                    <span className={'text_anim'}>and let's build something amazing together.</span>
                 </p>
             </div>
         </section>

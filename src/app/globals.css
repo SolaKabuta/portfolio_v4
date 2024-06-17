@@ -28,6 +28,10 @@ section {
   @apply hover:scale-110 hover:duration-500 ease-in-out transition delay-500
 }
 
+.text_anim {
+  @apply hover:text-third_color hover:duration-700 transition ease-in-out
+}
+
   @layer base {
     * {
       @apply border-border;
