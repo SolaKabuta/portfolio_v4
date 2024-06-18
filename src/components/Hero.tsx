@@ -1,5 +1,4 @@
 import Image from "next/image";
-import portrait2 from '../../public/portrait2.jpg'
 
 export const Hero = () => {
     return (
@@ -15,9 +14,10 @@ export const Hero = () => {
                 <div className={'box box_middle'}>
                     <Image
                         className={'img'}
-                        src={portrait2}
+                        src={'/portrait2.jpg'}
                         alt={'portrait of Sola'}
-                        />
+                        width={'400'}
+                        height={'900'}/>
                 </div>
                     <Image
                         className={'img'}

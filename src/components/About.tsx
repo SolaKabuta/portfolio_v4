@@ -4,7 +4,7 @@ import portrait2 from '../../public/portrait2.jpg'
 export const About = () => {
     return (
         <section>
-            <div className={'flex justify-between items-start pt-44'}>
+            <div className={'flex justify-between items-end pt-44'}>
 
                 <div className={''}>
                     <h3
@@ -58,9 +58,11 @@ export const About = () => {
                     </p>
                 </div>
                 <Image
-                    className={'scale-50 pr-64 transition hover:translate-x-6 ease-in-out duration-700'}
-                    src={portrait2}
-                    alt={'portrait of Sola Kabuta smiling in a chair'}/>
+                    className={'scale-110 py-20 transition hover:translate-x-6 ease-in-out duration-700'}
+                    src={'/portrait2.jpg'}
+                    alt={'portrait of Sola Kabuta smiling in a chair'}
+                    width={'600'}
+                    height={'900'}/>
 
             </div>
         </section>
