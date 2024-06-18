@@ -4,21 +4,19 @@ export const Hero = () => {
     return (
         <section>
             {/* IMAGES */}
-            <main className={'flex justify-between place-items-center py-56'}>
+            <main className={'flex justify-between place-items-center py-44'}>
                     <Image
                         className={'img'}
                         src={'/portrait1.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}/>
-                <div className={'box box_middle'}>
                     <Image
-                        className={'img'}
+                        className={'img mt-20'}
                         src={'/portrait2.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}/>
-                </div>
                     <Image
                         className={'img'}
                         src={'/portrait3.jpg'}
@@ -27,7 +25,7 @@ export const Hero = () => {
                         height={'900'}/>
             </main>
             {/* TEXTS */}
-            <div className={'flex justify-between place-items-end py-20 '}>
+            <div className={'flex justify-between place-items-end py-10 '}>
                 <p className={'font-black text-7xl transition hover:-translate-x-6 ease-in-out duration-700'}>
                     <span className={'text_anim'}>WEB</span> <span className={'text_anim'}>DEVELOPER</span> <br/>
                     <span className={'text_anim'}>&</span> <span className={'text_anim'}>WEB</span> <span className={'text_anim'}>DESIGNER.</span> <br/>
