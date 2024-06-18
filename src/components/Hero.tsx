@@ -11,7 +11,7 @@ export const Hero = () => {
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}/>
-                    <Image
+                    <img
                         className={'img mt-20'}
                         src={'/portrait2.jpg'}
                         alt={'portrait of Sola'}
