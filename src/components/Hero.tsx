@@ -7,7 +7,7 @@ export const Hero = () => {
             <main className={'flex justify-between place-items-center py-44'}>
                     <Image
                         className={'img'}
-                        src={'/portrait1.jpg'}
+                        src={'/portrait1_web.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}
