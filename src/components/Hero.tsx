@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import portrait2 from '../../public/portrait2.jpg'
 export const Hero = () => {
     return (
         <section>
@@ -11,9 +11,9 @@ export const Hero = () => {
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}/>
-                    <img
+                    <Image
                         className={'img mt-20'}
-                        src={'/portrait2.jpg'}
+                        src={portrait2}
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}/>
