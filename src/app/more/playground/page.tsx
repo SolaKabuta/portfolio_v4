@@ -1,10 +1,9 @@
 
-const Page = () => {
+export default function () {
     return (
         <section>
-
+            <p>Coming soon </p>
         </section>
     );
 };
 
-export default Page;
