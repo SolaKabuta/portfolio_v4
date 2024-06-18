@@ -25,7 +25,7 @@ export const Work = () => {
                         loading="lazy"/>
                 </div>
                 {/* MARTINE Henderyckx */}
-                <div className={'w-[850ox] h-[700px] bg-red-400'}>
+                <div className={''}>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>Martine Henderyckx</p>
                     <Image
                         className={'cover'}
