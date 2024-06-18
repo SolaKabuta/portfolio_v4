@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 
 export const Work = () => {
@@ -14,13 +15,25 @@ export const Work = () => {
             </div>
             <div className={'flex justify-around'}>
                 {/* CABINET COPPENS */}
-                <div className={'w-[490px] h-[742px] bg-third_color'}>
-                    <p className={'py-4 px-4'}>Cabinet Coppens - Experts-Comptables</p>
-                    {/*<p className={''}>Web development</p>*/}
+                <div>
+                    <p className={'absolute z-40 text-main_color py-4 px-4'}>Cabinet Coppens - Experts-Comptables</p>
+                    <Image
+                        src={'/coppens_macbook.jpg'}
+                        alt={'cabinet coppens mockup'}
+                        width={700}
+                        height={700}
+                        loading="lazy"/>
                 </div>
                 {/* MARTINE Henderyckx */}
-                <div className={'w-[490px] h-[742px] bg-third_color'}>
-                    <p className={'py-4 px-4'}>Martine Henderyckx</p>
+                <div className={'w-[850ox] h-[700px] bg-red-400'}>
+                    <p className={'absolute z-40 text-main_color py-4 px-4'}>Martine Henderyckx</p>
+                    <Image
+                        className={'cover'}
+                        src={'/martine_macbook.jpg'}
+                        alt={'Martine Henderyckx mockup'}
+                        width={675}
+                        height={675}
+                        loading="lazy"/>
                 </div>
             </div>
             <Link

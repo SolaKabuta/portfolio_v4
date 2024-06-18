@@ -10,19 +10,22 @@ export const Hero = () => {
                         src={'/portrait1.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
-                        height={'900'}/>
+                        height={'900'}
+                        loading="lazy"/>
                     <Image
                         className={'img mt-20'}
                         src={'/portrait2.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
-                        height={'900'}/>
+                        height={'900'}
+                        loading="lazy"/>
                     <Image
                         className={'img'}
                         src={'/portrait3.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
-                        height={'900'}/>
+                        height={'900'}
+                        loading="lazy"/>
             </main>
             {/* TEXTS */}
             <div className={'flex justify-between place-items-end py-10 '}>
