@@ -36,10 +36,10 @@ export const Hero = () => {
                 <p className={'text-right transition hover:translate-x-6 ease-in-out duration-700'}>
                     <span className={'text_anim'}>Each pixel holds a story,</span> <br/>
                     <span className={'text_anim'}>each line of code a puzzle begging to be solved.</span> <br/>
-                    <span className={'text_anim'}>I'm a developer who sees design as the brushstroke,</span> <br/>
+                    <span className={'text_anim'}>I&apos;m a developer who sees design as the brushstroke,</span> <br/>
                     <span className={'text_anim'}>and a designer who finds elegance in the logic.</span> <br/>
                     <span className={'text_anim'}>Come explore my creations,</span> <br/>
-                    <span className={'text_anim'}>and let's build something amazing together.</span>
+                    <span className={'text_anim'}>and let&apos;s build something amazing together.</span>
                 </p>
             </div>
         </section>
