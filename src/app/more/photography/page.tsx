@@ -20,7 +20,7 @@ export default function MorePhotography () {
                 <div></div>
             </div>
         </div>
-        <section className={'py-56 back'}>
+        <section className={'py-56'}>
             <p className={'font-bold text-6xl'}>Leo.</p>
             <p className={'py-5'}>Art direction / Photography </p>
             <div className={'flex justify-between'}>

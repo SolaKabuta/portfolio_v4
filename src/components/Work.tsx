@@ -32,11 +32,13 @@ export const Work = () => {
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Martine Henderyckx
                     </p>
-                    <Image
-                        className={'object-cover'}
-                        src={'/martine_macbook.jpg'}
-                        alt={'Martine Henderyckx mockup'}
-                        fill={true}/>
+                    <Link href={'/martine'}>
+                        <Image
+                            className={'object-cover'}
+                            src={'/martine_macbook.jpg'}
+                            alt={'Martine Henderyckx mockup'}
+                            fill={true}/>
+                    </Link>
                 </div>
             </div>
             <Link

@@ -11,6 +11,7 @@ export const Hero = () => {
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}
+                        loading={"lazy"}
                         />
                     <Image
                         className={'img mt-20'}
@@ -18,6 +19,7 @@ export const Hero = () => {
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}
+                        loading={"lazy"}
                         />
                     <Image
                         className={'img'}
@@ -25,6 +27,7 @@ export const Hero = () => {
                         alt={'portrait of Sola'}
                         width={'400'}
                         height={'900'}
+                        loading={"lazy"}
                         />
             </main>
             {/* TEXTS */}

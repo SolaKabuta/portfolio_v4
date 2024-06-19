@@ -2,19 +2,17 @@ import {Header} from "@/components/Header";
 import Image from "next/image";
 
 
-export default function () {
+export default function coppens () {
     return <>
-        <section>
-            <div className={'text-main_color'}>
-                <Header/>
-            </div>
+        <section className={'text-main_color'}>
+            <Header/>
             <Image
-                className={'-z-20 object-fill'}
+                className={'-z-20'}
                 src={'/coppens_macbook.jpg'}
                 alt={'cabinet coppens macbook mockup'}
                 fill={true}/>
-            <div className={'flex justify-between align-end text-main_color gap-80'}>
-                <p className={`text-7xl font-black`}>
+            <div>
+                <p className={`text-7xl font-black transition hover:translate-x-6 ease-in-out duration-700 pb-[550px]`}>
                     Cabinet Coppens <br/>
                     Experts Comptables
                 </p>
