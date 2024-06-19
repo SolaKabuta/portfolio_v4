@@ -9,13 +9,13 @@ export const Work = () => {
                 className={'flex justify-between pt-44'}>
                 <h2
                     id={'work'}
-                    className={'font-black text-7xl py-20 text_anim transition hover:-translate-x-6 ease-in-out duration-700'}>
+                    className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
                     Work.
                 </h2>
             </div>
             <div className={'flex justify-around gap-5'}>
                 {/* CABINET COPPENS */}
-                <div className={'relative w-[800px] h-[500px]'}>
+                <div className={'relative w-[800px] h-[500px] transition hover:translate-x-4 ease-in-out duration-700'}>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Cabinet Coppens - Experts-Comptables
                     </p>
@@ -28,7 +28,7 @@ export const Work = () => {
                     </Link>
                 </div>
                 {/* MARTINE Henderyckx */}
-                <div className={'relative w-[800px] h-[500px]'}>
+                <div className={'relative w-[800px] h-[500px] transition hover:-translate-x-4 ease-in-out duration-700'}>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Martine Henderyckx
                     </p>

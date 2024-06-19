@@ -9,7 +9,7 @@ export const Contact = () => {
                 <span className={'text_anim'}>together.</span>
             </h4>
             <a
-                className={'font-black text-6xl my-44 grid place-items-center text_anim'}
+                className={'font-black text-6xl my-44 grid place-items-center text_anim transition hover:-translate-x-3 ease-in-out duration-700'}
                 href="mailto:solakabuta@gmail.com">solakabuta@gmail.com
             </a>
         </section>
