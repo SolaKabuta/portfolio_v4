@@ -15,7 +15,7 @@ export const Header = () => {
     return (
         <header>
             <section
-                className={'py-10 flex justify-between align-middle'}>
+                className={'py-5 flex justify-between align-middle'}>
                 <a href="/">
                     <h1 className={'transition hover:translate-x-3 ease-in-out duration-700'}>
                         Sola Kabuta
@@ -35,7 +35,7 @@ export const Header = () => {
                     <SheetContent>
                         <SheetHeader>
                             <SheetTitle className={'Titles'}><a href={'/'}>Home</a></SheetTitle>
-                            <SheetTitle className={'Titles'}><Link href={'#work'}>Work</Link></SheetTitle>
+                            <SheetTitle className={'Titles'}><a href={'#work'}>Work</a></SheetTitle>
                             <SheetTitle className={'Titles'}><a href={'#about'}>About</a></SheetTitle>
                             <SheetTitle className={'Titles'}><a href={'#contact'}>Contact</a></SheetTitle>
                         </SheetHeader>
