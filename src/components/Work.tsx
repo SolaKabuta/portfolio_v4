@@ -22,7 +22,7 @@ export const Work = () => {
                     <Link href={'/coppens'}>
                         <Image
                         className={'object-cover'}
-                        src={'/coppens_macbook.jpg'}
+                        src={'/assets/images/coppens_macbook.jpg'}
                         alt={'cabinet coppens mockup'}
                         fill={true}/>
                     </Link>
@@ -35,7 +35,7 @@ export const Work = () => {
                     <Link href={'/martine'}>
                         <Image
                             className={'object-cover'}
-                            src={'/martine_macbook.jpg'}
+                            src={'/assets/images/martine_macbook.jpg'}
                             alt={'Martine Henderyckx mockup'}
                             fill={true}/>
                     </Link>

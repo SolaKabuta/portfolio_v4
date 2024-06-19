@@ -8,7 +8,7 @@ export default function coppens () {
             <Header/>
             <Image
                 className={'-z-20'}
-                src={'/coppens_macbook.jpg'}
+                src={'/assets/images/coppens_macbook.jpg'}
                 alt={'cabinet coppens macbook mockup'}
                 fill={true}/>
             <div>

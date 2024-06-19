@@ -7,6 +7,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import Link from "next/link";
+import Image from "next/image";
 
 
 
@@ -14,12 +15,21 @@ export const Header = () => {
     return (
         <header>
             <section
-                className={'py-10 flex justify-between'}>
+                className={'py-10 flex justify-between align-middle'}>
                 <a href="/">
                     <h1 className={'transition hover:translate-x-3 ease-in-out duration-700'}>
-                        Sola Kabuta <span className={'text-xs'}>(Sho.la)</span>
+                        Sola Kabuta
                     </h1>
                 </a>
+                <Link
+                    href={'/'}>
+                    <Image
+                    className={''}
+                    src={'/assets/icons/logo_original.svg'}
+                    alt={'Sola Kabuta logo'}
+                    width={30}
+                    height={30}/>
+                </Link>
                 <Sheet>
                     <SheetTrigger className={'uppercase transition hover:-translate-x-3 ease-in-out duration-700'}>Menu</SheetTrigger>
                     <SheetContent>

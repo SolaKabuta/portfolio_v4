@@ -1,5 +1,4 @@
 import Image from "next/image";
-import portrait2 from '../../public/portrait2.jpg'
 
 export const About = () => {
     return (
@@ -59,7 +58,7 @@ export const About = () => {
                 </div>
                 <Image
                     className={'scale-110 py-20 px-5 transition hover:-translate-x-6 ease-in-out duration-700'}
-                    src={'/portrait2_web.jpg'}
+                    src={'/assets/images/portrait2_web.jpg'}
                     alt={'portrait of Sola Kabuta smiling in a chair'}
                     width={'600'}
                     height={'900'}/>

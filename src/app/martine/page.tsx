@@ -8,7 +8,7 @@ export default function martine () {
                 <Header/>
             <Image
                 className={'-z-20'}
-                src={'/martine_macbook.jpg'}
+                src={'/assets/images/martine_macbook.jpg'}
                 alt={'cabinet coppens macbook mockup'}
                 loading={"lazy"}
                 style={{

@@ -7,7 +7,7 @@ export default function MorePlayground () {
             <p className={'text-7xl font-black text-main_color transition hover:-translate-x-6 ease-in-out duration-700 z-50'}>
                 Coming soon
             </p>
-            <div className={'backdrop-blur-sm h-screen w-screen absolute'}>
+            <div className={'backdrop-blur-sm h-max w-screen absolute'}>
 
             </div>
             {/* LOADER */}
@@ -20,14 +20,12 @@ export default function MorePlayground () {
                 <div></div>
             </div>
         </div>
-        <section className={'py-56'}>
-            <div className={''}>
+        <section className={'max-xl:py-56'}>
                 <video
                     autoPlay
                     loop
-                    src="/Pays.mp4">
+                    src="/assets/videos/Pays.mp4">
                 </video>
-            </div>
         </section>
     </>
 }
