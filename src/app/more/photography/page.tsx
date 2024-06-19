@@ -1,9 +1,8 @@
 import {Header} from "@/components/Header";
 
-export default function MorePlayground () {
-    return <div>
+export default function MorePhotography () {
+    return <>
         <Header/>
-        <p className={'absolute z-50 text-7xl backdrop-blur font-black grid place-items-center left-0 right-0 h-screen transition hover:-translate-x-6 ease-in-out duration-700'}>Coming soon</p>
         <section className={'py-56'}>
             <p className={'font-bold text-6xl'}>Leo.</p>
             <p className={'py-5'}>Art direction / Photography </p>
@@ -12,6 +11,21 @@ export default function MorePlayground () {
                 <div className={'box'}></div>
                 <div className={'box'}></div>
             </div>
+
+            <div className={'h-screen z-50'}>
+                <p className={'absolute text-7xl font-black backdrop-blur h-screen transition hover:-translate-x-6 ease-in-out duration-700'}>
+                    Coming soon
+                </p>
+                <div className="spinner absolute z-50 mt-44">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
         </section>
-    </div>
+    </>
 }

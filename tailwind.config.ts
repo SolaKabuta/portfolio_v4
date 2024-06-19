@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'coppens-bg': "url('/img/coppens_macbook.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       scale: {
         '30': '.3',
       },
