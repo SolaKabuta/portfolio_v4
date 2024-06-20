@@ -1,32 +1,91 @@
+"use client";
 import {
-    Sheet,
-    SheetContent,
-    SheetDescription,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-} from "@/components/ui/sheet"
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import Image from "next/image";
 import Link from "next/link";
+import { useState, useRef, useEffect } from "react";
 
+interface nav {
+  title: string;
+  slug: string;
+}
 
+const navItem = [
+  {
+    title: "Home",
+    slug: "/",
+  },
+  {
+    title: "Work",
+    slug: "#work",
+  },
+  {
+    title: "About",
+    slug: "#about",
+  },
+  {
+    title: "Contact",
+    slug: "#contact",
+  },
+];
 
 export const Header2 = () => {
-    return (
-        <header>
-            <section
-                className={'py-10 flex justify-between'}>
-                <Sheet>
-                    <SheetTrigger className={'uppercase transition hover:translate-x-3 ease-in-out duration-700'}>Menu</SheetTrigger>
-                    <SheetContent>
-                        <SheetHeader>
-                            <SheetTitle className={'Titles'}><a href={'/'}>Home</a></SheetTitle>
-                            <SheetTitle className={'Titles'}><Link href={'#work'}>Work</Link></SheetTitle>
-                            <SheetTitle className={'Titles'}><a href={'#about'}>About</a></SheetTitle>
-                            <SheetTitle className={'Titles'}><a href={'#contact'}>Contact</a></SheetTitle>
-                        </SheetHeader>
-                    </SheetContent>
-                </Sheet>
-            </section>
-        </header>
-    );
+  const [isActive, setIsActive] = useState<boolean>(false);
+
+  const navRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setIsActive(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isActive]);
+
+  return (
+    <header ref={navRef}>
+      <section className="py-10 flex justify-between">
+        <Link href="/" className="flex gap-2 items-center">
+          <h1 className="transition hover:translate-x-3 ease-in-out duration-700">
+            Sola Kabuta
+          </h1>
+          <Image
+            src="/assets/icons/logo_original.svg"
+            alt="Sola Kabuta logo"
+            width={30}
+            height={30}
+          />
+        </Link>
+        <button
+          onClick={() => {
+            setIsActive(!isActive);
+          }}
+        >
+          Menu
+        </button>
+      </section>
+
+      {isActive ? (
+        <div className="z-50 fixed bg-black/80 inset-y-0 right-0 h-full border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm">
+          <button onClick={() => setIsActive(!isActive)}>Close</button>
+          <ul>
+            {navItem.map((item) => (
+              <li key={item.slug}>
+                <Link href={item.slug}>{item.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+    </header>
+  );
 };

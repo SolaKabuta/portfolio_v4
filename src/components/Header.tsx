@@ -15,7 +15,7 @@ export const Header = () => {
     return (
         <header>
             <section
-                className={'py-5 flex justify-between align-middle'}>
+                className={'py-10 flex justify-between align-middle'}>
                 <a href="/">
                     <h1 className={'transition hover:translate-x-3 ease-in-out duration-700'}>
                         Sola Kabuta
