@@ -1,4 +1,24 @@
 import Image from "next/image";
+import React from "react";
+import { cva, type VariantProps} from "class-variance-authority";
+
+const textAnim = cva (
+    "hover:text-third_color duration-700 transition ease-in-out",
+{
+    variants: {
+        intent: {
+            primary: "text-xl font-light"
+        },
+    }
+}
+)
+
+const style = {
+    img : 'hover:scale-110 duration-700 ease-in-out transition',
+    txt: 'hover:text-third_color duration-700 transition ease-in-out',
+    txt2: 'font-light text-sm hover:text-third_color duration-700 transition ease-in-out'
+}
+
 
 export const Hero = () => {
     return (
@@ -6,7 +26,7 @@ export const Hero = () => {
             {/* IMAGES */}
             <main className={'flex justify-between place-items-center'}>
                     <Image
-                        className={'img'}
+                        className={style.img}
                         src={'/assets/images/portrait1_web.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
@@ -14,7 +34,7 @@ export const Hero = () => {
                         loading={"lazy"}
                         />
                     <Image
-                        className={'img mt-20'}
+                        className={style.img}
                         src={'/assets/images/portrait2_web.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
@@ -22,7 +42,7 @@ export const Hero = () => {
                         loading={"lazy"}
                         />
                     <Image
-                        className={'img'}
+                        className={style.img}
                         src={'/assets/images/portrait3_web.jpg'}
                         alt={'portrait of Sola'}
                         width={'400'}
@@ -33,9 +53,9 @@ export const Hero = () => {
             {/* TEXTS */}
             <div className={'flex justify-between place-items-start py-5 '}>
                 <p className={'font-black text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
-                    <span className={'text_anim'}>WEB</span> <span className={'text_anim'}>DEVELOPER</span> <br/>
-                    <span className={'text_anim'}>&</span> <span className={'text_anim'}>WEB</span> <span className={'text_anim'}>DESIGNER.</span> <br/>
-                    <span className={'text-xl font-light text_anim  leading-10'}>(+ LAZY PHOTOGRAPHER )</span>
+                    <span className={(textAnim({}))}>WEB</span> <span className={style.txt}>DEVELOPER</span> <br/>
+                    <span className={style.txt}>&</span> <span className={style.txt}>WEB</span> <span className={style.txt}>DESIGNER.</span> <br/>
+                    <span className={style.txt2}>(+ LAZY PHOTOGRAPHER )</span>
                 </p>
                 <p className={'text-right transition hover:-translate-x-6 ease-in-out duration-700'}>
                     <span className={'text_anim'}>Each pixel holds a story,</span> <br/>

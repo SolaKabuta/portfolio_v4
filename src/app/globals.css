@@ -24,13 +24,7 @@ section {
   height: 400px;
 }
 
-.img {
-  @apply hover:scale-110 duration-700 ease-in-out transition
-}
 
-.text_anim {
-  @apply hover:text-third_color duration-700 transition ease-in-out
-}
 
 .Titles {
   font-size: 60px;
