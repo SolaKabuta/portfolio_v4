@@ -16,7 +16,7 @@ interface nav {
   slug: string;
 }
 
-const navItem = [
+const navItem: nav[] = [
   {
     title: "Home",
     slug: "/",
@@ -39,6 +39,8 @@ export const Header2 = () => {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   const navRef = useRef<HTMLDivElement>(null);
+
+  // Close the navigation when you click outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(event.target as Node)) {
