@@ -21,11 +21,13 @@ export async function generateStaticParams(): Promise<
   }));
 }
 
+//function to find an item with the corresponding slug
 const getItemData = (slug: string): Work | undefined => {
   const data: Work[] = getData();
   return data.find((item: Work) => item.slug === slug);
 };
 
+//show the item to the client ith the slug as param
 const Item = ({ params }: { params: { slug: string } }) => {
   const item = getItemData(params.slug);
 
