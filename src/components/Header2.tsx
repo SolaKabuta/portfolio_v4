@@ -55,16 +55,18 @@ export const Header2 = () => {
 
   return (
     <header ref={navRef}>
-      <section className="py-10 flex justify-between bg-transparent">
+      <section className="py-5 flex justify-between">
         <Link href="/" className="flex gap-2 items-center">
           <h1 className="transition hover:translate-x-3 ease-in-out duration-700">
             Sola Kabuta
           </h1>
+        </Link>
+        <Link href={'/'}>
           <Image
-            src="/assets/icons/logo_original.svg"
-            alt="Sola Kabuta logo"
-            width={30}
-            height={30}
+              src="/assets/icons/logo_original_color.svg"
+              alt="Sola Kabuta logo"
+              width={30}
+              height={30}
           />
         </Link>
         <button className={'uppercase'}

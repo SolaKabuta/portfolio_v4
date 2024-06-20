@@ -31,7 +31,7 @@ export const Hero = () => {
                         />
             </main>
             {/* TEXTS */}
-            <div className={'flex justify-between place-items-end py-5 '}>
+            <div className={'flex justify-between place-items-start py-5 '}>
                 <p className={'font-black text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
                     <span className={'text_anim'}>WEB</span> <span className={'text_anim'}>DEVELOPER</span> <br/>
                     <span className={'text_anim'}>&</span> <span className={'text_anim'}>WEB</span> <span className={'text_anim'}>DESIGNER.</span> <br/>

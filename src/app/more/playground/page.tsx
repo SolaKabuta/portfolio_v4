@@ -1,8 +1,6 @@
-import {Header} from "@/components/Header";
 
 export default function MorePlayground () {
     return <>
-        <Header/>
         <div className={'h-screen w-screen grid place-items-center absolute z-50'}>
             <p className={'text-7xl font-black text-main_color transition hover:-translate-x-6 ease-in-out duration-700 z-50'}>
                 Coming soon
