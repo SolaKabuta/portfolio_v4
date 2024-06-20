@@ -1,9 +1,22 @@
 [
   {
     "title": " Martine Henderyckx",
-    "description": "web integration web development",
+    "description": ["web integration "],
+    "description2": ["web development"],
     "image": "/assets/images/martine_macbook.jpg",
+    "alt": "Martine Henderyckx background image",
     "url": "/martine",
+    "text": "",
     "slug": "martine"
+  },
+  {
+    "title": "Cabinet Coppens Experts Comptables",
+    "description": ["web integration"],
+    "description2": ["web development"],
+    "image": "/assets/images/coppens_macbook.jpg",
+    "alt": "Cabinet Coppens background image",
+    "url": "/coppens",
+    "text": "",
+    "slug": "coppens"
   }
 ]

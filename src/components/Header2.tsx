@@ -55,7 +55,7 @@ export const Header2 = () => {
 
   return (
     <header ref={navRef}>
-      <section className="py-10 flex justify-between">
+      <section className="py-10 flex justify-between bg-transparent">
         <Link href="/" className="flex gap-2 items-center">
           <h1 className="transition hover:translate-x-3 ease-in-out duration-700">
             Sola Kabuta
@@ -67,7 +67,7 @@ export const Header2 = () => {
             height={30}
           />
         </Link>
-        <button
+        <button className={'uppercase'}
           onClick={() => {
             setIsActive(!isActive);
           }}

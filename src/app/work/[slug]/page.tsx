@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { Work } from "../../../types/workTypes";
+import Image from "next/image";
 
 // Function to read data from data.json
 const getData = (): Work[] => {
@@ -36,10 +37,21 @@ const Item = ({ params }: { params: { slug: string } }) => {
   }
 
   return (
-    <div>
-      <h1>{item.title}</h1>
-      <p>{item.description}</p>
-    </div>
+      <section className={"text-main_color"}>
+        <div>
+          <Image
+              className='-z-20'
+              src={item.image}
+              alt={item.alt}
+              fill={true}/>
+          <h1 className={'text-7xl font-black transition hover:translate-x-6 ease-in-out duration-700'}>
+            {item.title}
+          </h1>
+          <p>{item.description}</p>
+          <p>{item.description2}</p>
+          <p>{item.text}</p>
+        </div>
+      </section>
   );
 };
 

@@ -19,7 +19,7 @@ export const Work = () => {
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Cabinet Coppens - Experts-Comptables
                     </p>
-                    <Link href={'/coppens'}>
+                    <Link href={'/work/coppens'}>
                         <Image
                         className={'object-cover'}
                         src={'/assets/images/coppens_macbook.jpg'}
@@ -32,7 +32,7 @@ export const Work = () => {
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Martine Henderyckx
                     </p>
-                    <Link href={'/martine'}>
+                    <Link href={'/work/martine'}>
                         <Image
                             className={'object-cover'}
                             src={'/assets/images/martine_macbook.jpg'}
