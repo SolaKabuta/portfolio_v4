@@ -1,3 +1,8 @@
+import { ArrowTopRightIcon } from '@radix-ui/react-icons'
+
+const style = {
+    icons: "flex items-center",
+}
 
 export const Footer = () => {
     return (
@@ -6,9 +11,9 @@ export const Footer = () => {
                 <div className={'flex justify-between items-center pt-44 text-main_color'}>
                     <h5 className={'font-black text-6xl text_anim'}>Get in touch.</h5>
                     <ul className={'flex gap-10'}>
-                        <li><a className={'text_anim'} href="mailto:solakabuta@gmail.com" target={'_blank'}>email</a></li>
-                        <li><a className={'text_anim'} href="https://www.linkedin.com/in/sola-kabuta/" target={'_blank'}>Linkedin</a></li>
-                        <li><a className={'text_anim'} href="https://github.com/SolaKabuta" target={'_blank'}>github</a></li>
+                        <li><a className={style.icons} href="mailto:solakabuta@gmail.com" target={'_blank'}>email <ArrowTopRightIcon/></a></li>
+                        <li><a className={style.icons} href="https://www.linkedin.com/in/sola-kabuta/" target={'_blank'}>Linkedin <ArrowTopRightIcon/></a></li>
+                        <li><a className={style.icons} href="https://github.com/SolaKabuta" target={'_blank'}>github <ArrowTopRightIcon/></a></li>
                     </ul>
                 </div>
             </section>
