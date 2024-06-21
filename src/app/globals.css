@@ -14,6 +14,10 @@ section {
   @apply max-w-screen-xl px-1 m-auto
 }
 
+#hand_subtitle {
+  font-family: "Inter", sans-serif;
+}
+
 .box {
   height: 500px;
   width: 400px;

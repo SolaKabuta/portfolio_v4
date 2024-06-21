@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "@/components/ui/button"
 
 
 export const Work = () => {
@@ -42,8 +43,8 @@ export const Work = () => {
                 </div>
             </div>
             <Link
-                className={'flex justify-end py-20'}
-                href='more'>See more
+                className={'flex justify-end py-20 transition duration-300'}
+                href='more'><Button className={'uppercase rounded-2xl transition duration-300 hover:bg-second_color hover:text-main_color'} variant="outline">See more</Button>
             </Link>
         </section>
     );

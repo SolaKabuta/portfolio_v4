@@ -9,8 +9,8 @@ export const Footer = () => {
         <footer className={'bg-second_color w-full h-[370px] sticky right-0 left-0'}>
             <section>
                 <div className={'flex justify-between items-center pt-44 text-main_color'}>
-                    <h5 className={'font-black text-6xl hover:text-black duration-700 transition ease-in-out'}>Get in touch.</h5>
-                    <ul className={'flex gap-10'}>
+                    <h5 className={'font-black text-6xl hover:text-black duration-700 transition ease-in-out hover:rotate-3'}>Get in touch.</h5>
+                    <ul className={'flex items-center gap-5'}>
                         <li>
                             <a
                                 className={style.icons}

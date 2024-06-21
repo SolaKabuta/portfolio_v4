@@ -18,7 +18,8 @@ const style = {
     img : 'hover:scale-110 duration-700 ease-in-out transition',
     imgcenter : 'hover:scale-110 duration-700 ease-in-out transition pt-10',
     txt: 'hover:text-third_color duration-700 transition ease-in-out',
-    txt2: 'font-light text-sm hover:text-third_color duration-700 transition ease-in-out pb-2'
+    txt2: 'font-light text-sm hover:text-third_color duration-700 transition ease-in-out pb-2',
+    socials: 'scale-150 hover:text-black duration-700 transition ease-in-out',
 }
 
 
@@ -69,15 +70,15 @@ export const Hero = () => {
                     <span className={'text_anim'}>and let&#39;s build something amazing together.</span>
                 </p>
             </div>
+                <p id={'hand_subtitle'} className={style.txt2}>(+ LAZY PHOTOGRAPHER )</p>
             <div className={'flex justify-end gap-4'}>
-                {/*<p className={style.txt2}>(+ LAZY PHOTOGRAPHER )</p>*/}
                 <a href="https://www.linkedin.com/in/sola-kabuta/"
                    target={'_blank'}>
-                    <LinkedInLogoIcon className={'scale-150'}/>
+                    <LinkedInLogoIcon className={style.socials}/>
                 </a>
                 <a href="https://github.com/SolaKabuta"
                    target={'_blank'}>
-                    <GitHubLogoIcon className={'scale-150'}/>
+                    <GitHubLogoIcon className={style.socials}/>
                 </a>
             </div>
         </section>
