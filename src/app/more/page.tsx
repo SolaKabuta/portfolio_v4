@@ -6,7 +6,7 @@ export default function more () {
     return <>
         <main className={''}>
             {/*DIVIDER*/}
-            {/*    <div className={'h-screen z-10 bg-main_color w-1'}></div>*/}
+            {/*    <div className={' z-10 bg-main_color absolute w-1'}></div>*/}
             <div className={'h-screen grid place-items-center bg-third_color'}>
                 <section>
                     <div className={'flex justify-between text-center gap-56'}>

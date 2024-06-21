@@ -1,19 +1,40 @@
 import { ArrowTopRightIcon } from '@radix-ui/react-icons'
 
 const style = {
-    icons: "flex items-center",
+    icons: "flex items-center hover:text-black duration-700 transition ease-in-out",
 }
 
 export const Footer = () => {
     return (
-        <footer className={'bg-second_color w-full h-[370px] sticky right-0 left-0 -bottom-full'}>
+        <footer className={'bg-second_color w-full h-[370px] sticky right-0 left-0'}>
             <section>
                 <div className={'flex justify-between items-center pt-44 text-main_color'}>
-                    <h5 className={'font-black text-6xl text_anim'}>Get in touch.</h5>
+                    <h5 className={'font-black text-6xl hover:text-black duration-700 transition ease-in-out'}>Get in touch.</h5>
                     <ul className={'flex gap-10'}>
-                        <li><a className={style.icons} href="mailto:solakabuta@gmail.com" target={'_blank'}>email <ArrowTopRightIcon/></a></li>
-                        <li><a className={style.icons} href="https://www.linkedin.com/in/sola-kabuta/" target={'_blank'}>Linkedin <ArrowTopRightIcon/></a></li>
-                        <li><a className={style.icons} href="https://github.com/SolaKabuta" target={'_blank'}>github <ArrowTopRightIcon/></a></li>
+                        <li>
+                            <a
+                                className={style.icons}
+                                href="mailto:solakabuta@gmail.com"
+                                target={'_blank'}>
+                                email <ArrowTopRightIcon/>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={style.icons}
+                                href="https://www.linkedin.com/in/sola-kabuta/"
+                                target={'_blank'}>
+                                Linkedin <ArrowTopRightIcon/>
+                            </a>
+                        </li>
+                        <li>
+                        </li>
+                        <a
+                            className={style.icons}
+                            href="https://github.com/SolaKabuta"
+                            target={'_blank'}>
+                            github <ArrowTopRightIcon/>
+                        </a>
                     </ul>
                 </div>
             </section>

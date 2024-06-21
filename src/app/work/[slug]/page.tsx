@@ -37,7 +37,7 @@ const Item = ({ params }: { params: { slug: string } }) => {
   }
 
   return (
-      <section className={"text-main_color"}>
+      <section className={"text-white"}>
         <div>
           <Image
               className='-z-20'
