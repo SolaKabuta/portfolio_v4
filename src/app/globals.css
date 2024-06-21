@@ -14,9 +14,6 @@ section {
   @apply max-w-screen-xl px-1 m-auto
 }
 
-#hand_subtitle {
-  font-family: "Inter", sans-serif;
-}
 
 .box {
   height: 500px;
@@ -35,6 +32,10 @@ section {
   line-height: 100px;
   font-weight: 800;
   transition: 0.7s;
+}
+
+.Titles:hover {
+  color: #F5E6E8;
 }
 
 /* LOADER */
@@ -95,9 +96,6 @@ section {
   }
 }
 
-.Titles:hover {
-  color: #F5E6E8;
-}
   @layer base {
     * {
       @apply border-border;

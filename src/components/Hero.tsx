@@ -27,7 +27,7 @@ export const Hero = () => {
     return (
         <section>
             {/* IMAGES */}
-            <main className={'flex justify-between place-items-center'}>
+            <main className={'flex justify-between place-items-center flex-col lg:flex-row'}>
                 <Image
                     className={style.img}
                     src={'/assets/images/portrait1_web.jpg'}
