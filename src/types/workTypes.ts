@@ -1,10 +1,13 @@
 export type Work = {
+  role: string;
+  role_details: string;
   alt: string;
   title: string;
-  description: string;
-  description2: string;
+  description: any;
   image: string;
   url: string;
   text: string;
+  info: string;
   slug: string;
+  separator: string;
 };

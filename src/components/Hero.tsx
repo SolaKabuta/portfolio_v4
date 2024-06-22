@@ -14,6 +14,7 @@ const textAnim = cva (
 }
 )
 
+// TEST
 const style = {
     img : 'hover:scale-110 duration-700 ease-in-out transition',
     imgcenter : 'hover:scale-110 duration-700 ease-in-out transition pt-10',
@@ -23,36 +24,42 @@ const style = {
 }
 
 
+const images = [
+    {
+        className: style.img,
+        src: '/assets/images/portrait1_web.jpg',
+        alt: 'portrait of Sola',
+
+    },
+    {
+        className: style.imgcenter,
+        src: '/assets/images/portrait2_web.jpg',
+        alt: 'portrait of Sola',
+    },
+    {
+        className: style.img,
+        src: '/assets/images/portrait3_web.jpg',
+        alt: 'portrait of Sola',
+    },
+];
+
 export const Hero = () => {
     return (
         <section>
             {/* IMAGES */}
-            <main className={'flex justify-between place-items-center flex-col lg:flex-row'}>
-                <Image
-                    className={style.img}
-                    src={'/assets/images/portrait1_web.jpg'}
-                    alt={'portrait of Sola'}
-                    width={'400'}
-                    height={'900'}
-                    loading={"lazy"}
-                />
-                <Image
-                    className={style.imgcenter}
-                    src={'/assets/images/portrait2_web.jpg'}
-                    alt={'portrait of Sola'}
-                    width={'400'}
-                    height={'900'}
-                    loading={"lazy"}
-                />
-                <Image
-                    className={style.img}
-                    src={'/assets/images/portrait3_web.jpg'}
-                    alt={'portrait of Sola'}
-                    width={'400'}
-                    height={'900'}
-                    loading={"lazy"}
-                />
-            </main>
+                <div className={"flex justify-between place-items-center"}>
+                    {images.map((image, index) => (
+                        <Image
+                            key={index}
+                            className={image.className}
+                            src={image.src}
+                            alt={image.alt}
+                            width={400}
+                            height={900}
+                            loading={'lazy'}
+                        />
+                    ))}
+                </div>
             {/* TEXTS */}
             <div className={'flex justify-between items-start py-5 '}>
                 <p className={'font-black text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>

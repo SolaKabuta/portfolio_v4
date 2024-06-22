@@ -36,22 +36,28 @@ const Item = ({ params }: { params: { slug: string } }) => {
     return <p>Item not found</p>;
   }
 
+  const texts = {
+    texts: 'web \\n development',
+  }
+
   return (
-      <section className={"text-white"}>
-        <div>
-          <Image
-              className='-z-20'
-              src={item.image}
-              alt={item.alt}
-              fill={true}/>
-          <h1 className={'text-7xl font-black transition hover:translate-x-6 ease-in-out duration-700'}>
-            {item.title}
-          </h1>
-          <p>{item.description}</p>
-          <p>{item.description2}</p>
-          <p>{item.text}</p>
-        </div>
-      </section>
+      <main className={'h-screen'}>
+        <section>
+          <div>
+            {/*<Image*/}
+            {/*    className='-z-20'*/}
+            {/*    src={item.image}*/}
+            {/*    alt={item.alt}*/}
+            {/*    fill={true}/>*/}
+            <h1 className={'text-7xl font-black transition hover:translate-x-6 ease-in-out duration-700'}>
+              {item.title}
+            </h1>
+            <p>{item.role}</p>
+            <p>{item.role_details}</p>
+            <p>{item.info}</p>
+          </div>
+        </section>
+      </main>
   );
 };
 
