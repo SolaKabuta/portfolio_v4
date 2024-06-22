@@ -17,7 +17,7 @@ const textAnim = cva (
 // TEST
 const style = {
     img : 'hover:scale-110 duration-700 ease-in-out transition',
-    imgcenter : 'hover:scale-110 duration-700 ease-in-out transition pt-10',
+    img_center : 'hover:scale-110 duration-700 ease-in-out transition pt-10',
     txt: 'hover:text-third_color duration-700 transition ease-in-out',
     txt2: 'font-light text-sm hover:text-third_color duration-700 transition ease-in-out pb-2',
     socials: 'scale-150 hover:text-black duration-700 transition ease-in-out',
@@ -32,7 +32,7 @@ const images = [
 
     },
     {
-        className: style.imgcenter,
+        className: style.img_center,
         src: '/assets/images/portrait2_web.jpg',
         alt: 'portrait of Sola',
     },

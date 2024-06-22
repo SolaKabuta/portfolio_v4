@@ -1,8 +1,8 @@
 [
   {
     "title": " Martine Henderyckx",
-    "role": ["web integration "],
-    "role_details": ["web development"],
+    "role": "web integration ",
+    "role_details": "web development",
     "image": "/assets/images/martine_macbook.jpg",
     "alt": "Martine Henderyckx background image",
     "url": "/martine",
@@ -11,8 +11,8 @@
   },
   {
     "title": "Cabinet Coppens Experts Comptables",
-    "role": ["web integration", "web development"],
-    "role_details": ["web development"],
+    "role": "web integration",
+    "role_details": "web development",
     "image": "/assets/images/coppens_macbook.jpg",
     "alt": "Cabinet Coppens background image",
     "info": "",
