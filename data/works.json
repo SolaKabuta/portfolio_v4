@@ -5,19 +5,19 @@
     "role_details": "web development",
     "image": "/assets/images/martine_macbook.jpg",
     "alt": "Martine Henderyckx background image",
-    "url": "/martine",
+    "url": "https://martine.mobilstudio.be/",
     "text": "",
     "slug": "martine"
   },
   {
-    "title": "Cabinet Coppens Experts Comptables",
+    "title": "Cabinet Coppens",
     "role": "web integration",
     "role_details": "web development",
     "image": "/assets/images/coppens_macbook.jpg",
     "alt": "Cabinet Coppens background image",
-    "info": "",
-    "url": "/coppens",
-    "text": "",
+    "info": "DURING MY INTERNSHIP AT MOBIL STUDIO AS A WEB DEVELOPER, I HAD THE OPPORTUNITY TO WORK ON THIS WEBSITE PROJECT, WHICH ALLOWED ME TO APPLY AND EXPAND MY SKILLS IN WORDPRESS DEVELOPMENT AND WEB INTEGRATION. I WAS RESPONSIBLE FOR BUILDING THE WEBSITE FROM A TO Z, SHOWCASING MY ABILITY TO MANAGE AND EXECUTE A WEB DEVELOPMENT PROJECT INDEPENDENTLY.",
+    "text": "This project reinforced my technical skills and underscored the importance of effective communication\n                and collaboration. It stands as a testament to my ability to handle full-cycle web development projects.",
+    "url": "https://cabinetcoppens.be/",
     "slug": "coppens"
   }
 ]

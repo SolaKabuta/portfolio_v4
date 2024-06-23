@@ -3,8 +3,8 @@ import path from "path";
 import { Work } from "@/types/workTypes";
 import {Button} from "@/components/ui/button";
 import Card from '@/components/ui/Card';
-import Image from "next/image";
-import Work_info_coppens from "@/components/info/work_info_coppens";
+// import Image from "next/image";
+// import Work_info_coppens from "@/components/info/work_info_coppens";
 
 // Function to read data from data.json
 const getData = (): Work[] => {
@@ -46,6 +46,7 @@ const images = [
     "../assets/images/coppens_macbook.jpg",
 ];
 
+
   return (
       <main className={''}>
         <section>
@@ -68,9 +69,11 @@ const images = [
               </div>
               <div>
                 <p>Info :</p>
-                <Work_info_coppens/>
+                {/*<Work_info_coppens/>*/}
+                <p className={'py-10'}>{item.info}</p>
+                <p>{item.text}</p>
                 <div className={'py-5 text-end'}>
-                  <a href={'https://cabinetcoppens.be/'} target={'_blank'}>
+                  <a href={item.url} target={'_blank'}>
                     <Button
                         className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color'}
                         variant="outline">
