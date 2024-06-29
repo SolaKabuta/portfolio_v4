@@ -43,14 +43,10 @@ const Item = ({ params }: { params: { slug: string } }) => {
 const images = [
     "../assets/images/coppens_iphone.jpg",
     "../assets/images/coppens_macbook.jpg",
-    "../assets/images/coppens_iphone.jpg",
-    "../assets/images/coppens_macbook.jpg",
+    "../assets/images/coppens_ipad.jpg",
+    "../assets/images/coppens_imac.jpg",
 ];
 
-const stack = [
-  "/assets/icons/stack/Wordpress icon.svg",
-  "/assets/icons/stack/Icon Elementor.svg"
-];
 
 
   return (
@@ -73,8 +69,8 @@ const stack = [
                 </p>
                 <p>Tech stack :</p>
                 <div className={'flex gap-2 py-5'}>
-                  <Image src={stack[0]} alt={""} width={50} height={50}/>
-                  <Image src={stack[1]} alt={""} width={50} height={50}/>
+                  <Image src={item.stack[0]} alt={""} width={50} height={50}/>
+                  <Image src={item.stack[1]} alt={""} width={50} height={50}/>
                 </div>
               </div>
               <div>
@@ -96,7 +92,7 @@ const stack = [
           </div>
         </section>
         <div className={'py-10 flex gap-10'}>
-          {images.map((itm, idx) => (
+          {item.image.map((itm, idx) => (
               <Card image={itm} key={idx}/>
           ))}
         </div>

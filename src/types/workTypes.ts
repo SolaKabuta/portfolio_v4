@@ -4,11 +4,11 @@ export type Work = {
   alt: string;
   title: string;
   description: any;
-  image: string;
+  image: object;
   url: string;
   text: string;
   info: string;
-  stack: string;
+  stack: object;
   slug: string;
   separator: string;
 };
