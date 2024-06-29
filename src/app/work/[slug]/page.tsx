@@ -40,13 +40,6 @@ const Item = ({ params }: { params: { slug: string } }) => {
     return <p>Item not found</p>;
   }
 
-const images = [
-    "../assets/images/coppens_iphone.jpg",
-    "../assets/images/coppens_macbook.jpg",
-    "../assets/images/coppens_ipad.jpg",
-    "../assets/images/coppens_imac.jpg",
-];
-
 
 
   return (
