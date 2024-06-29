@@ -3,6 +3,7 @@ import path from "path";
 import { Work } from "@/types/workTypes";
 import {Button} from "@/components/ui/button";
 import Card from '@/components/ui/Card';
+import Image from "next/image";
 // import Image from "next/image";
 // import Work_info_coppens from "@/components/info/work_info_coppens";
 
@@ -46,6 +47,11 @@ const images = [
     "../assets/images/coppens_macbook.jpg",
 ];
 
+const stack = [
+  "/assets/icons/stack/Wordpress icon.svg",
+  "/assets/icons/stack/Icon Elementor.svg"
+];
+
 
   return (
       <main className={''}>
@@ -56,7 +62,7 @@ const images = [
             {/*    src={item.image}*/}
             {/*    alt={item.alt}*/}
             {/*    fill={true}/>*/}
-            <h1 className={'py-10 text-7xl font-black transition hover:translate-x-6 ease-in-out duration-700'}>
+            <h1 className={'py-5 text-7xl font-black transition hover:translate-x-6 ease-in-out duration-700'}>
               {item.title}
             </h1>
             <div className={'flex gap-64'}>
@@ -66,6 +72,10 @@ const images = [
                   {item.role_details}
                 </p>
                 <p>Tech stack :</p>
+                <div className={'flex gap-2 py-5'}>
+                  <Image src={stack[0]} alt={""} width={50} height={50}/>
+                  <Image src={stack[1]} alt={""} width={50} height={50}/>
+                </div>
               </div>
               <div>
                 <p>Info :</p>

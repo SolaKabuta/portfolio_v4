@@ -8,6 +8,7 @@ export type Work = {
   url: string;
   text: string;
   info: string;
+  stack: string;
   slug: string;
   separator: string;
 };
