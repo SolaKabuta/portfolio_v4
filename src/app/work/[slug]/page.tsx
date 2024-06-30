@@ -46,11 +46,6 @@ const Item = ({ params }: { params: { slug: string } }) => {
       <main className={''}>
         <section>
           <div>
-            {/*<Image*/}
-            {/*    className='-z-20'*/}
-            {/*    src={item.image}*/}
-            {/*    alt={item.alt}*/}
-            {/*    fill={true}/>*/}
             <h1 className={'py-5 text-7xl font-black transition hover:translate-x-6 ease-in-out duration-700'}>
               {item.title}
             </h1>
@@ -85,8 +80,8 @@ const Item = ({ params }: { params: { slug: string } }) => {
           </div>
         </section>
         <div className={'py-10 flex gap-10'}>
-          {item.image.map((itm, idx) => (
-              <Card image={itm} key={idx}/>
+          {item.image.map((item, index) => (
+              <Card image={item} key={index}/>
           ))}
         </div>
       </main>
