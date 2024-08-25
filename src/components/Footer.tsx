@@ -10,15 +10,7 @@ export const Footer = () => {
             <section>
                 <div className={'flex justify-between items-center pt-44 text-main_color'}>
                     <h5 className={'font-black text-6xl hover:text-black duration-700 transition ease-in-out hover:rotate-3'}>Get in touch.</h5>
-                    <ul className={'flex items-center gap-5'}>
-                        <li>
-                            <a
-                                className={style.icons}
-                                href="mailto:solakabuta@gmail.com"
-                                target={'_blank'}>
-                                email <ArrowTopRightIcon/>
-                            </a>
-                        </li>
+                    <ul className={'flex items-center gap-2'}>
                         <li>
                             <a
                                 className={style.icons}
@@ -28,12 +20,20 @@ export const Footer = () => {
                             </a>
                         </li>
                         <li>
+                            <a
+                                className={style.icons}
+                                href="mailto:solakabuta@gmail.com"
+                                target={'_blank'}>
+                                email <ArrowTopRightIcon/>
+                            </a>
+                        </li>
+                        <li>
                         </li>
                         <a
                             className={style.icons}
                             href="https://github.com/SolaKabuta"
                             target={'_blank'}>
-                            github <ArrowTopRightIcon/>
+                        github <ArrowTopRightIcon/>
                         </a>
                     </ul>
                 </div>

@@ -8,8 +8,8 @@ export const About = () => {
                 <div className={''}>
                     <h3
                         id={'about'}
-                        className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
-                        About <span className={'text_anim'}>me.</span>
+                        className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700 hover:text-third_color'}>
+                        About me.
                     </h3>
                     <p className={'py-20 w-[500px] transition hover:translate-x-6 ease-in-out duration-700 text-justify'}>
                         <span className={'py-10'}>My name is Sola</span> <br/><br/>

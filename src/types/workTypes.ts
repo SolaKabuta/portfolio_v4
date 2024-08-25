@@ -4,7 +4,7 @@ export type Work = {
   alt: string;
   title: string;
   description: any;
-  image: any;
+  images: any;
   url: string;
   text: string;
   info: string;

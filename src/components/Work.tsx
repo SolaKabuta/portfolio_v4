@@ -3,6 +3,13 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button"
 
 
+// TEST
+const style = {
+    txt: 'hover:text-third_color duration-700 transition ease-in-out',
+    txt2: 'font-light text-sm hover:text-third_color duration-700 transition ease-in-out pb-2',
+}
+
+
 export const Work = () => {
     return (
         <section>
@@ -10,7 +17,7 @@ export const Work = () => {
                 className={'flex justify-between pt-44'}>
                 <h2
                     id={'work'}
-                    className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
+                    className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700 hover:text-third_color'}>
                     Work.
                 </h2>
             </div>

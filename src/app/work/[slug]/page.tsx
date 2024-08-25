@@ -33,7 +33,7 @@ const getItemData = (slug: string): Work | undefined => {
 };
 
 //show the item to the client ith the slug as param
-const Item = ({ params }: { params: { slug: string } }) => {
+const Item = ({ params }: { params: { slug: any } }) => {
   const item = getItemData(params.slug);
 
   if (!item) {
@@ -80,8 +80,8 @@ const Item = ({ params }: { params: { slug: string } }) => {
           </div>
         </section>
         <div className={'py-10 flex gap-10'}>
-          {item.image.map((item, index) => (
-              <Card image={item} key={index}/>
+          {item.images.map((imageItem, index) => (
+              <Card image={imageItem} key={index}/>
           ))}
         </div>
       </main>
