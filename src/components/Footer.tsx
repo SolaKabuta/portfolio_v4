@@ -43,7 +43,7 @@ export const Footer = () => {
             <section>
                 <div className={'flex justify-between text-main_color py-5 text-xs'}>
                     <a href="#">© 2024 sola kabuta portfolio All Rights Reserved.</a>
-                    <p>LAST UPDATE on JUNE 2024</p>
+                    <p>LAST UPDATE on august 2024</p>
                     <p>DESIGNED & DEVELOPED BY sola kabuta</p>
                 </div>
             </section>
