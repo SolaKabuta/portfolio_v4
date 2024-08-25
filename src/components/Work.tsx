@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 // TEST
 const style = {
     txt: 'hover:text-third_color duration-700 transition ease-in-out',
-    txt2: 'font-light text-sm hover:text-third_color duration-700 transition ease-in-out pb-2',
 }
 
 
@@ -17,8 +16,8 @@ export const Work = () => {
                 className={'flex justify-between pt-44'}>
                 <h2
                     id={'work'}
-                    className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700 hover:text-third_color'}>
-                    Work.
+                    className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
+                    <span className={style.txt}>My</span> <span className={style.txt}>work.</span>
                 </h2>
             </div>
             <div className={'flex justify-around gap-5 flex-col lg:flex-row'}>

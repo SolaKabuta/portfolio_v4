@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+const style = {
+    txt: 'hover:text-third_color duration-700 transition ease-in-out',
+}
+
 export const About = () => {
     return (
         <section>
@@ -8,8 +12,8 @@ export const About = () => {
                 <div className={''}>
                     <h3
                         id={'about'}
-                        className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700 hover:text-third_color'}>
-                        About me.
+                        className={'font-black text-7xl py-28 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
+                        <span className={style.txt}>About</span> <span className={style.txt}>me.</span>
                     </h3>
                     <p className={'py-20 w-[500px] transition hover:translate-x-6 ease-in-out duration-700 text-justify'}>
                         <span className={'py-10'}>My name is Sola</span> <br/><br/>
@@ -45,7 +49,7 @@ export const About = () => {
                             className={'font-bold underline'}
                             href="https://mobilstudio.be/" target="_blank">Mobil studio
                         </a> <br/>
-                        web developer intern <br/>
+                        web developer & web integrator intern <br/>
                     </p>
                     <p className={'py-10 transition hover:translate-x-6 ease-in-out duration-700'}>
                         from august 2023 to april 2024 <br/>

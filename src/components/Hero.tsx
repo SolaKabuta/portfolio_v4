@@ -3,6 +3,7 @@ import React from "react";
 import { cva, type VariantProps} from "class-variance-authority";
 import {LinkedInLogoIcon, GitHubLogoIcon} from "@radix-ui/react-icons";
 
+// TEST CVA
 const textAnim = cva (
     "hover:text-third_color duration-700 transition ease-in-out",
 {
@@ -22,6 +23,7 @@ const style = {
     txt2: 'font-light text-sm hover:text-third_color duration-700 transition ease-in-out pb-2',
     socials: 'scale-150 hover:text-black duration-700 transition ease-in-out',
 }
+
 
 
 const images = [
@@ -63,18 +65,19 @@ export const Hero = () => {
             {/* TEXTS */}
             <div className={'flex justify-between items-start py-5 '}>
                 <p className={'font-black text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
+                    {/*TEST CVA*/}
                     <span className={(textAnim({}))}>WEB</span> <span className={style.txt}>DEVELOPER</span> <br/>
                     <span className={style.txt}>&</span> <span className={style.txt}>WEB</span> <span
                     className={style.txt}>DESIGNER.</span> <br/>
                 </p>
                 <p className={'text-right transition hover:-translate-x-6 ease-in-out duration-700'}>
-                    <span className={'text_anim'}>Each pixel holds a story,</span> <br/>
-                    <span className={'text_anim'}>each line of code a puzzle begging to be solved.</span> <br/>
-                    <span className={'text_anim'}>I&#39;m a developer who sees design as the brushstroke,</span> <br/>
-                    <span className={'text_anim'}>and a designer who finds elegance in the logic.</span> <br/>
-                    <span className={'text_anim'}>Come explore <span className={'underline font-bold'}><a href="#work">my creations</a></span>,</span>
+                    <span className={style.txt}>Each pixel holds a story,</span> <br/>
+                    <span className={style.txt}>each line of code a puzzle begging to be solved.</span> <br/>
+                    <span className={style.txt}>I&#39;m a developer who sees design as the brushstroke,</span> <br/>
+                    <span className={style.txt}>and a designer who finds elegance in the logic.</span> <br/>
+                    <span className={style.txt}>Come explore <span className={'underline font-bold'}><a href="#work">my work</a></span>,</span>
                     <br/>
-                    <span className={'text_anim'}>and let&#39;s build something amazing together.</span>
+                    <span className={style.txt}>and let&#39;s build something amazing together.</span>
                 </p>
             </div>
                 <p id={'hand_subtitle'} className={style.txt2}>(+ LAZY PHOTOGRAPHER )</p>
