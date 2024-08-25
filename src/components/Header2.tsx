@@ -79,11 +79,11 @@ export const Header2 = () => {
       </section>
 
       {isActive ? (
-        <div className="z-50 fixed bg-black/80 inset-y-0 right-0 h-full border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm">
-          <button onClick={() => setIsActive(!isActive)}>Close</button>
-          <ul>
+        <div className="z-50 fixed w-[600px]  bg-black/80 inset-y-0 right-0 h-full border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm">
+          <button className={'pl-[80%]'} onClick={() => setIsActive(!isActive)}>Close</button>
+          <ul className={'py-20 uppercase font-black text-7xl text-center'}>
             {navItem.map((item) => (
-              <li key={item.slug}>
+              <li className={'py-5'} key={item.slug}>
                 <Link href={item.slug}>{item.title}</Link>
               </li>
             ))}

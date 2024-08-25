@@ -63,7 +63,7 @@ export const Hero = () => {
                     ))}
                 </div>
             {/* TEXTS */}
-            <div className={'flex justify-between items-start py-5 '}>
+            <div className={'flex justify-between items-start pt-20 py-5 '}>
                 <p className={'font-black text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
                     {/*TEST CVA*/}
                     <span className={(textAnim({}))}>WEB</span> <span className={style.txt}>DEVELOPER</span> <br/>

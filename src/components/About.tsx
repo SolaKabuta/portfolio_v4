@@ -1,8 +1,28 @@
 import Image from "next/image";
 
+
 const style = {
     txt: 'hover:text-third_color duration-700 transition ease-in-out',
 }
+
+const images = [
+    {
+        className: style.img,
+        src: '/assets/icons/stack/logo_original.svg',
+        alt: 'portrait of Sola',
+
+    },
+    // {
+    //     className: style.img_center,
+    //     src: '/assets/images/portrait2_web.jpg',
+    //     alt: 'portrait of Sola',
+    // },
+    // {
+    //     className: style.img,
+    //     src: '/assets/images/portrait3_web.jpg',
+    //     alt: 'portrait of Sola',
+    // },
+];
 
 export const About = () => {
     return (
@@ -40,10 +60,16 @@ export const About = () => {
                     </p>
 
                     {/* TECH STACK */}
-                    <p>
-                        tech stack :
-
-                    </p>
+                    {/*<p>*/}
+                    {/*    tech stack :*/}
+                    {/*</p>*/}
+                    {/*<div>*/}
+                    {/*    <Image src={images.src}*/}
+                    {/*           alt={images.alt}*/}
+                    {/*           width={400}*/}
+                    {/*           height={900}*/}
+                    {/*           loading={'lazy'}/>*/}
+                    {/*</div>*/}
 
                     {/* EXPERIENCE */}
                     <p className={'py-5'}>
