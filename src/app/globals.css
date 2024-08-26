@@ -11,7 +11,7 @@
   }
 
 section {
-  @apply max-w-screen-xl px-1 m-auto
+  @apply max-w-screen-xl px-1 m-auto max-lg:w-[80%]
 }
 
 

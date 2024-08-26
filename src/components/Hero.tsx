@@ -49,7 +49,7 @@ export const Hero = () => {
     return (
         <section>
             {/* IMAGES */}
-                <div className={"flex justify-between place-items-center"}>
+                <div className={"max-lg:hidden flex justify-between place-items-center"}>
                     {images.map((image, index) => (
                         <Image
                             key={index}
@@ -62,9 +62,17 @@ export const Hero = () => {
                         />
                     ))}
                 </div>
+                    <div className={'lg:hidden grid place-items-center'}>
+                        <Image
+                            src={images[1].src}
+                            alt={images[1].alt}
+                            width={600}
+                            height={900}
+                            loading={'lazy'}/>
+                    </div>
             {/* TEXTS */}
             <div className={'flex justify-between items-start pt-20 py-5 '}>
-                <p className={'font-black text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
+                <p className={'font-black sm:text-3xl lg:text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
                     {/*TEST CVA*/}
                     <span className={(textAnim({}))}>WEB</span> <span className={style.txt}>DEVELOPER</span> <br/>
                     <span className={style.txt}>&</span> <span className={style.txt}>WEB</span> <span
@@ -80,16 +88,18 @@ export const Hero = () => {
                     <span className={style.txt}>and let&#39;s build something amazing together.</span>
                 </p>
             </div>
+            <div className={'flex justify-between gap-4'}>
                 <p id={'hand_subtitle'} className={style.txt2}>(+ LAZY PHOTOGRAPHER )</p>
-            <div className={'flex justify-end gap-4'}>
-                <a href="https://www.linkedin.com/in/sola-kabuta/"
-                   target={'_blank'}>
-                    <LinkedInLogoIcon className={style.socials}/>
-                </a>
-                <a href="https://github.com/SolaKabuta"
-                   target={'_blank'}>
-                    <GitHubLogoIcon className={style.socials}/>
-                </a>
+                <div className={'flex justify-end gap-5'}>
+                    <a href="https://www.linkedin.com/in/sola-kabuta/"
+                       target={'_blank'}>
+                        <LinkedInLogoIcon className={style.socials}/>
+                    </a>
+                    <a href="https://github.com/SolaKabuta"
+                       target={'_blank'}>
+                        <GitHubLogoIcon className={style.socials}/>
+                    </a>
+                </div>
             </div>
         </section>
     );

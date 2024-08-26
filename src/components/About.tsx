@@ -5,24 +5,24 @@ const style = {
     txt: 'hover:text-third_color duration-700 transition ease-in-out',
 }
 
-const images = [
-    {
-        className: style.img,
-        src: '/assets/icons/stack/logo_original.svg',
-        alt: 'portrait of Sola',
-
-    },
-    // {
-    //     className: style.img_center,
-    //     src: '/assets/images/portrait2_web.jpg',
-    //     alt: 'portrait of Sola',
-    // },
-    // {
-    //     className: style.img,
-    //     src: '/assets/images/portrait3_web.jpg',
-    //     alt: 'portrait of Sola',
-    // },
-];
+// const images = [
+//     {
+//         className: style.img,
+//         src: '/assets/icons/stack/logo_original.svg',
+//         alt: 'portrait of Sola',
+//
+//     },
+//     // {
+//     //     className: style.img_center,
+//     //     src: '/assets/images/portrait2_web.jpg',
+//     //     alt: 'portrait of Sola',
+//     // },
+//     // {
+//     //     className: style.img,
+//     //     src: '/assets/images/portrait3_web.jpg',
+//     //     alt: 'portrait of Sola',
+//     // },
+// ];
 
 export const About = () => {
     return (
