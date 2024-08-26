@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 
@@ -5,10 +7,11 @@ const style = {
     txt: 'hover:text-third_color duration-700 transition ease-in-out',
 }
 
+// Tech Stack line one :
 const images = [
     {
         src: '/assets/icons/stack/WebStorm logo.svg',
-        alt: 'portrait of Sola',
+        alt: 'Webstorm logo',
 
     },
     {
@@ -29,6 +32,29 @@ const images = [
     },
 ];
 
+const images2 = [
+    {
+        src: 'assets/icons/stack/Wordpress icon.svg',
+        alt: 'Figma logo',
+    },
+    {
+        src: 'assets/icons/stack/Icon Elementor.svg',
+        alt: 'Figma logo',
+    },
+    {
+        src: 'assets/icons/stack/Figma (2).svg',
+        alt: 'Figma logo',
+    },
+    {
+        src: 'assets/icons/stack/Adobe XD (1).svg',
+        alt: 'Figma logo',
+    },
+    {
+        src: 'assets/icons/stack/Adobe Illustrator.svg',
+        alt: 'Figma logo',
+    },
+];
+
 export const About = () => {
     return (
         <section>
@@ -42,7 +68,9 @@ export const About = () => {
                     </h3>
                     <p className={'py-10 w-[500px] transition hover:translate-x-6 ease-in-out duration-700 text-justify'}>
                         <span className={'py-10'}>My name is Sola</span> <br/><br/>
-                        <span className={'text-third_color font-bold hover:text-red-600 transition duration-300 ease-in-out'}>(pronounced « <span className={'duration-300 transition ease-in-out'}>sho . la</span> »)</span> <br/> <br/>
+                        <span
+                            className={'text-third_color font-bold hover:text-red-600 transition duration-300 ease-in-out'}>(pronounced « <span
+                            className={'duration-300 transition ease-in-out'}>sho . la</span> »)</span> <br/> <br/>
 
                         I Am a web developer based in bruxelles (belgium). <br/>
                         Before I delved into the world of coding, I stirred creativity in unconventional realms. <br/>
@@ -68,17 +96,29 @@ export const About = () => {
                     <p className={'py-5'}>
                         tech stack :
                     </p>
-                    <div className={'flex gap-5'}>
+                    <div className={'flex gap-5 py-5'}>
                         {images.map((image, index) => (
                             <Image
-                                className={'hover:pb-2 transition duration-700'}
+                                className={'hover:scale-110 transition duration-700'}
                                 src={image.src}
                                 alt={image.alt}
-                                width={80}
-                                height={80}
+                                width={60}
+                                height={60}
                                 loading={'lazy'}/>
                         ))}
                     </div>
+                    <div className={'flex gap-5 py-5'}>
+                        {images2.map((image, index) => (
+                            <Image
+                                src={image.src}
+                                alt={image.alt}
+                                width={60}
+                                height={60}
+                                loading={'lazy'}/>
+                        ))}
+                    </div>
+
+
 
                     {/* EXPERIENCE */}
                     <p className={'py-5'}>
