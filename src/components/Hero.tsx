@@ -71,7 +71,7 @@ export const Hero = () => {
                             loading={'lazy'}/>
                     </div>
             {/* TEXTS */}
-            <div className={'flex justify-between items-start pt-20 py-5 '}>
+            <div className={'max-lg:grid place-items-center flex justify-between items-start pt-20 py-5 '}>
                 <p className={'font-black sm:text-3xl lg:text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
                     {/*TEST CVA*/}
                     <span className={(textAnim({}))}>WEB</span> <span className={style.txt}>DEVELOPER</span> <br/>

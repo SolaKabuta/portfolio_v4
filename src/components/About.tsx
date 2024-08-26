@@ -5,24 +5,29 @@ const style = {
     txt: 'hover:text-third_color duration-700 transition ease-in-out',
 }
 
-// const images = [
-//     {
-//         className: style.img,
-//         src: '/assets/icons/stack/logo_original.svg',
-//         alt: 'portrait of Sola',
-//
-//     },
-//     // {
-//     //     className: style.img_center,
-//     //     src: '/assets/images/portrait2_web.jpg',
-//     //     alt: 'portrait of Sola',
-//     // },
-//     // {
-//     //     className: style.img,
-//     //     src: '/assets/images/portrait3_web.jpg',
-//     //     alt: 'portrait of Sola',
-//     // },
-// ];
+const images = [
+    {
+        src: '/assets/icons/stack/WebStorm logo.svg',
+        alt: 'portrait of Sola',
+
+    },
+    {
+        src: '/assets/icons/stack/NextJS icon.svg',
+        alt: 'portrait of Sola',
+    },
+    {
+        src: '/assets/icons/stack/React (1).svg',
+        alt: 'portrait of Sola',
+    },
+    {
+        src: '/assets/icons/stack/icon TailwindCSS.svg',
+        alt: 'portrait of Sola',
+    },
+    {
+        src: '/assets/icons/stack/Git icon.svg',
+        alt: 'portrait of Sola',
+    },
+];
 
 export const About = () => {
     return (
@@ -60,16 +65,20 @@ export const About = () => {
                     </p>
 
                     {/* TECH STACK */}
-                    {/*<p>*/}
-                    {/*    tech stack :*/}
-                    {/*</p>*/}
-                    {/*<div>*/}
-                    {/*    <Image src={images.src}*/}
-                    {/*           alt={images.alt}*/}
-                    {/*           width={400}*/}
-                    {/*           height={900}*/}
-                    {/*           loading={'lazy'}/>*/}
-                    {/*</div>*/}
+                    <p className={'py-5'}>
+                        tech stack :
+                    </p>
+                    <div className={'flex gap-5'}>
+                        {images.map((image, index) => (
+                            <Image
+                                className={'hover:pb-2 transition duration-700'}
+                                src={image.src}
+                                alt={image.alt}
+                                width={80}
+                                height={80}
+                                loading={'lazy'}/>
+                        ))}
+                    </div>
 
                     {/* EXPERIENCE */}
                     <p className={'py-5'}>
