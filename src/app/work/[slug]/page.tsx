@@ -80,11 +80,11 @@ const Item = ({ params }: { params: { slug: any } }) => {
             </div>
           </div>
         </section>
-        {/*<div className={'py-10 flex gap-10'}>
+        <div className={'py-10 flex gap-10'}>
           {item.images.map((imageItem, index) => (
               <Card image={imageItem} key={index} priority={index === 0}/>
           ))}
-        </div>*/}
+        </div>
       </main>
   );
 };
