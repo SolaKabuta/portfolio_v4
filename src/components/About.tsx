@@ -16,30 +16,30 @@ const images = [
     },
     {
         src: '/assets/icons/stack/NextJS icon.svg',
-        alt: 'portrait of Sola',
+        alt: 'NextJS logo',
     },
     {
         src: '/assets/icons/stack/React (1).svg',
-        alt: 'portrait of Sola',
+        alt: 'React logo',
     },
     {
         src: '/assets/icons/stack/icon TailwindCSS.svg',
-        alt: 'portrait of Sola',
+        alt: 'TailwindCSS logo',
     },
     {
         src: '/assets/icons/stack/Git icon.svg',
-        alt: 'portrait of Sola',
+        alt: 'Git logo',
     },
 ];
-
+// Tech Stack line two :
 const images2 = [
     {
         src: 'assets/icons/stack/Wordpress icon.svg',
-        alt: 'Figma logo',
+        alt: 'Wordpress logo',
     },
     {
         src: 'assets/icons/stack/Icon Elementor.svg',
-        alt: 'Figma logo',
+        alt: 'Elementor logo',
     },
     {
         src: 'assets/icons/stack/Figma (2).svg',
@@ -47,18 +47,18 @@ const images2 = [
     },
     {
         src: 'assets/icons/stack/Adobe XD (1).svg',
-        alt: 'Figma logo',
+        alt: 'XD logo',
     },
     {
         src: 'assets/icons/stack/Adobe Illustrator.svg',
-        alt: 'Figma logo',
+        alt: 'Illustrator logo',
     },
 ];
 
 export const About = () => {
     return (
         <section>
-            <div className={'flex justify-between items-end pt-20'}>
+            <div className={'flex justify-between items-center pt-20'}>
 
                 <div className={''}>
                     <h3
@@ -69,8 +69,8 @@ export const About = () => {
                     <p className={'py-10 w-[500px] transition hover:translate-x-6 ease-in-out duration-700 text-justify'}>
                         <span className={'py-10'}>My name is Sola</span> <br/><br/>
                         <span
-                            className={'text-third_color font-bold hover:text-red-600 transition duration-300 ease-in-out'}>(pronounced « <span
-                            className={'duration-300 transition ease-in-out'}>sho . la</span> »)</span> <br/> <br/>
+                            className={'text-third_color font-bold hover:text-red-600 transition duration-300 ease-in-out'}>
+                            (pronounced « <span className={'duration-300 transition ease-in-out'}>sho . la</span> »)</span> <br/> <br/>
 
                         I Am a web developer based in bruxelles (belgium). <br/>
                         Before I delved into the world of coding, I stirred creativity in unconventional realms. <br/>
@@ -110,6 +110,7 @@ export const About = () => {
                     <div className={'flex gap-5 py-5'}>
                         {images2.map((image, index) => (
                             <Image
+                                className={'hover:scale-110 transition duration-700'}
                                 src={image.src}
                                 alt={image.alt}
                                 width={60}
@@ -117,8 +118,6 @@ export const About = () => {
                                 loading={'lazy'}/>
                         ))}
                     </div>
-
-
 
                     {/* EXPERIENCE */}
                     <p className={'py-5'}>
@@ -142,9 +141,9 @@ export const About = () => {
                     </p>
                 </div>
                 <Image
-                    className={'scale-110 py-20 px-5 transition hover:-translate-x-6 ease-in-out duration-700'}
+                    className={'scale-110 pt-20 px-5 transition hover:-translate-x-6 ease-in-out duration-700'}
                     src={'/assets/images/portrait2_web.jpg'}
-                    alt={'portrait of Sola Kabuta smiling in a chair'}
+                    alt={'portrait of Sola Kabuta sitting in a chair'}
                     width={'600'}
                     height={'900'}/>
 

@@ -59,6 +59,7 @@ const Item = ({ params }: { params: { slug: any } }) => {
                 <div className={'flex gap-2 py-5'}>
                   <Image src={item.stack[0]} alt={""} width={50} height={50}/>
                   <Image src={item.stack[1]} alt={""} width={50} height={50}/>
+                  <Image src={item.stack[2]} alt={""} width={50} height={50}/>
                 </div>
               </div>
               <div>
@@ -81,7 +82,7 @@ const Item = ({ params }: { params: { slug: any } }) => {
         </section>
         <div className={'py-10 flex gap-10'}>
           {item.images.map((imageItem, index) => (
-              <Card image={imageItem} key={index}/>
+              <Card image={imageItem} key={index} priority={index === 0}/>
           ))}
         </div>
       </main>

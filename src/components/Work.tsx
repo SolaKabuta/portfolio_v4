@@ -16,11 +16,11 @@ export const Work = () => {
                 className={'flex justify-between pt-44'}>
                 <h2
                     id={'work'}
-                    className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
+                    className={'max-xl:text-center font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
                     <span className={style.txt}>My</span> <span className={style.txt}>work.</span>
                 </h2>
             </div>
-            <div className={'flex justify-around gap-5 flex-col lg:flex-row'}>
+            <div className={'max-lg:grid max-lg:scale-75 flex justify-around gap-5 flex-col lg:flex-row'}>
                 {/* CABINET COPPENS */}
                 <div className={'relative w-[800px] h-[500px] transition hover:translate-x-4 ease-in-out duration-700'}>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
@@ -49,7 +49,7 @@ export const Work = () => {
                 </div>
             </div>
             <Link
-                className={'flex justify-center py-10 transition duration-300 md:justify-start lg:justify-end lg:py-20'}
+                className={'flex justify-center py-10 max-lg:py-0 transition duration-300 md:justify-start lg:justify-end lg:py-20'}
                 href='more'><Button className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color'} variant="outline">See more</Button>
             </Link>
         </section>

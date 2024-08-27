@@ -58,7 +58,7 @@ export const Hero = () => {
                             alt={image.alt}
                             width={400}
                             height={900}
-                            loading={'lazy'}
+                            priority={index === 0}
                         />
                     ))}
                 </div>
@@ -68,7 +68,8 @@ export const Hero = () => {
                             alt={images[1].alt}
                             width={600}
                             height={900}
-                            loading={'lazy'}/>
+                            loading={'lazy'}
+                            /*priority={true}*//>
                     </div>
             {/* TEXTS */}
             <div className={'max-lg:grid place-items-center flex justify-between items-start pt-20 py-5 '}>
