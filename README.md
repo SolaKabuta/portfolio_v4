@@ -18,9 +18,8 @@ Build Tools:
 
 This portfolio website is still under development, but it will eventually include:
 
-- Descriptions of my skills and experience
-- Showcases of my web development projects
-- Links to my social media profiles and contact information
+- Showcases my web development projects
+- Showcase my photography skills
 
 
 I'm using NextJS to create a dynamic and interactive user experience.
@@ -30,6 +29,7 @@ Tailwind CSS provides a utility-first approach to styling, making development ef
 In a near future I'd like to:
 
 - Add smoother animations/transitions
+- Boost performance
 - Add projects
 - Design and build responsive
 

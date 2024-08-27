@@ -16,7 +16,7 @@ export const Work = () => {
                 className={'flex justify-between pt-44'}>
                 <h2
                     id={'work'}
-                    className={'max-xl:text-center font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
+                    className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
                     <span className={style.txt}>My</span> <span className={style.txt}>work.</span>
                 </h2>
             </div>
