@@ -19,7 +19,7 @@ export const Work = () => {
                     data-aos-easing="linear"
                     data-aos-duration="1000"
                     id={'work'}
-                    className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
+                    className={'font-black max-md:text-4xl text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
                     <span className={style.txt}>My</span> <span className={style.txt}>work.</span>
                 </h2>
             </div>
