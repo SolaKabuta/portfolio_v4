@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { Work } from "@/types/workTypes";
 import {Button} from "@/components/ui/button";
-import Card from '@/components/ui/Card';
+// import Card from '@/components/ui/Card';
 import Image from "next/image";
 
 // Function to read data from data.json
@@ -76,11 +76,11 @@ const Item = ({ params }: { params: { slug: any } }) => {
           </div>
         </section>
         <div className={'py-10 flex gap-10'}>
-          {item.images && item.images.map((imageItem, index) => {
-            return (
-                <Card image={imageItem} key={index} priority={index === 0}/>
-            );
-          })}
+          {/*{item.images && item.images.map((imageItem, index) => {*/}
+          {/*  return (*/}
+          {/*      <Card image={imageItem} key={index} priority={index === 0}/>*/}
+          {/*  );*/}
+          {/*})}*/}
         </div>
       </main>
   );
