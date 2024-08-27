@@ -104,6 +104,7 @@ export const About = () => {
                          className={'flex gap-5 py-5'}>
                         {images.map((image, index) => (
                             <Image
+                                key={index}
                                 className={'hover:scale-110 transition duration-700'}
                                 src={image.src}
                                 alt={image.alt}
@@ -120,6 +121,7 @@ export const About = () => {
                         className={'flex gap-5 py-5'}>
                         {images2.map((image, index) => (
                             <Image
+                                key={index}
                                 className={'hover:scale-110 transition duration-700'}
                                 src={image.src}
                                 alt={image.alt}

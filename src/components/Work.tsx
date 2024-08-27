@@ -17,7 +17,7 @@ export const Work = () => {
                 <h2
                     data-aos="fade-zoom-in"
                     data-aos-easing="linear"
-                    data-aos-duration="1000"
+                    data-aos-duration="1200"
                     id={'work'}
                     className={'font-black max-md:text-4xl text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
                     <span className={style.txt}>My</span> <span className={style.txt}>work.</span>
@@ -56,7 +56,7 @@ export const Work = () => {
                 </div>
             </div>
             <Link
-                className={'flex justify-center max-md:justify-start py-10 max-lg:py-5 transition duration-300 md:justify-start'}
+                className={'flex justify-end max-lg:justify-start py-10 max-lg:py-5 transition duration-300'}
                 href='more'><Button className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color'} variant="outline">See more</Button>
             </Link>
         </section>
