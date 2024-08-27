@@ -4,8 +4,6 @@ import { Work } from "@/types/workTypes";
 import {Button} from "@/components/ui/button";
 import Card from '@/components/ui/Card';
 import Image from "next/image";
-// import Image from "next/image";
-// import Work_info_coppens from "@/components/info/work_info_coppens";
 
 // Function to read data from data.json
 const getData = (): Work[] => {
@@ -16,7 +14,7 @@ const getData = (): Work[] => {
 
 // Generate static paths based on data
 export async function generateStaticParams(): Promise<
-  { params: { slug: string } }[]
+    { params: { slug: string } }[]
 > {
   const data: Work[] = getData();
   return data.map((item: Work) => ({
@@ -26,21 +24,19 @@ export async function generateStaticParams(): Promise<
   }));
 }
 
-//function to find an item with the corresponding slug
+// Function to find an item with the corresponding slug
 const getItemData = (slug: string): Work | undefined => {
   const data: Work[] = getData();
   return data.find((item: Work) => item.slug === slug);
 };
 
-//show the item to the client ith the slug as param
+// Show the item to the client with the slug as param
 const Item = ({ params }: { params: { slug: any } }) => {
   const item = getItemData(params.slug);
 
   if (!item) {
     return <p>Item not found</p>;
   }
-
-
 
   return (
       <main className={''}>
@@ -64,7 +60,6 @@ const Item = ({ params }: { params: { slug: any } }) => {
               </div>
               <div>
                 <p>Info :</p>
-                {/*<Work_info_coppens/>*/}
                 <p className={'py-10'}>{item.info}</p>
                 <p>{item.text}</p>
                 <div className={'py-5 text-end'}>
@@ -81,9 +76,11 @@ const Item = ({ params }: { params: { slug: any } }) => {
           </div>
         </section>
         <div className={'py-10 flex gap-10'}>
-          {item.images.map((imageItem, index) => (
-              <Card image={imageItem} key={index} priority={index === 0}/>
-          ))}
+          {item.images && item.images.map((imageItem, index) => {
+            return (
+                <Card image={imageItem} key={index} priority={index === 0}/>
+            );
+          })}
         </div>
       </main>
   );
