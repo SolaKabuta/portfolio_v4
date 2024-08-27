@@ -62,7 +62,7 @@ export const About = () => {
                 <div className={'max-md:text-xs'}>
                     <h3
                         id={'about'}
-                        className={'font-black max-md:text-4xl text-7xl py-28 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
+                        className={'font-black max-md:text-4xl text-7xl py-28 max-md:py-10 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
                         <span className={style.txt}>About</span> <span className={style.txt}>me.</span>
                     </h3>
                     <p className={'py-10 w-[500px] transition hover:translate-x-6 ease-in-out duration-700 text-justify'}>
@@ -95,39 +95,41 @@ export const About = () => {
                     <p className={'py-5'}>
                         tech stack :
                     </p>
-                    <div
-                        data-aos="fade-zoom-in"
-                        data-aos-easing="ease-in-sine"
-                        data-aos-duration="700"
-                        data-aos-anchor-placement="bottom-bottom"
-                        className={'flex gap-5 py-5'}>
-                        {images.map((image, index) => (
-                            <Image
-                                key={index} // Ajout de la prop `key`
-                                className={'hover:scale-110 transition duration-700'}
-                                src={image.src}
-                                alt={image.alt}
-                                width={60}
-                                height={60}
-                                loading={'lazy'}/>
-                        ))}
-                    </div>
-                    <div
-                        data-aos="fade-zoom-in"
-                        data-aos-easing="ease-in-sine"
-                        data-aos-duration="1000"
-                        data-aos-anchor-placement="bottom-bottom"
-                        className={'flex gap-5 py-5'}>
-                        {images2.map((image, index) => (
-                            <Image
-                                key={index} // Ajout de la prop `key`
-                                className={'hover:scale-110 transition duration-700'}
-                                src={image.src}
-                                alt={image.alt}
-                                width={60}
-                                height={60}
-                                loading={'lazy'}/>
-                        ))}
+                    <div className={'max-md:scale-75 grid place-items-start'}>
+                        <div
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="700"
+                            data-aos-anchor-placement="bottom-bottom"
+                            className={'flex gap-5 py-5'}>
+                            {images.map((image, index) => (
+                                <Image
+                                    key={index} // Ajout de la prop `key`
+                                    className={'hover:scale-110 transition duration-700'}
+                                    src={image.src}
+                                    alt={image.alt}
+                                    width={60}
+                                    height={60}
+                                    loading={'lazy'}/>
+                            ))}
+                        </div>
+                        <div
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="bottom-bottom"
+                            className={'flex gap-5 py-5'}>
+                            {images2.map((image, index) => (
+                                <Image
+                                    key={index} // Ajout de la prop `key`
+                                    className={'hover:scale-110 transition duration-700'}
+                                    src={image.src}
+                                    alt={image.alt}
+                                    width={60}
+                                    height={60}
+                                    loading={'lazy'}/>
+                            ))}
+                        </div>
                     </div>
 
                     {/* EXPERIENCE */}

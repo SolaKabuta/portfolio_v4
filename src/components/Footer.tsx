@@ -40,13 +40,14 @@ export const Footer = () => {
             </section>
             {/*  DIVIDER  */}
             <div className={'bg-main_color h-1 w-full mt-14'}></div>
-            <section>
-                <div className={'flex justify-between text-main_color py-5 text-xs'}>
+            {/* Copyrights */}
+            <div>
+                <div className={'flex justify-between text-main_color py-5 px-20 text-xs bg-second_color'}>
                     <a href="#">© 2024 sola kabuta portfolio All Rights Reserved.</a>
-                    <p>LAST UPDATE on august 2024</p>
-                    <p>DESIGNED & DEVELOPED BY sola kabuta</p>
+                    <p className={'max-lg:hidden'}>LAST UPDATE on august 2024</p>
+                    <p>DESIGNED & DEVELOPED BY sola kabuta.</p>
                 </div>
-            </section>
+            </div>
         </footer>
     );
 };
