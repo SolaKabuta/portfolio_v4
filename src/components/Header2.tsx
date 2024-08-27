@@ -55,7 +55,10 @@ export const Header2 = () => {
 
   return (
     <header ref={navRef}>
-      <section className="py-5 flex justify-between">
+      <section data-aos="fade-zoom-in"
+               data-aos-easing="ease-in-sine"
+               data-aos-duration="1500"
+               data-aos-anchor-placement="bottom-bottom" className="py-5 flex justify-between">
         <Link href="/" className="flex gap-2 items-center">
           <h1 className="transition hover:translate-x-3 ease-in-out duration-700">
             Sola <span className={"max-lg:hidden"}>Kabuta</span>

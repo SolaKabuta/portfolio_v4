@@ -1,7 +1,12 @@
+"use client";
+import { useEffect } from 'react';
 import Image from "next/image";
 import React from "react";
 import { cva, type VariantProps} from "class-variance-authority";
 import {LinkedInLogoIcon, GitHubLogoIcon} from "@radix-ui/react-icons";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 // TEST CVA
 const textAnim = cva (
@@ -46,10 +51,18 @@ const images = [
 ];
 
 export const Hero = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <section>
             {/* IMAGES */}
-                <div className={"max-lg:hidden flex justify-between place-items-center"}>
+                <div data-aos="fade-zoom-in"
+                     data-aos-easing="linear"
+                     data-aos-duration="1000"
+                     className={"max-lg:hidden flex justify-between place-items-center"}>
                     {images.map((image, index) => (
                         <Image
                             key={index}
@@ -73,25 +86,35 @@ export const Hero = () => {
                     </div>
             {/* TEXTS */}
             <div className={'max-lg:grid place-items-center flex justify-between items-start pt-20 py-5 '}>
-                <p className={'font-black sm:text-3xl lg:text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
+                <p data-aos="fade-zoom-in"
+                   data-aos-easing="ease-in-sine"
+                   data-aos-duration="1200"
+                   className={'font-black sm:text-3xl lg:text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
                     {/*TEST CVA*/}
                     <span className={(textAnim({}))}>WEB</span> <span className={style.txt}>DEVELOPER</span> <br/>
                     <span className={style.txt}>&</span> <span className={style.txt}>WEB</span> <span
                     className={style.txt}>DESIGNER.</span> <br/>
                 </p>
-                <p className={'text-right transition hover:-translate-x-6 ease-in-out duration-700'}>
+                <p  data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1200"
+                    className={'text-right transition hover:-translate-x-6 ease-in-out duration-700'}>
                     <span className={style.txt}>Each pixel holds a story,</span> <br/>
                     <span className={style.txt}>each line of code a puzzle begging to be solved.</span> <br/>
                     <span className={style.txt}>I&#39;m a developer who sees design as the brushstroke,</span> <br/>
                     <span className={style.txt}>and a designer who finds elegance in the logic.</span> <br/>
-                    <span className={style.txt}>Come explore <span className={'underline font-bold'}><a href="#work">my work</a></span>,</span>
+                    <span className={style.txt}>Come explore <span className={'underline font-bold hover:text-black duration-700 transition ease-in-out'}><a href="#work">my work</a></span>,</span>
                     <br/>
                     <span className={style.txt}>and let&#39;s build something amazing together.</span>
                 </p>
             </div>
             <div className={'flex justify-between gap-4'}>
-                <p id={'hand_subtitle'} className={style.txt2}>(+ LAZY PHOTOGRAPHER )</p>
-                <div className={'flex justify-end gap-5'}>
+                <p data-aos="fade-zoom-in"
+                   data-aos-easing="ease-in-sine"
+                   data-aos-duration="2000" id={'hand_subtitle'}>(+ LAZY PHOTOGRAPHER )</p>
+                <div data-aos="fade-zoom-in"
+                     data-aos-easing="ease-in-sine"
+                     data-aos-duration="2000" className={'flex justify-end gap-5'}>
                     <a href="https://www.linkedin.com/in/sola-kabuta/"
                        target={'_blank'}>
                         <LinkedInLogoIcon className={style.socials}/>

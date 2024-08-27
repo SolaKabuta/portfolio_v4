@@ -96,7 +96,12 @@ export const About = () => {
                     <p className={'py-5'}>
                         tech stack :
                     </p>
-                    <div className={'flex gap-5 py-5'}>
+                    <div
+                        data-aos="fade-zoom-in"
+                         data-aos-easing="ease-in-sine"
+                         data-aos-duration="700"
+                         data-aos-anchor-placement="bottom-bottom"
+                         className={'flex gap-5 py-5'}>
                         {images.map((image, index) => (
                             <Image
                                 className={'hover:scale-110 transition duration-700'}
@@ -107,7 +112,12 @@ export const About = () => {
                                 loading={'lazy'}/>
                         ))}
                     </div>
-                    <div className={'flex gap-5 py-5'}>
+                    <div
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="1000"
+                        data-aos-anchor-placement="bottom-bottom"
+                        className={'flex gap-5 py-5'}>
                         {images2.map((image, index) => (
                             <Image
                                 className={'hover:scale-110 transition duration-700'}
@@ -126,7 +136,7 @@ export const About = () => {
                     <p className={'py-10 transition hover:translate-x-6 ease-in-out duration-700'}>
                         from february to april 2024 <br/>
                         <a
-                            className={'font-bold underline'}
+                            className={'font-bold underline hover:text-black duration-700 transition ease-in-out'}
                             href="https://mobilstudio.be/" target="_blank">Mobil studio
                         </a> <br/>
                         web developer & web integrator intern <br/>
@@ -134,7 +144,7 @@ export const About = () => {
                     <p className={'py-10 transition hover:translate-x-6 ease-in-out duration-700'}>
                         from august 2023 to april 2024 <br/>
                         <a
-                            className={'font-bold underline'}
+                            className={'font-bold underline hover:text-black duration-700 transition ease-in-out'}
                             href="https://becode.org/fr/" target="_blank">BECODE BRussels
                         </a> <br/>
                         web developer trainee <br/>
