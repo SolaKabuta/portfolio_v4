@@ -2,10 +2,9 @@
 
 import Image from "next/image";
 
-
 const style = {
     txt: 'hover:text-third_color duration-700 transition ease-in-out',
-}
+};
 
 // Tech Stack line one :
 const images = [
@@ -98,13 +97,13 @@ export const About = () => {
                     </p>
                     <div
                         data-aos="fade-zoom-in"
-                         data-aos-easing="ease-in-sine"
-                         data-aos-duration="700"
-                         data-aos-anchor-placement="bottom-bottom"
-                         className={'flex gap-5 py-5'}>
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="700"
+                        data-aos-anchor-placement="bottom-bottom"
+                        className={'flex gap-5 py-5'}>
                         {images.map((image, index) => (
                             <Image
-                                key={index}
+                                key={index} // Ajout de la prop `key`
                                 className={'hover:scale-110 transition duration-700'}
                                 src={image.src}
                                 alt={image.alt}
@@ -121,7 +120,7 @@ export const About = () => {
                         className={'flex gap-5 py-5'}>
                         {images2.map((image, index) => (
                             <Image
-                                key={index}
+                                key={index} // Ajout de la prop `key`
                                 className={'hover:scale-110 transition duration-700'}
                                 src={image.src}
                                 alt={image.alt}

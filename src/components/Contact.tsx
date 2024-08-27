@@ -9,7 +9,7 @@ export const Contact = () => {
         <section className={'relative'}>
             <h4
                 id={'contact'}
-                className={'font-black max-md:text-4xl text-7xl max-md:py-10 max-md:text-start py-44 pt-80 text-center transition hover:-translate-x-6 ease-in-out duration-700'}>
+                className={'font-black max-md:text-4xl text-7xl max-md:py-10 max-lg:text-start py-44 pt-80 text-center transition hover:-translate-x-6 ease-in-out duration-700'}>
                 <span className={style.txt}>Let's</span> <span className={style.txt}>build</span> <br/>
                 <span className={style.txt}>together.</span>
             </h4>
