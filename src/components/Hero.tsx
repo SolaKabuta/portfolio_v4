@@ -75,7 +75,11 @@ export const Hero = () => {
                         />
                     ))}
                 </div>
-                    <div className={'lg:hidden grid place-items-center'}>
+                    <div
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        className={'lg:hidden grid place-items-center'}>
                         <Image
                             src={images[1].src}
                             alt={images[1].alt}
@@ -85,7 +89,7 @@ export const Hero = () => {
                             /*priority={true}*//>
                     </div>
             {/* TEXTS */}
-            <div className={'max-lg:grid place-items-center flex justify-between items-start pt-20 py-5 '}>
+            <div className={'max-lg:grid place-items-center flex justify-between items-start pt-20 py-5'}>
                 <p data-aos="fade-zoom-in"
                    data-aos-easing="ease-in-sine"
                    data-aos-duration="1200"

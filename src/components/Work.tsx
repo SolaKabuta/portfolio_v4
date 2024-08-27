@@ -15,12 +15,19 @@ export const Work = () => {
             <div
                 className={'flex justify-between pt-44'}>
                 <h2
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
                     id={'work'}
                     className={'font-black text-7xl py-20 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
                     <span className={style.txt}>My</span> <span className={style.txt}>work.</span>
                 </h2>
             </div>
-            <div className={'max-lg:grid max-lg:scale-75 flex justify-around gap-5 flex-col lg:flex-row'}>
+            <div
+                data-aos="fade-zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="1200"
+                className={'max-lg:grid flex justify-around gap-5 flex-col lg:flex-row'}>
                 {/* CABINET COPPENS */}
                 <div className={'relative w-[800px] h-[500px] transition hover:translate-x-4 ease-in-out duration-700'}>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>

@@ -60,7 +60,7 @@ export const About = () => {
         <section>
             <div className={'flex justify-between items-center pt-20'}>
 
-                <div className={''}>
+                <div className={'max-lg:text-xs'}>
                     <h3
                         id={'about'}
                         className={'font-black text-7xl py-28 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
@@ -151,7 +151,7 @@ export const About = () => {
                     </p>
                 </div>
                 <Image
-                    className={'scale-110 pt-20 px-5 transition hover:-translate-x-6 ease-in-out duration-700'}
+                    className={'scale-110 pt-20 px-5 transition hover:-translate-x-6 ease-in-out duration-700 max-lg:hidden'}
                     src={'/assets/images/portrait2_web.jpg'}
                     alt={'portrait of Sola Kabuta sitting in a chair'}
                     width={'600'}
