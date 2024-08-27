@@ -56,7 +56,7 @@ export const Work = () => {
                 </div>
             </div>
             <Link
-                className={'flex justify-center py-10 max-lg:py-0 transition duration-300 md:justify-start lg:justify-end lg:py-20'}
+                className={'flex justify-center max-md:justify-start py-10 max-lg:py-5 transition duration-300 md:justify-start'}
                 href='more'><Button className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color'} variant="outline">See more</Button>
             </Link>
         </section>
