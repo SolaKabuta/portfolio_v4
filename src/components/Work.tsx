@@ -31,7 +31,7 @@ export const Work = () => {
                 className={'max-lg:grid max-lg:place-items-start flex justify-around gap-5 max-md:gap-0 max-md:hidden'}>
                 {/* CABINET COPPENS */}
                 <div
-                    className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 transition hover:translate-x-4 ease-in-out duration-700 group'}>
+                    className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:translate-x-4 ease-in-out duration-700 group'}>
                     {/* TEST */}
                     {/*<p className={'absolute z-40 text-blue-600 font-black text-2xl py-[40%] px-[45%] group-hover:text-white transition duration-700 text-center group-hover:scale-125'}>*/}
                     {/*    CLICK ME*/}
@@ -49,7 +49,7 @@ export const Work = () => {
                 </div>
                 {/* MARTINE Henderyckx */}
                 <div
-                    className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-center transition hover:-translate-x-4 ease-in-out duration-700'}>
+                    className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:-translate-x-4 ease-in-out duration-700'}>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Martine Henderyckx
                     </p>
