@@ -27,7 +27,7 @@ export const Work = () => {
                 data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-duration="500"
-                className={'max-lg:grid max-lg:place-items-start flex justify-around gap-5'}>
+                className={'max-lg:grid max-lg:place-items-start flex justify-around gap-5 max-md:gap-0 scale-75'}>
                 {/* CABINET COPPENS */}
                 <div className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:translate-x-4 ease-in-out duration-700 group'}>
                     {/* TEST */}
@@ -46,7 +46,7 @@ export const Work = () => {
                     </Link>
                 </div>
                 {/* MARTINE Henderyckx */}
-                <div className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:-translate-x-4 ease-in-out duration-700'}>
+                <div className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-top-left transition hover:-translate-x-4 ease-in-out duration-700'}>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Martine Henderyckx
                     </p>
@@ -60,7 +60,7 @@ export const Work = () => {
                 </div>
             </div>
             <Link
-                className={'flex justify-end max-lg:justify-start py-10 max-lg:py-5 transition duration-300'}
+                className={'flex justify-end max-lg:justify-start py-10 max-lg:py-0 transition duration-300'}
                 href='more'><Button className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color hover:rotate-6'} variant="outline">See more</Button>
             </Link>
         </section>
