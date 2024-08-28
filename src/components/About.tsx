@@ -4,6 +4,8 @@ import Image from "next/image";
 
 const style = {
     txt: 'hover:text-third_color duration-700 transition ease-in-out',
+    icons: "duration-700 transition ease-in-out hover:rotate-12 hover:scale-110",
+    links: "duration-700 transition ease-in-out hover:rotate-12 hover:scale-110",
 };
 
 // Tech Stack line one :
@@ -105,7 +107,7 @@ export const About = () => {
                             {images.map((image, index) => (
                                 <Image
                                     key={index} // Ajout de la prop `key`
-                                    className={'hover:scale-110 transition duration-700'}
+                                    className={style.icons}
                                     src={image.src}
                                     alt={image.alt}
                                     width={60}
@@ -122,7 +124,7 @@ export const About = () => {
                             {images2.map((image, index) => (
                                 <Image
                                     key={index} // Ajout de la prop `key`
-                                    className={'hover:scale-110 transition duration-700'}
+                                    className={style.icons}
                                     src={image.src}
                                     alt={image.alt}
                                     width={60}

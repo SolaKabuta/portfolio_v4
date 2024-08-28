@@ -2,7 +2,8 @@ import { ArrowTopRightIcon } from '@radix-ui/react-icons'
 
 const style = {
     icons: "flex items-center hover:text-black duration-700 transition ease-in-out",
-    arrows: "hover:-translate-y-2 transition duration-300 ease-in-out",
+    // arrows: "hover:-translate-y-2 transition duration-300 ease-in-out",
+    links: "duration-700 transition ease-in-out hover:rotate-3 hover:scale-110",
 }
 
 export const Footer = () => {
@@ -12,15 +13,15 @@ export const Footer = () => {
                 <div className={'flex justify-between items-center pt-44 text-main_color'}>
                     <h5 className={'font-black max-md:text-4xl text-7xl hover:text-black duration-700 transition ease-in-out hover:rotate-3'}>Get in touch.</h5>
                     <ul className={'flex items-center gap-2 max-md:grid max-md:place-items-end'}>
-                        <li className={'first:hover:animate-bounce'}>
+                        <li className={style.links}>
                             <a
                                 className={style.icons}
                                 href="https://www.linkedin.com/in/sola-kabuta/"
                                 target={'_blank'}>
-                                Linkedin <span className={style.arrows}><ArrowTopRightIcon/></span>
+                                Linkedin <ArrowTopRightIcon/>
                             </a>
                         </li>
-                        <li>
+                        <li className={style.links}>
                             <a
                                 className={style.icons}
                                 href="mailto:solakabuta@gmail.com"
@@ -28,14 +29,14 @@ export const Footer = () => {
                                 email <ArrowTopRightIcon/>
                             </a>
                         </li>
-                        <li>
-                        </li>
+                        <li className={style.links}>
                             <a
                             className={style.icons}
                             href="https://github.com/SolaKabuta"
                             target={'_blank'}>
                             github <ArrowTopRightIcon/>
                             </a>
+                        </li>
                     </ul>
                 </div>
             </section>
