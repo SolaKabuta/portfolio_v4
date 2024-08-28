@@ -24,7 +24,7 @@ const images = [
         alt: 'React logo',
     },
     {
-        src: '/assets/icons/stack/icon TailwindCSS.svg',
+        src: '/assets/icons/stack/twind.svg',
         alt: 'TailwindCSS logo',
     },
     {

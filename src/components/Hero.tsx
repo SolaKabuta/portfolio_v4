@@ -75,11 +75,12 @@ export const Hero = () => {
                         />
                     ))}
                 </div>
+                    {/* MOBILE IMAGE */}
                     <div
                         data-aos="fade-zoom-in"
                         data-aos-easing="linear"
                         data-aos-duration="1000"
-                        className={'lg:hidden grid place-items-center'}>
+                        className={'lg:hidden grid place-items-center pt-10'}>
                         <Image
                             src={images[1].src}
                             alt={images[1].alt}
