@@ -62,14 +62,6 @@ export const Work = () => {
                     </Link>
                 </div>
             </div>
-            {/*<div className={'relative'}>*/}
-            {/*    <Link*/}
-            {/*        className={'flex justify-end max-lg:justify-start py-10 max-lg:py-0 transition duration-300 absolute -top-20 md:hidden'}*/}
-            {/*        href='more'><Button*/}
-            {/*        className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color hover:rotate-6'}*/}
-            {/*        variant="outline">See more</Button>*/}
-            {/*    </Link>*/}
-            {/*</div>*/}
             <Link
                 className={'flex justify-end max-lg:justify-start py-10 max-lg:py-0 transition duration-300'}
                 href='more'><Button

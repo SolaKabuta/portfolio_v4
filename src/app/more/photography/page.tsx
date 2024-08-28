@@ -19,12 +19,23 @@ export default function MorePhotography () {
             </div>
         </div>
         <section className={'py-56'}>
-            <p className={'font-bold text-6xl'}>Leo.</p>
-            <p className={'py-5'}>Art direction / Photography </p>
-            <div className={'flex justify-between'}>
-                <div className={'box'}></div>
-                <div className={'box'}></div>
-                <div className={'box'}></div>
+            <div id={'Leo'} className={''}>
+                <p className={'font-bold text-6xl'}>Leo.</p>
+                <p className={'py-5'}>Art direction / Photography </p>
+                <div className={'flex justify-between'}>
+                    <div className={'box'}></div>
+                    <div className={'box'}></div>
+                    <div className={'box'}></div>
+                </div>
+            </div>
+            <div id={'Eleni'} className={'py-20'}>
+                <p className={'font-bold text-6xl'}>Eleni.</p>
+                <p className={'py-5'}>Art direction / Photography </p>
+                <div className={'flex justify-between'}>
+                    <div className={'box'}></div>
+                    <div className={'box'}></div>
+                    <div className={'box'}></div>
+                </div>
             </div>
         </section>
     </>
