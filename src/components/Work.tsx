@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 // TEST
 const style = {
-    txt: 'hover:text-third_color duration-700 transition ease-in-out',
+    txt: 'hover:text-black duration-700 transition ease-in-out',
 }
 
 

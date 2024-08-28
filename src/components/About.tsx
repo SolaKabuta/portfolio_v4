@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 const style = {
-    txt: 'hover:text-third_color duration-700 transition ease-in-out',
+    txt: 'hover:text-black duration-700 transition ease-in-out',
     icons: "duration-700 transition ease-in-out hover:rotate-12 hover:scale-110",
     links: "duration-700 transition ease-in-out hover:rotate-12 hover:scale-110",
 };
@@ -106,7 +106,7 @@ export const About = () => {
                             className={'flex gap-5 py-5 max-md:py-0'}>
                             {images.map((image, index) => (
                                 <Image
-                                    key={index} // Ajout de la prop `key`
+                                    key={index}
                                     className={style.icons}
                                     src={image.src}
                                     alt={image.alt}
@@ -123,7 +123,7 @@ export const About = () => {
                             className={'flex gap-5 py-5'}>
                             {images2.map((image, index) => (
                                 <Image
-                                    key={index} // Ajout de la prop `key`
+                                    key={index}
                                     className={style.icons}
                                     src={image.src}
                                     alt={image.alt}

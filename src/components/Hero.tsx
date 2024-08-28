@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 
 // TEST CVA
 const textAnim = cva (
-    "hover:text-third_color duration-700 transition ease-in-out",
+    "hover:text-black duration-700 transition ease-in-out",
 {
     variants: {
         intent: {
@@ -24,7 +24,7 @@ const textAnim = cva (
 const style = {
     img : 'hover:scale-110 duration-700 ease-in-out transition',
     img_center : 'hover:scale-110 duration-700 ease-in-out transition pt-10',
-    txt: 'hover:text-third_color duration-700 transition ease-in-out',
+    txt: 'hover:text-black duration-700 transition ease-in-out',
     txt2: 'font-light text-sm hover:text-third_color duration-700 transition ease-in-out pb-2',
     socials: 'scale-150 hover:text-black duration-700 transition ease-in-out',
 }
