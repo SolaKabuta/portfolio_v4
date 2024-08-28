@@ -20,7 +20,7 @@ const textAnim = cva (
 }
 )
 
-// TEST
+// TEST CLEANER STYLE
 const style = {
     img : 'hover:scale-110 duration-700 ease-in-out transition',
     img_center : 'hover:scale-110 duration-700 ease-in-out transition pt-10',
