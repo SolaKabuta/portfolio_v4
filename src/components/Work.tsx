@@ -23,13 +23,15 @@ export const Work = () => {
                     <span className={style.txt}>My</span> <span className={style.txt}>work.</span>
                 </h2>
             </div>
+            {/* DESKTOP LAYOUT */}
             <div
                 data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-duration="500"
-                className={'max-lg:grid max-lg:place-items-start flex justify-around gap-5 max-md:gap-0 scale-75'}>
+                className={'max-lg:grid max-lg:place-items-start flex justify-around gap-5 max-md:gap-0 max-md:hidden'}>
                 {/* CABINET COPPENS */}
-                <div className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-center transition hover:translate-x-4 ease-in-out duration-700 group'}>
+                <div
+                    className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 transition hover:translate-x-4 ease-in-out duration-700 group'}>
                     {/* TEST */}
                     {/*<p className={'absolute z-40 text-blue-600 font-black text-2xl py-[40%] px-[45%] group-hover:text-white transition duration-700 text-center group-hover:scale-125'}>*/}
                     {/*    CLICK ME*/}
@@ -39,14 +41,15 @@ export const Work = () => {
                     </p>
                     <Link href={'/work/coppens'}>
                         <Image
-                        className={'object-cover'}
-                        src={'/assets/images/coppens_macbook.jpg'}
-                        alt={'cabinet coppens mockup'}
-                        fill={true}/>
+                            className={'object-cover'}
+                            src={'/assets/images/coppens_macbook.jpg'}
+                            alt={'cabinet coppens mockup'}
+                            fill={true}/>
                     </Link>
                 </div>
                 {/* MARTINE Henderyckx */}
-                <div className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-center transition hover:-translate-x-4 ease-in-out duration-700'}>
+                <div
+                    className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-center transition hover:-translate-x-4 ease-in-out duration-700'}>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Martine Henderyckx
                     </p>
@@ -59,16 +62,60 @@ export const Work = () => {
                     </Link>
                 </div>
             </div>
-            <div className={'relative'}>
-                <Link
-                    className={'flex justify-end max-lg:justify-start py-10 max-lg:py-0 transition duration-300 absolute -top-20 md:hidden'}
-                    href='more'><Button className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color hover:rotate-6'} variant="outline">See more</Button>
-                </Link>
-            </div>
+            {/*<div className={'relative'}>*/}
+            {/*    <Link*/}
+            {/*        className={'flex justify-end max-lg:justify-start py-10 max-lg:py-0 transition duration-300 absolute -top-20 md:hidden'}*/}
+            {/*        href='more'><Button*/}
+            {/*        className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color hover:rotate-6'}*/}
+            {/*        variant="outline">See more</Button>*/}
+            {/*    </Link>*/}
+            {/*</div>*/}
             <Link
                 className={'flex justify-end max-lg:justify-start py-10 max-lg:py-0 transition duration-300'}
-                href='more'><Button className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color hover:rotate-6 max-md:hidden'} variant="outline">See more</Button>
+                href='more'><Button
+                className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color hover:rotate-6 max-md:hidden'}
+                variant="outline">See more</Button>
             </Link>
+
+
+
+            {/*  MOBILE LAYOUT  */}
+            {/* CABINET COPPENS */}
+            <div className={'grid gap-10 pt-20'}>
+                <div
+                    className={'relative w-[800px] h-[500px] max-lg:w-[300px] max-lg:h-[300px] max-lg:pb-20 origin-left transition hover:translate-x-4 ease-in-out duration-700 md:hidden'}>
+                    {/* TEST */}
+                    {/*<p className={'absolute z-40 text-blue-600 font-black text-2xl py-[40%] px-[45%] group-hover:text-white transition duration-700 text-center group-hover:scale-125'}>*/}
+                    {/*    CLICK ME*/}
+                    {/*</p>*/}
+                    <p className={'absolute z-40 text-main_color py-4 px-4'}>
+                        Cabinet Coppens - Experts-Comptables
+                    </p>
+                    <Link href={'/work/coppens'}>
+                        <Image
+                            className={'object-cover'}
+                            src={'/assets/images/coppens_macbook.jpg'}
+                            alt={'cabinet coppens mockup'}
+                            fill={true}/>
+                    </Link>
+                </div>
+                {/* MARTINE Henderyckx */}
+                <div className={''}>
+                    <div
+                        className={'relative w-[800px] h-[500px] max-lg:w-[300px] max-lg:h-[300px]  origin-left transition hover:-translate-x-4 ease-in-out duration-700 md:hidden'}>
+                        <p className={'absolute z-40 text-main_color py-4 px-4'}>
+                            Martine Henderyckx
+                        </p>
+                        <Link href={'/work/martine'}>
+                            <Image
+                                className={'object-cover'}
+                                src={'/assets/images/martine_macbook.jpg'}
+                                alt={'Martine Henderyckx mockup'}
+                                fill={true}/>
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };
