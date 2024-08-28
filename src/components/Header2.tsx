@@ -7,6 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import menu from "../../public/assets/icons/burger_menu.svg"
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
@@ -78,7 +79,13 @@ export const Header2 = () => {
             setIsActive(!isActive);
           }}
         >
-          Menu
+          <span className={'max-lg:hidden'}>Menu</span>
+          <Image
+              className={'stroke-second_color lg:hidden'}
+              src={menu}
+              alt={''}
+              width={30}
+              height={30}/>
         </button>
       </section>
 
