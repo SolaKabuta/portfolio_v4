@@ -7,7 +7,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import menu from "../../public/assets/icons/burger_menu.svg"
+import menu from "../../public/assets/icons/ui/burger_menu.svg"
+import menu2 from "../../public/assets/icons/ui/close.svg"
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
@@ -35,6 +36,15 @@ const navItem: nav[] = [
     slug: "#contact",
   },
 ];
+
+const icons = [
+  {
+    src: "/assets/icons/ui/burger_menu.svg"
+  },
+  {
+    src: "/assets/icons/ui/close.svg"
+  },
+]
 
 export const Header2 = () => {
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -82,7 +92,7 @@ export const Header2 = () => {
           <span className={'max-lg:hidden'}>Menu</span>
           <Image
               className={'stroke-second_color lg:hidden'}
-              src={menu}
+              src={icons[0].src}
               alt={''}
               width={30}
               height={30}/>
@@ -91,7 +101,14 @@ export const Header2 = () => {
 
       {isActive ? (
         <div className="z-50 fixed w-[600px]  bg-black/80 inset-y-0 right-0 h-full border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm">
-          <button className={'pl-[80%]'} onClick={() => setIsActive(!isActive)}>Close</button>
+          <button className={'pl-[80%]'} onClick={() => setIsActive(!isActive)}>
+            <Image
+              className={'stroke-second_color pt-10'}
+              src={icons[1].src}
+              alt={''}
+              width={30}
+              height={30}/>
+          </button>
           <ul className={'py-20 uppercase font-black text-7xl text-center'}>
             {navItem.map((item) => (
               <li className={'py-5'} key={item.slug}>
