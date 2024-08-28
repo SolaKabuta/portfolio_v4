@@ -112,7 +112,7 @@ export const Hero = () => {
                     <span className={style.txt}>and let&#39;s build something amazing together.</span>
                 </p>
             </div>
-            <div className={'flex justify-between gap-4'}>
+            <div className={'flex justify-between gap-4 pb-20'}>
                 <p data-aos="fade-zoom-in"
                    data-aos-easing="ease-in-sine"
                    data-aos-duration="2000" 
