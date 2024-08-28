@@ -13,7 +13,7 @@ export const Work = () => {
     return (
         <section>
             <div
-                className={'flex justify-between pt-44'}>
+                className={'flex justify-between pt-44 max-md:pt-5'}>
                 <h2
                     data-aos="fade-zoom-in"
                     data-aos-easing="linear"
@@ -29,7 +29,7 @@ export const Work = () => {
                 data-aos-duration="500"
                 className={'max-lg:grid max-lg:place-items-start flex justify-around gap-5'}>
                 {/* CABINET COPPENS */}
-                <div className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 transition hover:translate-x-4 ease-in-out duration-700 group'}>
+                <div className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:translate-x-4 ease-in-out duration-700 group'}>
                     {/* TEST */}
                     {/*<p className={'absolute z-40 text-blue-600 font-black text-2xl py-[40%] px-[45%] group-hover:text-white transition duration-700 text-center group-hover:scale-125'}>*/}
                     {/*    CLICK ME*/}
@@ -46,7 +46,7 @@ export const Work = () => {
                     </Link>
                 </div>
                 {/* MARTINE Henderyckx */}
-                <div className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 transition hover:-translate-x-4 ease-in-out duration-700'}>
+                <div className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:-translate-x-4 ease-in-out duration-700'}>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Martine Henderyckx
                     </p>

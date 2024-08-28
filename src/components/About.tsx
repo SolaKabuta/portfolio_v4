@@ -97,13 +97,14 @@ export const About = () => {
                     <p className={'py-5'}>
                         tech stack :
                     </p>
-                    <div className={'max-md:scale-75 max-md:grid place-items-start'}>
+                    {/* To align images correctly after scaling them down I used "origin-left" */}
+                    <div className={'max-md:scale-75 origin-left'}>
                         <div
                             data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-sine"
                             data-aos-duration="700"
                             data-aos-anchor-placement="bottom-bottom"
-                            className={'flex gap-5 py-5 max-md:py-0'}>
+                            className={'flex gap-5 py-5 items-center'}>
                             {images.map((image, index) => (
                                 <Image
                                     key={index}
@@ -120,7 +121,7 @@ export const About = () => {
                             data-aos-easing="ease-in-sine"
                             data-aos-duration="1000"
                             data-aos-anchor-placement="bottom-bottom"
-                            className={'flex gap-5 py-5'}>
+                            className={'flex gap-5 py-5 justify-start'}>
                             {images2.map((image, index) => (
                                 <Image
                                     key={index}
