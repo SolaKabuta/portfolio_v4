@@ -82,6 +82,7 @@ export const Hero = () => {
                         data-aos-duration="1000"
                         className={'lg:hidden grid place-items-center pt-10'}>
                         <Image
+                            className={'rounded-2xl'}
                             src={images[1].src}
                             alt={images[1].alt}
                             width={600}
