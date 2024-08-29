@@ -33,9 +33,9 @@ export const Work = () => {
                 <div
                     className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:translate-x-4 ease-in-out duration-700 group'}>
                     {/* TEST */}
-                    {/*<p className={'absolute z-40 text-blue-600 font-black text-2xl py-[40%] px-[45%] group-hover:text-white transition duration-700 text-center group-hover:scale-125'}>*/}
-                    {/*    CLICK ME*/}
-                    {/*</p>*/}
+                    <p className={'absolute z-40 text-blue-600 font-black text-xl bottom-0 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
+                        CLICK ME
+                    </p>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Cabinet Coppens - Experts-Comptables
                     </p>
@@ -49,7 +49,10 @@ export const Work = () => {
                 </div>
                 {/* MARTINE Henderyckx */}
                 <div
-                    className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:-translate-x-4 ease-in-out duration-700'}>
+                    className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:-translate-x-4 ease-in-out duration-700 group'}>
+                    <p className={'absolute z-40 text-blue-600 font-black text-xl bottom-0 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
+                        CLICK ME
+                    </p>
                     <p className={'absolute z-40 text-main_color py-4 px-4'}>
                         Martine Henderyckx
                     </p>

@@ -10,9 +10,9 @@ export default function more () {
                 <section>
                     <div className={'flex justify-between text-center gap-56'}>
                         <Link href='more/playground'>
-                            <h5 className={'font-black text-7xl transition hover:-translate-x-6 ease-in-out duration-700 hover:text-main_color'}>
+                            <h5 className={'font-black text-7xl transition hover:-translate-x-6 ease-in-out duration-700 hover:text-main_color group'}>
                                 Playground <br/>
-                                <span className={'font-light text-sm'}>
+                                <span className={'font-light text-sm group-hover:text-black invisible group-hover:visible ease-in-out duration-500 transition'}>
                                     (stylish name for side projects)
                                 </span>
                             </h5>

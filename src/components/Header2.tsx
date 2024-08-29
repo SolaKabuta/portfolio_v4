@@ -103,7 +103,7 @@ export const Header2 = () => {
         <div className="z-50 fixed w-[600px]  bg-black/80 inset-y-0 right-0 h-full border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm">
           <button className={'pl-[80%]'} onClick={() => setIsActive(!isActive)}>
             <Image
-              className={'stroke-second_color pt-10'}
+              className={'stroke-second_color pt-5 '}
               src={icons[1].src}
               alt={''}
               width={30}
