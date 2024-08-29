@@ -25,15 +25,12 @@ export const Work = () => {
             </div>
             {/* DESKTOP LAYOUT */}
             <div
-                data-aos="fade-right"
-                data-aos-easing="linear"
-                data-aos-duration="500"
                 className={'max-lg:grid max-lg:place-items-start flex justify-around gap-5 max-md:gap-0 max-md:hidden'}>
                 {/* CABINET COPPENS */}
                 <div
                     className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:translate-x-4 ease-in-out duration-700 group'}>
                     {/* TEST */}
-                    <p className={'absolute z-40 text-blue-600 font-black text-xl bottom-0 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
+                    <p className={'absolute z-40 text-orange-600 font-black text-xl bottom-0 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
                         CLICK ME
                     </p>
                     {/*<p className={'absolute z-40 text-main_color py-4 px-4'}>*/}
@@ -41,13 +38,13 @@ export const Work = () => {
                     {/*</p>*/}
                     <Link href={'/work/coppens'}>
                         <Image
-                            className={'object-cover group-hover:-translate-y-24 transition duration-700 z-50'}
+                            className={'object-cover group-hover:-translate-y-32 transition duration-700 z-50 rounded-2xl'}
                             src={'/assets/images/coppens_macbook.jpg'}
                             alt={'cabinet coppens mockup'}
                             fill={true}/>
-                        <div className={'w-full h-full bg-black '}>
+                        <div className={'w-full h-full bg-black rounded-2xl'}>
                             <p className={'absolute bottom-0 z-30 text-main_color py-4 px-4'}>
-                                Cabinet Coppens : <br/>
+                                Cabinet Coppens : <br/> <br/>
                                 Mastering accounting <br/>
                                 for balanced finances
                             </p>
@@ -65,13 +62,13 @@ export const Work = () => {
                     {/*</p>*/}
                     <Link href={'/work/martine'}>
                         <Image
-                            className={'object-cover group-hover:-translate-y-24 transition duration-700 z-50'}
+                            className={'object-cover group-hover:-translate-y-32 transition duration-700 z-50 rounded-2xl'}
                             src={'/assets/images/martine_macbook.jpg'}
                             alt={'Martine Henderyckx mockup'}
                             fill={true}/>
-                        <div className={'w-full h-full bg-black '}>
+                        <div className={'w-full h-full bg-black rounded-2xl'}>
                             <p className={'absolute bottom-0 z-30 text-main_color py-4 px-4'}>
-                                Martine Henderyckx : <br/>
+                                Martine Henderyckx : <br/> <br/>
                                 The art of guidance <br/>
                                 for living in harmony with oneself
                             </p>
@@ -82,7 +79,7 @@ export const Work = () => {
             <Link
                 className={'flex justify-end max-lg:justify-start py-10 max-lg:py-0 transition duration-300'}
                 href='more'><Button
-                className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color hover:rotate-6 max-md:hidden'}
+                className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-orange-600 hover:scale-110 max-md:hidden'}
                 variant="outline">See more</Button>
             </Link>
 

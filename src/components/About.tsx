@@ -70,7 +70,7 @@ export const About = () => {
                     <p className={'py-10 w-[500px] transition hover:translate-x-6 ease-in-out duration-700 text-justify max-lg:w-11/12'}>
                         <span className={'py-10'}>My name is Sola</span> <br/><br/>
                         <span
-                            className={'text-third_color font-bold hover:text-red-600 transition duration-300 ease-in-out'}>
+                            className={'text-third_color font-bold hover:text-black transition duration-300 ease-in-out'}>
                             (pronounced « <span className={'duration-300 transition ease-in-out'}>sho . la</span> »)</span> <br/> <br/>
 
                         I Am a web developer based in bruxelles (belgium). <br/>

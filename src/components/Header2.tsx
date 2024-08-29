@@ -78,7 +78,7 @@ export const Header2 = () => {
         </Link>
         <Link href={'/'}>
           <Image
-              src="/assets/icons/logo_original_color.svg"
+              src="/assets/icons/logo_original.svg"
               alt="Sola Kabuta logo"
               width={30}
               height={30}

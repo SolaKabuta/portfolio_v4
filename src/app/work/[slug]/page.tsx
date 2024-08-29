@@ -65,9 +65,10 @@ const Item = ({ params }: { params: { slug: any } }) => {
                 <div className={'py-5 text-end'}>
                   <a href={item.url} target={'_blank'}>
                     <Button
-                        className={'uppercase rounded-2xl transition duration-300 bg-second_color text-main_color hover:bg-black hover:text-main_color'}
+                        className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-second_color hover:scale-110'}
                         variant="outline">
-                      View live
+                      Live project
+                      <div className={'w-2 h-2 ml-2 bg-red-600 rounded-2xl animate-pulse'}></div>
                     </Button>
                   </a>
                 </div>
