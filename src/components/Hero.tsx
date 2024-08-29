@@ -104,7 +104,7 @@ export const Hero = () => {
                 <p  data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="1200"
-                    className={'text-right transition hover:-translate-x-6 ease-in-out duration-700 max-md:text-sm max-lg:text-start max-lg:pt-10'}>
+                    className={'text-right transition hover:-translate-x-6 ease-in-out duration-700 max-md:text-sm max-lg:text-start max-lg:pt-10 text-balance'}>
                     <span className={style.txt}>Each pixel holds a story,</span> <br/>
                     <span className={style.txt}>each line of code a puzzle begging to be solved.</span> <br/>
                     <span className={style.txt}>I&#39;m a developer who sees design as the brushstroke,</span> <br/>

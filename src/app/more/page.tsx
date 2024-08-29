@@ -8,7 +8,7 @@ export default function more () {
         <main className={''}>
             {/*DIVIDER*/}
             {/*    <div className={' z-10 bg-main_color absolute w-1'}></div>*/}
-            <div className={'h-screen grid place-items-center bg-third_color z-30'}>
+            <div className={'h-screen grid place-items-center bg-second z-30'}>
                 {/*<div className={'opacity-75 bg-black h-screen w-screen z-30'}></div>*/}
                 <section>
                     <div className={'flex flex-col md:flex-row justify-between text-center gap-56 z-50'}>
@@ -32,9 +32,8 @@ export default function more () {
                         </Link>
                     </div>
                 </section>
-                <div className={'md:hidden w-full h-2 bg-main_color absolute top-1/2'}>
-
-                </div>
+                {/* DIVIDER */}
+                <div className={'md:hidden w-full h-2 bg-black absolute top-1/2'}></div>
             </div>
         </main>
     </>

@@ -36,8 +36,8 @@ const config = {
         '30': '.3',
       },
       colors: {
-        main_color: '#F5E6E8',
-        second_color: '#7189FF',
+        main: '#FB5607',
+        second: '#fcfbf5',
         third_color: '#D9D9D9',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
