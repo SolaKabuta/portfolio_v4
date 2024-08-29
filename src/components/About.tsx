@@ -56,6 +56,7 @@ const images2 = [
     },
 ];
 
+
 export const About = () => {
     return (
         <section>
@@ -142,16 +143,19 @@ export const About = () => {
                     <p className={'py-10 transition hover:translate-x-6 ease-in-out duration-700'}>
                         from february to april 2024 <br/>
                         <a
-                            className={'font-bold underline hover:text-black duration-700 transition ease-in-out'}
+                            className={'font-bold underline hover:text-black duration-700 transition ease-in-out flex gap-2 group'}
                             href="https://mobilstudio.be/" target="_blank">Mobil studio
-                        </a> <br/>
+                            <span className={'origin-center invisible transition duration-700 ease-in-out group-hover:visible'}>
+                                <Image src={'assets/icons/heart.svg'} alt={'heart icon'} width={20} height={20}/>
+                            </span>
+                        </a>
                         web developer & web integrator intern <br/>
                     </p>
                     <p className={'py-10 transition hover:translate-x-6 ease-in-out duration-700'}>
                         from august 2023 to april 2024 <br/>
                         <a
                             className={'font-bold underline hover:text-black duration-700 transition ease-in-out'}
-                            href="https://becode.org/fr/" target="_blank">BECODE BRussels
+                            href="https://becode.org/fr/" target="_blank">BECODE Brussels
                         </a> <br/>
                         web developer trainee <br/>
                     </p>
