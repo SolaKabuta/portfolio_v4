@@ -36,15 +36,22 @@ export const Work = () => {
                     <p className={'absolute z-40 text-blue-600 font-black text-xl bottom-0 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
                         CLICK ME
                     </p>
-                    <p className={'absolute z-40 text-main_color py-4 px-4'}>
-                        Cabinet Coppens - Experts-Comptables
-                    </p>
+                    {/*<p className={'absolute z-40 text-main_color py-4 px-4'}>*/}
+                    {/*    Cabinet Coppens - Experts-Comptables*/}
+                    {/*</p>*/}
                     <Link href={'/work/coppens'}>
                         <Image
-                            className={'object-cover'}
+                            className={'object-cover group-hover:-translate-y-24 transition duration-700 z-50'}
                             src={'/assets/images/coppens_macbook.jpg'}
                             alt={'cabinet coppens mockup'}
                             fill={true}/>
+                        <div className={'w-full h-full bg-black '}>
+                            <p className={'absolute bottom-0 z-30 text-main_color py-4 px-4'}>
+                                Cabinet Coppens : <br/>
+                                Mastering accounting <br/>
+                                for balanced finances
+                            </p>
+                        </div>
                     </Link>
                 </div>
                 {/* MARTINE Henderyckx */}
@@ -53,15 +60,22 @@ export const Work = () => {
                     <p className={'absolute z-40 text-blue-600 font-black text-xl bottom-0 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
                         CLICK ME
                     </p>
-                    <p className={'absolute z-40 text-main_color py-4 px-4'}>
-                        Martine Henderyckx
-                    </p>
+                    {/*<p className={'absolute z-40 text-main_color py-4 px-4'}>*/}
+                    {/*    Martine Henderyckx*/}
+                    {/*</p>*/}
                     <Link href={'/work/martine'}>
                         <Image
-                            className={'object-cover'}
+                            className={'object-cover group-hover:-translate-y-24 transition duration-700 z-50'}
                             src={'/assets/images/martine_macbook.jpg'}
                             alt={'Martine Henderyckx mockup'}
                             fill={true}/>
+                        <div className={'w-full h-full bg-black '}>
+                            <p className={'absolute bottom-0 z-30 text-main_color py-4 px-4'}>
+                                Martine Henderyckx : <br/>
+                                The art of guidance <br/>
+                                for living in harmony with oneself
+                            </p>
+                        </div>
                     </Link>
                 </div>
             </div>
