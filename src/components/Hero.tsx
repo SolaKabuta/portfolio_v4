@@ -34,18 +34,18 @@ const style = {
 const images = [
     {
         className: style.img,
-        src: '/assets/images/portrait1_web.jpg',
+        src: '/assets/images/portrait1.webp',
         alt: 'portrait of Sola',
 
     },
     {
         className: style.img_center,
-        src: '/assets/images/portrait2_web.jpg',
+        src: '/assets/images/portrait2.webp',
         alt: 'portrait of Sola',
     },
     {
         className: style.img,
-        src: '/assets/images/portrait3_web.jpg',
+        src: '/assets/images/portrait3.webp',
         alt: 'portrait of Sola',
     },
 ];
@@ -71,7 +71,7 @@ export const Hero = () => {
                             alt={image.alt}
                             width={400}
                             height={900}
-                            priority={index === 0}
+                            priority
                         />
                     ))}
                 </div>
@@ -87,21 +87,22 @@ export const Hero = () => {
                             alt={images[1].alt}
                             width={600}
                             height={900}
-                            loading={'lazy'}
-                            /*priority={true}*//>
+                            priority
+                        />
                     </div>
             {/* TEXTS */}
             <div className={'max-lg:grid place-items-start flex justify-between items-start pt-20 py-5'}>
-                <p data-aos="fade-zoom-in"
+                <h1 data-aos="fade-zoom-in"
                    data-aos-easing="ease-in-sine"
                    data-aos-duration="1200"
                    className={'font-black max-md:text-4xl text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
                     {/*TEST CVA*/}
-                    <span className={(textAnim({}))}>WEB</span> <span className={style.txt}>DEVELOPER</span> <br/>
+                    <span className={(textAnim({}))}>Front</span><span className={style.txt}>-</span><span
+                    className={style.txt}>End</span> <span className={style.txt}>DEVELOPER</span> <br/>
                     <span className={style.txt}>&</span> <span className={style.txt}>WEB</span> <span
                     className={style.txt}>DESIGNER.</span> <br/>
-                </p>
-                <p  data-aos="fade-zoom-in"
+                </h1>
+                <p data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="1200"
                     className={'text-right transition hover:-translate-x-6 ease-in-out duration-700 max-md:text-sm max-lg:text-start max-lg:pt-10 text-balance'}>

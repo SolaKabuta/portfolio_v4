@@ -33,7 +33,7 @@ export default function more () {
                     </div>
                 </section>
                 {/* DIVIDER */}
-                <div className={'md:hidden w-full h-2 bg-black absolute top-1/2'}></div>
+                <div className={'md:hidden w-full h-1 bg-black absolute top-1/2'}></div>
             </div>
         </main>
     </>

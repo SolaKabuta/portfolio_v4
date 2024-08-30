@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-// import { Alice } from "next/font/google";
+import { Hanken_Grotesk, Anek_Gujarati } from "next/font/google";
 import "./globals.css";
 import { Header2 } from "@/components/Header2";
 
 
-const inter = Inter({ subsets: ["latin"] });
-// const alice = Alice({weight: undefined, subsets: ["latin"] });
+const hankenGrotesk = Hanken_Grotesk({ subsets: ["latin"] });
+const roboto = Anek_Gujarati({weight: ["400"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sola Kabuta Portfolio",
@@ -20,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${hankenGrotesk.className} ${roboto.className}`}>
         <Header2 />
         {children}
       </body>

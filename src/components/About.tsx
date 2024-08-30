@@ -161,8 +161,8 @@ export const About = () => {
                     </p>
                 </div>
                 <Image
-                    className={'rounded-2xl scale-110 pt-20 px-5 transition hover:-translate-x-6 ease-in-out duration-700 max-lg:hidden'}
-                    src={'/assets/images/portrait2_web.jpg'}
+                    className={'scale-110 mt-20 mx-5 transition hover:-translate-x-6 ease-in-out duration-700 max-lg:hidden rounded-2xl'}
+                    src={'/assets/images/portrait2.webp'}
                     alt={'portrait of Sola Kabuta sitting in a chair'}
                     width={'600'}
                     height={'900'}/>

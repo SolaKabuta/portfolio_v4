@@ -1,14 +1,5 @@
 "use client";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import menu from "../../public/assets/icons/ui/burger_menu.svg"
-import menu2 from "../../public/assets/icons/ui/close.svg"
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";

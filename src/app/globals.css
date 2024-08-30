@@ -14,6 +14,10 @@ section {
   @apply max-w-screen-xl px-1 m-auto max-lg:w-[80%]
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Hanken Grotesk", serif;
+  font-size: 20px;
+}
 
 
 .box {
@@ -48,11 +52,11 @@ section {
 }
 
 .spinner > div {
-  background-color: rgba(71,75,255,0.2);
+  background-color: rgba(255,165,0,0.2);
   height: 100%;
   position: absolute;
   width: 100%;
-  border: 2.2px solid #474bff;
+  border: 2.2px solid #FB5607;
 }
 
 .spinner div:nth-of-type(1) {

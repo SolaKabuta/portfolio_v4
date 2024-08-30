@@ -77,6 +77,7 @@ const Item = ({ params }: { params: { slug: any } }) => {
           </div>
         </section>
         <div className={'py-10 flex gap-10'}>
+
           {/*{item.images && item.images.map((imageItem, index) => {*/}
           {/*  return (*/}
           {/*      <Card image={imageItem} key={index} priority={index === 0}/>*/}

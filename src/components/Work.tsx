@@ -30,20 +30,20 @@ export const Work = () => {
                 <div
                     className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:translate-x-4 ease-in-out duration-700 group'}>
                     {/* TEST */}
-                    <p className={'absolute z-40 text-main font-black text-xl bottom-0 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
+                    <p className={'absolute z-40 text-main font-black text-xl bottom-3 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
                         CLICK ME
                     </p>
                     {/*<p className={'absolute z-40 text-main_color py-4 px-4'}>*/}
                     {/*    Cabinet Coppens - Experts-Comptables*/}
                     {/*</p>*/}
-                    <Link href={'/work/coppens'}>
+                    <Link href={'/work/coppens'} className={'relative'}>
                         <Image
                             className={'object-cover group-hover:-translate-y-32 transition duration-700 z-50 rounded-2xl'}
-                            src={'/assets/images/coppens_macbook.jpg'}
+                            src={'/assets/images/coppens_macbook.webp'}
                             alt={'cabinet coppens mockup'}
-                            fill={true}/>
+                            fill/>
                         <div className={'w-full h-full bg-black rounded-2xl'}>
-                            <p className={'absolute bottom-0 z-30 text-main_color py-4 px-4 text-white'}>
+                            <p className={'absolute bottom-0 z-30 text-main_color py-4 px-4 text-white font-bold'}>
                                 Cabinet Coppens : <br/> <br/>
                                 Mastering accounting <br/>
                                 for balanced finances
@@ -54,20 +54,20 @@ export const Work = () => {
                 {/* MARTINE Henderyckx */}
                 <div
                     className={'relative w-[800px] h-[500px] max-lg:scale-75 max-md:scale-50 origin-left transition hover:-translate-x-4 ease-in-out duration-700 group'}>
-                    <p className={'absolute z-40 text-main font-black text-xl bottom-0 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
+                    <p className={'absolute z-40 text-main font-black text-xl bottom-3 right-5 group-hover:animate-bounce group-hover:text-white invisible group-hover:visible transition duration-700 text-center group-hover:scale-125'}>
                         CLICK ME
                     </p>
                     {/*<p className={'absolute z-40 text-main_color py-4 px-4'}>*/}
                     {/*    Martine Henderyckx*/}
                     {/*</p>*/}
-                    <Link href={'/work/martine'}>
+                    <Link href={'/work/martine'} className={'relative'}>
                         <Image
                             className={'object-cover group-hover:-translate-y-32 transition duration-700 z-50 rounded-2xl'}
-                            src={'/assets/images/martine_macbook.jpg'}
+                            src={'/assets/images/martine_macbook.webp'}
                             alt={'Martine Henderyckx mockup'}
                             fill={true}/>
                         <div className={'w-full h-full bg-black rounded-2xl'}>
-                            <p className={'absolute bottom-0 z-30 text-main_color py-4 px-4 text-white'}>
+                            <p className={'absolute bottom-0 z-30 text-main_color py-4 px-4 text-white font-bold'}>
                                 Martine Henderyckx : <br/> <br/>
                                 The art of guidance <br/>
                                 for living in harmony with oneself
@@ -113,7 +113,7 @@ export const Work = () => {
                         <Link href={'/work/martine'}>
                             <Image
                                 className={'object-cover rounded-2xl'}
-                                src={'/assets/images/martine_macbook.jpg'}
+                                src={'/assets/images/martine_macbook.webp'}
                                 alt={'Martine Henderyckx mockup'}
                                 fill={true}/>
                         </Link>
