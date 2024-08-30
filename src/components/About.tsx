@@ -74,7 +74,7 @@ export const About = () => {
                             className={'text-third_color font-bold hover:text-black transition duration-300 ease-in-out'}>
                             (pronounced « <span className={'duration-300 transition ease-in-out'}>sho . la</span> »)</span> <br/> <br/>
 
-                        I Am a web developer based in bruxelles (belgium). <br/>
+                        I Am a web developer based in Brussels (belgium). <br/>
                         Before I delved into the world of coding, I stirred creativity in unconventional realms. <br/>
                         As a former bartender specializing in crafting intricate cocktails, I found artistry in
                         mixology, <br/>

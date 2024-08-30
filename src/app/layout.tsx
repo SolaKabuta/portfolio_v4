@@ -5,7 +5,7 @@ import { Header2 } from "@/components/Header2";
 
 
 const hankenGrotesk = Hanken_Grotesk({ subsets: ["latin"] });
-const roboto = Anek_Gujarati({weight: ["400"], subsets: ["latin"] });
+const roboto = Anek_Gujarati({weight: ["500"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sola Kabuta Portfolio",
