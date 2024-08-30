@@ -1,9 +1,12 @@
+import React from "react";
 import fs from "fs";
 import path from "path";
 import { Work } from "@/types/workTypes";
 import {Button} from "@/components/ui/button";
-// import Card from '@/components/ui/Card';
+import Card from '@/components/ui/Card';
 import Image from "next/image";
+
+
 
 // Function to read data from data.json
 const getData = (): Work[] => {
@@ -42,10 +45,10 @@ const Item = ({ params }: { params: { slug: any } }) => {
       <main className={''}>
         <section>
           <div>
-            <h1 className={'py-5 text-7xl font-black transition hover:translate-x-6 ease-in-out duration-700'}>
+            <h1 className={'py-5 text-7xl max-md:text-5xl font-black transition hover:translate-x-6 ease-in-out duration-700'}>
               {item.title}
             </h1>
-            <div className={'flex gap-64'}>
+            <div className={'flex max-lg:flex-col lg:gap-64'}>
               <div className={'w-1/2'}>
                 <p>Role :</p>
                 <p className={'py-10'}>{item.role} <br/>
@@ -62,10 +65,10 @@ const Item = ({ params }: { params: { slug: any } }) => {
                 <p>Info :</p>
                 <p className={'py-10'}>{item.info}</p>
                 <p>{item.text}</p>
-                <div className={'py-5 text-end'}>
+                <div className={'py-5 text-end max-md:text-start'}>
                   <a href={item.url} target={'_blank'}>
                     <Button
-                        className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-main hover:scale-110'}
+                        className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-main hover:scale-110  '}
                         variant="outline">
                       Live project
                       <div className={'w-2 h-2 ml-2 bg-red-600 rounded-2xl animate-pulse'}></div>
@@ -76,13 +79,29 @@ const Item = ({ params }: { params: { slug: any } }) => {
             </div>
           </div>
         </section>
-        <div className={'py-10 flex gap-10'}>
+        <div className={'py-10 flex gap-10 max-md:text-start'}>
 
-          {/*{item.images && item.images.map((imageItem, index) => {*/}
-          {/*  return (*/}
-          {/*      <Card image={imageItem} key={index} priority={index === 0}/>*/}
-          {/*  );*/}
-          {/*})}*/}
+
+
+
+          {/*<div className="swiper">*/}
+          {/*  <div className="swiper-wrapper">*/}
+          {/*    <div className="swiper-slide"><Image src={item.images[0]} alt={""} width={600} height={600}/></div>*/}
+          {/*    <div className="swiper-slide"><Image src={item.images[1]} alt={""} width={600} height={600}/></div>*/}
+          {/*    <div className="swiper-slide"><Image src={item.images[2]} alt={""} width={600} height={600}/></div>*/}
+          {/*    <div className="swiper-slide"><Image src={item.images[3]} alt={""} width={600} height={600}/></div>*/}
+          {/*  </div>*/}
+          {/*  <div className="swiper-pagination"></div>*/}
+          {/*  <div className="swiper-button-prev"></div>*/}
+          {/*  <div className="swiper-button-next"></div>*/}
+          {/*  <div className="swiper-scrollbar"></div>*/}
+          {/*</div>*/}
+
+          {item.images && item.images.map((imageItem, index) => {
+            return (
+                <Card  image={imageItem} key={index} priority={index === 0}/>
+            );
+          })}
         </div>
       </main>
   );
