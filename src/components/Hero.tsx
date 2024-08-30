@@ -22,8 +22,8 @@ const textAnim = cva (
 
 // TEST CLEANER STYLE
 const style = {
-    img : 'hover:scale-110 duration-700 ease-in-out transition rounded-2xl',
-    img_center : 'hover:scale-110 duration-700 ease-in-out transition mt-10 rounded-2xl',
+    img : 'hover:scale-110 duration-700 ease-in-out transition w-[400px] h-auto rounded-2xl',
+    img_center : 'hover:scale-110 duration-700 ease-in-out transition mt-10 w-[400px] h-auto rounded-2xl',
     txt: 'hover:text-black duration-700 transition ease-in-out',
     txt2: 'font-light text-sm hover:text-third_color duration-700 transition ease-in-out pb-2',
     socials: 'scale-150 hover:text-black duration-700 transition ease-in-out',
@@ -69,8 +69,8 @@ export const Hero = () => {
                             className={image.className}
                             src={image.src}
                             alt={image.alt}
-                            width={400}
-                            height={900}
+                            width={0}
+                            height={0}
                             priority
                         />
                     ))}

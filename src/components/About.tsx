@@ -99,7 +99,7 @@ export const About = () => {
                         tech stack :
                     </p>
                     {/* To align images correctly after scaling them down I used "origin-left" */}
-                    <div className={'max-md:scale-75 origin-left'}>
+                    <div className={'max-md:scale-75 origin-left relative'}>
                         <div
                             data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-sine"
@@ -122,7 +122,7 @@ export const About = () => {
                             data-aos-easing="ease-in-sine"
                             data-aos-duration="1000"
                             data-aos-anchor-placement="bottom-bottom"
-                            className={'flex gap-5 py-5 justify-start'}>
+                            className={'flex gap-5 py-5 justify-start relative'}>
                             {images2.map((image, index) => (
                                 <Image
                                     key={index}

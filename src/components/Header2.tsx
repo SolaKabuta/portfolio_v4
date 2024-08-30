@@ -69,10 +69,11 @@ export const Header2 = () => {
         </Link>
         <Link href={'/'}>
           <Image
+              className={'h-auto w-[30px]'}
               src="/assets/icons/logo_original.svg"
               alt="Sola Kabuta logo"
-              width={30}
-              height={30}
+              width={0}
+              height={0}
           />
         </Link>
         <button className={'uppercase'}

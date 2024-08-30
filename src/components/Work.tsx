@@ -41,6 +41,7 @@ export const Work = () => {
                             className={'object-cover group-hover:-translate-y-32 transition duration-700 z-50 rounded-2xl'}
                             src={'/assets/images/coppens_macbook.webp'}
                             alt={'cabinet coppens mockup'}
+                            loading={'lazy'}
                             fill/>
                         <div className={'w-full h-full bg-black rounded-2xl'}>
                             <p className={'absolute bottom-0 z-30 text-main_color py-4 px-4 text-white font-bold'}>
