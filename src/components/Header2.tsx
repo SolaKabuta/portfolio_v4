@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import sidebarMenu from "@/components/ui/sidebar-menu";
+import SidebarMenu from "@/components/ui/sidebar-menu";
 
 interface nav {
   title: string;
