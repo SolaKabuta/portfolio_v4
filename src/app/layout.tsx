@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk, Anek_Gujarati } from "next/font/google";
 import "./globals.css";
 import { Header2 } from "@/components/Header2";
+import {Footer} from "@/components/Footer";
 
 
 const hankenGrotesk = Hanken_Grotesk({ subsets: ["latin"] });
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${hankenGrotesk.className} ${roboto.className}`}>
         <Header2 />
         {children}
+      <Footer/>
       </body>
     </html>
   );

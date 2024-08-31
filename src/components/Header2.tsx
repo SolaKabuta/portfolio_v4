@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { HamburgerMenuIcon } from '@radix-ui/react-icons'
+import { HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons'
 import { useState, useRef, useEffect } from "react";
 import sidebarMenu from "@/components/ui/sidebar-menu";
 import SidebarMenu from "@/components/ui/sidebar-menu";
@@ -85,19 +85,14 @@ export const Header2 = () => {
           }}
         >
           <span className={'max-lg:hidden'}>Menu</span>
-          <HamburgerMenuIcon className={'scale-125'}/>
+          <HamburgerMenuIcon className={'scale-125 lg:hidden'}/>
         </button>
       </section>
 
       {isActive ? (
         <div className="z-50 fixed w-[600px]  bg-black/80 inset-y-0 right-0 h-full border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm">
           <button className={'pl-[80%]'} onClick={() => setIsActive(!isActive)}>
-            <Image
-              className={'stroke-second_color pt-5 '}
-              src={icons[1].src}
-              alt={''}
-              width={30}
-              height={30}/>
+            <Cross1Icon className={'scale-125'}/>
           </button>
           <ul className={'py-20 uppercase font-black text-7xl text-center'}>
             {navItem.map((item) => (

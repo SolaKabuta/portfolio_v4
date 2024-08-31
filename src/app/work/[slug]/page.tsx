@@ -79,30 +79,6 @@ const Item = ({ params }: { params: { slug: any } }) => {
             </div>
           </div>
         </section>
-        <div className={'py-10 flex gap-10 max-md:text-start'}>
-
-
-
-
-          {/*<div className="swiper">*/}
-          {/*  <div className="swiper-wrapper">*/}
-          {/*    <div className="swiper-slide"><Image src={item.images[0]} alt={""} width={600} height={600}/></div>*/}
-          {/*    <div className="swiper-slide"><Image src={item.images[1]} alt={""} width={600} height={600}/></div>*/}
-          {/*    <div className="swiper-slide"><Image src={item.images[2]} alt={""} width={600} height={600}/></div>*/}
-          {/*    <div className="swiper-slide"><Image src={item.images[3]} alt={""} width={600} height={600}/></div>*/}
-          {/*  </div>*/}
-          {/*  <div className="swiper-pagination"></div>*/}
-          {/*  <div className="swiper-button-prev"></div>*/}
-          {/*  <div className="swiper-button-next"></div>*/}
-          {/*  <div className="swiper-scrollbar"></div>*/}
-          {/*</div>*/}
-
-          {/*{item.images && item.images.map((imageItem, index) => {*/}
-          {/*  return (*/}
-          {/*      <Card  image={imageItem} key={index} priority={index === 0}/>*/}
-          {/*  );*/}
-          {/*})}*/}
-        </div>
       </main>
   );
 };
