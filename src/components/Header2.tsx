@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 import { useState, useRef, useEffect } from "react";
 import sidebarMenu from "@/components/ui/sidebar-menu";
 import SidebarMenu from "@/components/ui/sidebar-menu";
@@ -84,12 +85,7 @@ export const Header2 = () => {
           }}
         >
           <span className={'max-lg:hidden'}>Menu</span>
-          <Image
-              className={'stroke-second_color lg:hidden'}
-              src={icons[0].src}
-              alt={''}
-              width={30}
-              height={30}/>
+          <HamburgerMenuIcon className={'scale-125'}/>
         </button>
       </section>
 

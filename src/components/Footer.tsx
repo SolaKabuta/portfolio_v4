@@ -12,7 +12,7 @@ export const Footer = () => {
         <footer className={'bg-black w-full h-[370px] sticky right-0 left-0 text-white'}>
             <section>
                 <div className={'flex justify-between items-center pt-44 text-main_color'}>
-                    <h5 className={'font-black max-md:text-4xl text-7xl hover:text-orange-600 duration-700 transition ease-in-out hover:rotate-3'}>Get in touch!</h5>
+                    <h5 className={'font-black max-md:text-4xl text-7xl hover:text-orange-600 duration-700 transition ease-in-out hover:rotate-3 max-lg:grid'}>Get in <span>touch!</span></h5>
                     <ul className={'flex items-center gap-2 max-lg:grid max-md:place-items-end'}>
                         <li className={style.links}>
                             <a
