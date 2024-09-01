@@ -213,7 +213,7 @@ export const Header = () => {
                 data-aos="fade-zoom-in"
                 data-aos-easing="linear"
                 data-aos-duration="1000"
-                className="text-7xl font-black md:text-7xl">
+                className="text-4xl font-black md:text-7xl ">
                 This part of my website <br /> is till in the development phase
             </h1>
             <div data-aos="fade-zoom-in"
