@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = ({ className }: { className?: string }) => {
     const [active, setActive] = useState<string | null>(null);
@@ -10,14 +11,9 @@ const Navbar = ({ className }: { className?: string }) => {
         <div
             className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
             <Menu setActive={setActive}>
-                <MenuItem setActive={setActive} active={active} item="Services">
-                    <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                        <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-                        <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-                        <HoveredLink href="/branding">Branding</HoveredLink>
-                    </div>
-                </MenuItem>
+                    <a href={'/'}>
+                        Sola
+                    </a>
                 <MenuItem setActive={setActive} active={active} item="Products">
                     <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
@@ -46,20 +42,19 @@ const Navbar = ({ className }: { className?: string }) => {
                         />
                     </div>
                 </MenuItem>
-                    <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+                    <div className="text-sm grid grid-cols-2 gap-10 p-4">
                         <Image
-                            title="Algochurn"
                             src="/assets/icons/logo_original.svg"
                             width={50}
                             height={50}
                             alt={'/'}/>
                     </div>
-                <MenuItem setActive={setActive} active={active} item="Pricing">
+                <MenuItem setActive={setActive} active={active} item="Contact">
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/hobby">Hobby</HoveredLink>
-                        <HoveredLink href="/individual">Individual</HoveredLink>
-                        <HoveredLink href="/team">Team</HoveredLink>
-                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+                        <HoveredLink href="/hobby">Mail</HoveredLink>
+                        <HoveredLink href="/individual">Linkedin</HoveredLink>
+                        <HoveredLink href="/team">Github</HoveredLink>
+                        <HoveredLink href="/enterprise">CV</HoveredLink>
                     </div>
                 </MenuItem>
             </Menu>
