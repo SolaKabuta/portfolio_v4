@@ -9,10 +9,10 @@ const style = {
 
 export const Footer = () => {
     return (
-        <footer className={'bg-black w-full h-[370px] sticky right-0 left-0 text-white'}>
+        <footer className={'bg-black w-full h-[370px] text-white'}>
             <section>
                 <div className={'flex justify-between items-center pt-44 text-main_color'}>
-                    <h5 className={'font-black max-md:text-4xl text-7xl hover:text-orange-600 duration-700 transition ease-in-out hover:rotate-3 max-lg:grid'}>Get in <span>touch!</span></h5>
+                    <h5 className={'font-black max-md:text-4xl text-7xl hover:text-orange-600 duration-700 transition ease-in-out hover:rotate-3'}>Get in <span>touch!</span></h5>
                     <ul className={'flex items-center gap-2 max-lg:grid max-md:place-items-end'}>
                         <li className={style.links}>
                             <a
@@ -54,9 +54,8 @@ export const Footer = () => {
             {/* Copyrights */}
             <div className={'flex justify-between text-main_color py-5 px-20 max-md:px-8 text-xs bg-black'}>
                 <a href="#">© Copyright - sola kabuta - 2024</a>
-                    <p className={'max-lg:hidden'}>LAST UPDATE august 2024</p>
-                    <p className={'text-end'}>made with love</p>
-                {/*<Image src={'assets/icons/ui/heart.svg'} alt={'heart icon'} width={20} height={20}/>*/}
+                <p className={'max-lg:hidden'}>LAST UPDATE august 2024</p>
+                <p className={'text-end'}>made with love</p>
             </div>
         </footer>
     );

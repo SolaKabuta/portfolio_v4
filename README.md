@@ -8,6 +8,7 @@ Frontend:
 - [NextJS](https://reactjs.org/) : A JavaScript library for building user interfaces.
 - [TypeScript](https://www.typescriptlang.org/): A superset of JavaScript that adds optional static typing.
 - [Shadcn/ui](https://ui.shadcn.com/): Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
+- [Aceternity/ui](https://ui.aceternity.com/): Copy paste the most trending components and use them in your websites without having to worry about styling and animations.
 - [Radix](https://www.radix-ui.com/): An open source component library optimized for fast development, easy maintenance, and accessibility. Just import and go—no configuration required.
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development.
 

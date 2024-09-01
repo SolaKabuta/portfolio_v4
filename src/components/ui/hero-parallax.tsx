@@ -225,7 +225,7 @@ export const Header = () => {
                 In the near future it will showcase both my personal and professional projects.
             </p>
             <p>
-                (However you can hover/scroll down to see the cool effect from Acceternity UI)
+                (However you can hover/scroll down to see the cool effect from Aceternity UI)
             </p>
             </div>
         </div>

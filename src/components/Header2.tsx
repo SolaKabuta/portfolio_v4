@@ -7,6 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import sidebarMenu from "@/components/ui/sidebar-menu";
 import SidebarMenu from "@/components/ui/sidebar-menu";
 
+
 interface nav {
   title: string;
   slug: string;
@@ -60,6 +61,7 @@ export const Header2 = () => {
 
   return (
     <header ref={navRef}>
+
       <section data-aos="fade-zoom-in"
                data-aos-easing="ease-in-sine"
                data-aos-duration="1500"
