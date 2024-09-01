@@ -65,10 +65,10 @@ const Item = ({ params }: { params: { slug: any } }) => {
                 <p>Info :</p>
                 <p className={'py-10'}>{item.info}</p>
                 <p>{item.text}</p>
-                <div className={'py-5 text-end max-md:text-start'}>
+                <div className={'py-5 text-end max-md:text-start pb-56'}>
                   <a href={item.url} target={'_blank'}>
                     <Button
-                        className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-main hover:scale-110  '}
+                        className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-main hover:scale-110 '}
                         variant="outline">
                       Live project
                       <div className={'w-2 h-2 ml-2 bg-red-600 rounded-2xl animate-pulse'}></div>
