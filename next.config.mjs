@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        unoptimized: false,
+        unoptimized: true,
+        domains: ['aceternity.com'],
     },
+    optimizeFonts: false,
 };
 
 
