@@ -5,6 +5,7 @@ import { Work } from "@/types/workTypes";
 import {Button} from "@/components/ui/button";
 // import Card from '@/components/ui/Card';
 import Image from "next/image";
+import {Cards as InfiniteMovingCards} from "@/components/Cards";
 
 
 
@@ -79,6 +80,7 @@ const Item = ({ params }: { params: { slug: any } }) => {
             </div>
           </div>
         </section>
+          <InfiniteMovingCards/>
       </main>
   );
 };
