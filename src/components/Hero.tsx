@@ -124,9 +124,10 @@ export const Hero = () => {
                     <span className={style.txt}>and let&#39;s build something amazing together.</span>
                 </p>
             </div>
+                {/*ICONS*/}
                 <div data-aos="fade-zoom-in"
                      data-aos-easing="ease-in-sine"
-                     data-aos-duration="2000" className={'flex justify-end gap-5'}>
+                     data-aos-duration="2000" className={'flex justify-end max-md:justify-start gap-5'}>
                     <a href="https://www.linkedin.com/in/sola-kabuta/"
                        target={'_blank'}>
                         <LinkedInLogoIcon className={style.socials}/>
