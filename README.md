@@ -45,9 +45,7 @@ Live preview :
 
 https://portfolio-v4-five-sigma.vercel.app/
 
-[//]#### Screenshots:
 
-![](./src/assets/projects/screenshots/Sola/portfolio_landing.gif)
 
 [//]: # (![]&#40;./screenshot.jpg&#41;)
 [//]: # (![]&#40;./screenshot.jpg&#41;)
