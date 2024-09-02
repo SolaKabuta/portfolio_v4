@@ -6,6 +6,8 @@ import { cva} from "class-variance-authority";
 import {LinkedInLogoIcon, GitHubLogoIcon} from "@radix-ui/react-icons";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import WordRotate from "@/components/magicui/word-rotate";
+
 
 
 // TEST CVA
@@ -93,36 +95,35 @@ export const Hero = () => {
                         />
                     </div>
             {/* TEXTS */}
-            <div className={'max-lg:grid place-items-start flex justify-between items-start pt-20 py-5'}>
-                <h1 data-aos="fade-zoom-in"
+            <div className={'max-lg:grid  justify-between items-start pt-20 py-5 align-text-bottom'}>
+                <div>
+                    <h1 data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="1200"
+                        className={'font-black max-md:text-4xl text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
+                        {/*TEST CVA*/}
+                        <WordRotate duration = "2000" className="text-4xl max-md:text-4xl font-bold text-black dark:text-white" words={["Hello, I am Sola", `but my friends call me "Kam"`]}/>
+                        <span className={(textAnim({}))}>Front</span><span className={style.txt}>-</span><span
+                        className={style.txt}>End</span> <span className={style.txt}>DEVELOPER</span> <br/>
+                        <span className={style.txt}>&</span> <span className={style.txt}>WEB</span> <span
+                        className={style.txt}>DESIGNER.</span> <br/>
+                    </h1>
+                </div>
+                <p data-aos="fade-zoom-in"
                    data-aos-easing="ease-in-sine"
                    data-aos-duration="1200"
-                   className={'font-black max-md:text-4xl text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
-                    {/*TEST CVA*/}
-                    <span className={(textAnim({}))}>Front</span><span className={style.txt}>-</span><span
-                    className={style.txt}>End</span> <span className={style.txt}>DEVELOPER</span> <br/>
-                    <span className={style.txt}>&</span> <span className={style.txt}>WEB</span> <span
-                    className={style.txt}>DESIGNER.</span> <br/>
-                </h1>
-                <p data-aos="fade-zoom-in"
-                    data-aos-easing="ease-in-sine"
-                    data-aos-duration="1200"
-                    className={'text-right transition hover:-translate-x-6 ease-in-out duration-700 max-md:text-sm max-lg:text-start max-lg:pt-10 text-balance'}>
+                   className={'text-right transition hover:-translate-x-6 ease-in-out duration-700 max-md:text-sm max-lg:text-start max-lg:pt-10 text-balance'}>
                     <span className={style.txt}>Each pixel holds a story,</span> <br/>
                     <span className={style.txt}>each line of code a puzzle begging to be solved.</span> <br/>
                     <span className={style.txt}>I&#39;m a developer who sees design as the brushstroke,</span> <br/>
                     <span className={style.txt}>and a designer who finds elegance in the logic.</span> <br/>
-                    <span className={style.txt}>Come explore <span className={'underline font-bold hover:text-black duration-700 transition ease-in-out'}><a href="#work">my work</a></span>,</span>
+                    <span className={style.txt}>Come explore <span
+                        className={'underline font-bold hover:text-black duration-700 transition ease-in-out'}><a
+                        href="#work">my work</a></span>,</span>
                     <br/>
                     <span className={style.txt}>and let&#39;s build something amazing together.</span>
                 </p>
             </div>
-            <div className={'flex justify-between gap-4 pb-20'}>
-                <p data-aos="fade-zoom-in"
-                   data-aos-easing="ease-in-sine"
-                   data-aos-duration="2000" 
-                   id={'hand_subtitle'}
-                    className={'max-lg:hidden'}>(+ LAZY PHOTOGRAPHER )</p>
                 <div data-aos="fade-zoom-in"
                      data-aos-easing="ease-in-sine"
                      data-aos-duration="2000" className={'flex justify-end gap-5'}>
@@ -135,7 +136,6 @@ export const Hero = () => {
                         <GitHubLogoIcon className={style.socials}/>
                     </a>
                 </div>
-            </div>
         </section>
     );
 };

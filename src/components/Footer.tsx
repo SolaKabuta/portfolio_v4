@@ -63,8 +63,8 @@ export const Footer = () => {
                 {/* Copyrights */}
                 <div className={'flex justify-between items-center text-main_color py-5 text-xs bg-black'}>
                     <a href="#">© Copyright - sola kabuta - 2024</a>
-                    <p className={'max-lg:hidden max-md:hidden'}>LAST UPDATE august 2024</p>
-                    <p className={'flex gap-2 max-md:hidden'}>made with love <HeartFilledIcon/> </p>
+                    <p className={'max-lg:hidden max-md:hidden'}>LAST UPDATE september 2024</p>
+                    <p className={'flex gap-2 max-md:hidden'}>made with <span className={'animate-bounce'}><HeartFilledIcon/></span> </p>
                 </div>
             </section>
         </footer>
