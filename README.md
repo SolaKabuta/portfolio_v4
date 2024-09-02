@@ -41,7 +41,11 @@ Stay tuned!
 As I continue to develop this portfolio, I'll be adding more content and functionality. <br/>
 Feel free to reach out if you have any questions or feedback.
 
-#### Screenshots:
+Live preview :
+
+https://portfolio-v4-five-sigma.vercel.app/
+
+//#### Screenshots:
 
 ![](./src/assets/projects/screenshots/Sola/portfolio_landing.gif)
 
