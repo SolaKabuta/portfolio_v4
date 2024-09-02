@@ -81,8 +81,10 @@ const Item = ({ params }: { params: { slug: any } }) => {
           </div>
           {/* MOCKUP SECTION*/}
           <div>
-            <h2 className={'text-7xl'}>
-              Here is supposed to be the part where I showcase some cool mockups but yeah.. I'm working on it..
+            <h2 className={'text-7xl font-black'}>
+              Here is supposed to be <br/> the part where I showcase some cool mockups but yeah.. <br/>
+              I'm still working on it.. <br/>
+              In the meantime you can click the button to see it live.
             </h2>
           </div>
         </section>
