@@ -5,7 +5,7 @@ import { Work } from "@/types/workTypes";
 import {Button} from "@/components/ui/button";
 // import Card from '@/components/ui/Card';
 import Image from "next/image";
-// import {Cards as InfiniteMovingCards} from "@/components/Cards";
+import {Cards as InfiniteMovingCards} from "@/components/Cards";
 
 
 
@@ -82,10 +82,10 @@ const Item = ({ params }: { params: { slug: any } }) => {
             </div>
           </div>
         </section>
-        <div className={'rounded-2xl flex'}>
+        <div className={'rounded-2xl flex max-md:hidden'}>
           {item.images.map ((image) => (
                 <Image src={image} alt={''} width={600} height={800} priority={true}/>
-          ))};
+          ))}
         </div>
       </main>
   );
