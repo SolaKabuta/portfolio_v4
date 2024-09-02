@@ -25,7 +25,7 @@ main {
 }
 
 section {
-  @apply max-w-screen-xl px-1 m-auto max-lg:w-[80%]
+  @apply max-w-screen-xl px-1 m-auto max-lg:w-[80%] pt-36 z-50
 }
 
 h1,h2,h3,h4,h5,h6 {

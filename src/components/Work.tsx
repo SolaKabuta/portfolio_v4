@@ -38,7 +38,7 @@ export const Work = () => {
                     {/*</p>*/}
                     <Link href={'/work/coppens'} className={'relative'}>
                         <Image
-                            className={'object-cover group-hover:-translate-y-32 group-hover:grayscale transition duration-700 z-50 rounded-2xl '}
+                            className={'object-cover group-hover:-translate-y-32 group-hover:grayscale transition duration-700 z-40 rounded-2xl '}
                             src={'/assets/images/coppens_macbook.webp'}
                             alt={'cabinet coppens mockup'}
                             loading={'lazy'}
@@ -63,7 +63,7 @@ export const Work = () => {
                     {/*</p>*/}
                     <Link href={'/work/martine'} className={'relative'}>
                         <Image
-                            className={'object-cover group-hover:-translate-y-32 group-hover:grayscale transition duration-700 z-50 rounded-2xl'}
+                            className={'object-cover group-hover:-translate-y-32 group-hover:grayscale transition duration-700 z-40 rounded-2xl'}
                             src={'/assets/images/martine_macbook.webp'}
                             alt={'Martine Henderyckx mockup'}
                             fill={true}/>
