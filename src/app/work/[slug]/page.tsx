@@ -79,6 +79,12 @@ const Item = ({ params }: { params: { slug: any } }) => {
               </div>
             </div>
           </div>
+          {/* MOCKUP SECTION*/}
+          <div>
+            <h2 className={'text-7xl'}>
+              Here is supposed to be the part where I showcase some cool mockups but yeah.. I'm working on it..
+            </h2>
+          </div>
         </section>
         {/*<div className={'rounded-2xl flex justify-center max-md:hidden w-screen'}>*/}
         {/*  {item.images.map((image) => (*/}
