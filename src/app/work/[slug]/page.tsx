@@ -55,8 +55,8 @@ const Item = ({ params }: { params: { slug: any } }) => {
                 </p>
                 <p>Tech stack :</p>
                 <div className={'flex gap-2 py-5'}>
-                  {item.stack.map ((stack) => (
-                      <div>
+                  {item.stack.map ((stack, index) => (
+                      <div key={index}>
                         <Image src={stack} alt={""} width={50} height={50}/>
                       </div>
                   ))}
