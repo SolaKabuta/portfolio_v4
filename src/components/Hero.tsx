@@ -102,7 +102,7 @@ export const Hero = () => {
                         data-aos-duration="1200"
                         className={'font-black max-md:text-4xl text-7xl transition hover:translate-x-6 ease-in-out duration-700'}>
                         {/*TEST CVA*/}
-                        <WordRotate duration = "2000" className="text-4xl max-md:text-4xl font-bold text-black dark:text-white" words={["Hello, I am Sola", `but my friends call me "Kam"`]}/>
+                        <WordRotate className="text-4xl max-md:text-4xl font-bold text-black dark:text-white" words={[`Hello, I am Sola`, `but my friends call me "Kam"`]}/>
                         <span className={(textAnim({}))}>Front</span><span className={style.txt}>-</span><span
                         className={style.txt}>End</span> <span className={style.txt}>DEVELOPER</span> <br/>
                         <span className={style.txt}>&</span> <span className={style.txt}>WEB</span> <span
