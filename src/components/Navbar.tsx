@@ -12,9 +12,7 @@ const Navbar = ({ className }: { className?: string }) => {
             <div
                 className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto max-md:w-[350px] z-50", className)}>
                 <Menu setActive={setActive}>
-                    <a href={'#Home'}>
-                        Home
-                    </a>
+                    <Link href={'/'}>Home</Link>
                     {/*<div className="text-sm grid grid-cols-2 gap-10 p-4">*/}
                     {/*    <Image*/}
                     {/*        src="/assets/icons/logo_original.svg"*/}

@@ -5,7 +5,7 @@ import { Work } from "@/types/workTypes";
 import {Button} from "@/components/ui/button";
 // import Card from '@/components/ui/Card';
 import Image from "next/image";
-import {Cards as InfiniteMovingCards} from "@/components/Cards";
+// import {Cards as InfiniteMovingCards} from "@/components/Cards";
 
 
 
@@ -57,9 +57,11 @@ const Item = ({ params }: { params: { slug: any } }) => {
                 </p>
                 <p>Tech stack :</p>
                 <div className={'flex gap-2 py-5'}>
-                  <Image src={item.stack[0]} alt={""} width={50} height={50}/>
-                  <Image src={item.stack[1]} alt={""} width={50} height={50}/>
-                  <Image src={item.stack[2]} alt={""} width={50} height={50}/>
+                  {item.stack.map ((stack, index) => (
+                      <div>
+                        <Image src={stack} alt={""} width={50} height={50}/>
+                      </div>
+                  ))}
                 </div>
               </div>
               <div>
@@ -80,7 +82,11 @@ const Item = ({ params }: { params: { slug: any } }) => {
             </div>
           </div>
         </section>
-          <InfiniteMovingCards/>
+        <div className={'rounded-2xl flex'}>
+          {item.images.map ((image) => (
+                <Image src={image} alt={''} width={600} height={800} priority={true}/>
+          ))};
+        </div>
       </main>
   );
 };
