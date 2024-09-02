@@ -5,8 +5,6 @@ import { Work } from "@/types/workTypes";
 import {Button} from "@/components/ui/button";
 // import Card from '@/components/ui/Card';
 import Image from "next/image";
-import {Cards as InfiniteMovingCards} from "@/components/Cards";
-
 
 
 // Function to read data from data.json
@@ -57,7 +55,7 @@ const Item = ({ params }: { params: { slug: any } }) => {
                 </p>
                 <p>Tech stack :</p>
                 <div className={'flex gap-2 py-5'}>
-                  {item.stack.map ((stack, index) => (
+                  {item.stack.map ((stack) => (
                       <div>
                         <Image src={stack} alt={""} width={50} height={50}/>
                       </div>
