@@ -32,6 +32,10 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Hanken Grotesk", serif;
 }
 
+h5 span {
+  @apply hover:text-orange-600 duration-700 transition ease-in-out hover:rotate-3 hover:scale-110
+}
+
 
 .container {
   flex: 1;
