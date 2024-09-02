@@ -12,9 +12,16 @@ export const Footer = () => {
         <footer className={'bg-black w-full h-max text-white'}>
             <section>
                 <div className={'flex justify-between pb-10'}>
-                    <a className={style.links} href="">solakabuta@gmail.com</a>
                     <div>
-                    <ul className={''}>
+                        <p >Sola Kabuta</p>
+                        <a className={'transition duration-300 hover:text-main ease-in-out'} href="">solakabuta@gmail.com</a>
+                        <p>Brussels, Belgium</p>
+                    </div>
+                    <div>
+                        <Image className={'invert'} src={'/assets/icons/logo_original.svg'} alt={'Sola Kabuta logo'} width={50} height={50}/>
+                    </div>
+                    <div>
+                        <ul className={''}>
                         <li className={style.links}>
                             <a
                                 className={style.icons}
