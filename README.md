@@ -33,7 +33,6 @@ In a near future I'd like to:
 - Add smoother animations/transitions
 - Boost performance
 - Add projects
-- Design and build responsive
 
 
 Stay tuned!
