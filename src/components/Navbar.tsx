@@ -5,6 +5,15 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
+const thumbnails = [
+    {
+        src: "/assets/thumbnails/coppens_imac.png",
+    },
+    {
+        src: "/assets/thumbnails/martine_thumbnail.png",
+    }
+]
+
 const Navbar = ({ className }: { className?: string }) => {
     const [active, setActive] = useState<string | null>(null);
     return (
@@ -20,24 +29,26 @@ const Navbar = ({ className }: { className?: string }) => {
                     {/*        height={40}*/}
                     {/*        alt={'/'}/>*/}
                     {/*</div>*/}
-                    <a href="#work">
-                        <MenuItem setActive={setActive} active={active} item="Work">
-                            <div className="group text-sm grid grid-cols-2 gap-10 p-4">
-                                <ProductItem
-                                    title="Cabinet Coppens"
-                                    href="https://cabinetcoppens.be/"
-                                    src="assets/thumbnails/coppens_imac.png"
-                                    description="Mastering accounting for balanced finances"
-                                />
-                                <ProductItem
-                                    title="MARTINE Henderyckx"
-                                    href="https://martine.mobilstudio.be/"
-                                    src="assets/thumbnails/martine_thumbnail.png"
-                                    description="The art of guidance for living in harmony with oneself"
-                                />
-                            </div>
-                        </MenuItem>
-                    </a>
+                    <div className={''}>
+                        <Link href={'#work'}>
+                            <MenuItem setActive={setActive} active={active} item="Work">
+                                <div className="group text-sm grid grid-cols-2 gap-10 p-4 max-lg:flex max-lg:flex-col">
+                                    <ProductItem
+                                        title="Cabinet Coppens"
+                                        href="https://cabinetcoppens.be/"
+                                        src={thumbnails[0].src}
+                                        description="Mastering accounting for balanced finances"
+                                    />
+                                    <ProductItem
+                                        title="MARTINE Henderyckx"
+                                        href="https://martine.mobilstudio.be/"
+                                        src={thumbnails[1].src}
+                                        description="The art of guidance for living in harmony with oneself"
+                                    />
+                                </div>
+                            </MenuItem>
+                        </Link>
+                    </div>
 
                     <MenuItem setActive={setActive} active={active} item="Contact">
                         <div className="flex flex-col space-y-4 text-sm">

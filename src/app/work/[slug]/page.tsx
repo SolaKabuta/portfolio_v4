@@ -6,6 +6,16 @@ import {Button} from "@/components/ui/button";
 // import Card from '@/components/ui/Card';
 import Image from "next/image";
 
+const thumbnails = [
+  {
+    src: "/assets/thumbnails/coppens_imac.png",
+  },
+  {
+    src: "/assets/thumbnails/martine_thumbnail.png",
+  }
+]
+
+
 
 // Function to read data from data.json
 const getData = (): Work[] => {
@@ -81,11 +91,21 @@ const Item = ({ params }: { params: { slug: any } }) => {
           </div>
           {/* MOCKUP SECTION*/}
           <div>
-            <h2 className={'text-7xl font-black'}>
+            <h2 className={'text-7xl max-md:text-4xl text-balance font-black'}>
               Here is supposed to be <br/> the part where I showcase some cool mockups but yeah.. <br/>
               I'm still working on it.. <br/>
               In the meantime you can click the button to see it live.
             </h2>
+            <div className={'py-10'}>
+              <a href={item.url} target={'_blank'}>
+              <Button
+                  className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-main hover:scale-110 lg:hidden'}
+                  variant="outline">
+                Live project
+                <div className={'w-2 h-2 ml-2 bg-red-600 rounded-2xl animate-pulse'}></div>
+              </Button>
+            </a>
+            </div>
           </div>
         </section>
         {/*<div className={'rounded-2xl flex justify-center max-md:hidden w-screen'}>*/}

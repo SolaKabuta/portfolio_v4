@@ -57,7 +57,7 @@ export const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <h5 className={'flex justify-between font-black max-md:text-4xl text-12xl'}>
+                <h5 className={'flex justify-between font-black max-lg:text-4xl text-12xl'}>
                     <span>C</span><span>o</span><span>n</span><span>n</span><span>e</span><span>c</span><span>t</span>
                 </h5>
                 {/* Copyrights */}
