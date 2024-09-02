@@ -59,7 +59,9 @@ export const Hero = () => {
     return (
         <section>
             {/* IMAGES */}
-                <div data-aos="fade-zoom-in"
+                <div
+                    id = 'Home'
+                    data-aos="fade-zoom-in"
                      data-aos-easing="linear"
                      data-aos-duration="1000"
                      className={"max-lg:hidden flex justify-between place-items-center"}>

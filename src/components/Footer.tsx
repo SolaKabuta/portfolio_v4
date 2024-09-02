@@ -1,4 +1,4 @@
-import { ArrowTopRightIcon } from '@radix-ui/react-icons'
+import { ArrowTopRightIcon, HeartFilledIcon } from '@radix-ui/react-icons'
 import Image from "next/image";
 
 const style = {
@@ -55,7 +55,7 @@ export const Footer = () => {
                 <div className={'flex justify-between items-center text-main_color py-5 text-xs bg-black'}>
                     <a href="#">© Copyright - sola kabuta - 2024</a>
                     <p className={'max-lg:hidden'}>LAST UPDATE august 2024</p>
-                    <p className={'text-end'}>made with love</p>
+                    <p className={'flex gap-2'}>made with love <HeartFilledIcon/> </p>
                 </div>
             </section>
         </footer>
