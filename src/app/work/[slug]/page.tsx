@@ -16,7 +16,6 @@ const thumbnails = [
 ]
 
 
-
 // Function to read data from data.json
 const getData = (): Work[] => {
   const filePath = path.join(process.cwd(), "data", "works.json");

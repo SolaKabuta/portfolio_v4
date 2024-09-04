@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk, Anek_Gujarati } from "next/font/google";
 import "./globals.css";
-import { Header2 } from "@/components/Header2";
+// import { Header2 } from "@/components/Header2";
 import {Footer} from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 

@@ -80,7 +80,7 @@ export const Work = () => {
             <Link
                 className={'flex justify-end max-lg:justify-start py-10 max-lg:py-0 transition duration-300'}
                 href='/more'><Button
-                className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-main hover:scale-110 max-md:hidden'}
+                className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-main hover:scale-110 max-md:hidden align-middle'}
                 variant="outline">See more</Button>
             </Link>
 
