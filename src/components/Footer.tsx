@@ -67,7 +67,7 @@ export const Footer = () => {
                             <span>C</span><span>o</span><span>n</span><span>n</span><span>e</span><span>c</span><span>t</span>
                         </h5>
                         <div className={'md:hidden'}>
-                            <a href="/"><Image className={'invert'} src={'/assets/icons/logo_original.svg'}
+                            <a href="/"><Image className={'invert transition duration-700 hover:rotate-6'} src={'/assets/icons/logo_original.svg'}
                                                alt={'Sola Kabuta logo'} width={50} height={50}/></a>
                         </div>
                     </div>
