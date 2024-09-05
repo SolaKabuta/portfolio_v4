@@ -1,4 +1,5 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Hanken_Grotesk, Anek_Gujarati } from "next/font/google";
 import "./globals.css";
@@ -26,7 +27,8 @@ export default function RootLayout({
         <Navbar />
         {children}
       <Footer/>
-        <SpeedInsights />gi
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
