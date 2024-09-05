@@ -62,7 +62,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className={'max-md:grid place-content-center'}>
-                    <div className={'flex items-center align-bottom gap-4'}>
+                    <div className={'max-md:flex items-center align-bottom gap-4 '}>
                         <h5 className={'flex justify-between font-black max-lg:text-4xl text-12xl'}>
                             <span>C</span><span>o</span><span>n</span><span>n</span><span>e</span><span>c</span><span>t</span>
                         </h5>
