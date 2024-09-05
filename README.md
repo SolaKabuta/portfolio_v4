@@ -31,8 +31,9 @@ Tailwind CSS provides a utility-first approach to styling, making development ef
 In a near future I'd like to:
 
 - Add smoother animations/transitions
-- Boost performance
-- Add projects
+- Add projects in the "see more" section
+- Improve performance
+
 
 
 Stay tuned!
