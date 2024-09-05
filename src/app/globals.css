@@ -8,7 +8,12 @@
       color: #FB5607;
       text-transform: uppercase;
     }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Hanken Grotesk', sans-serif;
+    }
   }
+
+
 
 html, body {
   height: 100%;
@@ -28,9 +33,9 @@ section {
   @apply max-w-screen-xl px-1 m-auto max-lg:w-[80%] pt-36 z-50
 }
 
-h1,h2,h3,h4,h5,h6,.VelocityScroll {
-  font-family: "Hanken Grotesk", serif;
-}
+/*h1,h2,h3,h4,h5,h6,.VelocityScroll {*/
+/*  font-family: "Hanken Grotesk", serif;*/
+/*}*/
 
 
 h5 span {
