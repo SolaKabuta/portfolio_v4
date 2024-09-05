@@ -42,7 +42,7 @@ Feel free to reach out if you have any questions or feedback.
 
 Live preview :
 
-https://portfolio-v4-five-sigma.vercel.app/
+www.solakabuta.com
 
 
 
