@@ -79,7 +79,7 @@ export const Work = () => {
             </div>
             <Link
                 className={'flex justify-end max-lg:justify-start py-10 max-lg:py-0 transition duration-300'}
-                href='/more'>
+                href={'/more'}>
                 <Button className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-main hover:scale-110 max-md:hidden align-middle flex gap-2 text-center'}
                 variant="outline">See more
                 </Button>
@@ -125,7 +125,7 @@ export const Work = () => {
                     </p>
                     <Link
                         className={'flex justify-start transition duration-300'}
-                        href='/more'>
+                        href={'/more'}>
                         <Button
                         className={'uppercase rounded-2xl transition duration-500 bg-black text-white hover:bg-white hover:text-main hover:scale-110 mt-10 md:hidden'}
                         variant="outline">

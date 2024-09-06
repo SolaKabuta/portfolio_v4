@@ -68,7 +68,7 @@ export const About = () => {
                         className={'font-black max-md:text-4xl text-7xl py-28 max-md:py-5 text_anim transition hover:translate-x-6 ease-in-out duration-700'}>
                         <span className={style.txt}>About</span> <span className={style.txt}>me.</span>
                     </h3>
-                    <p className={'py-10 w-[500px] transition hover:translate-x-6 ease-in-out duration-700 text-justify max-lg:w-11/12 text-pretty'}>
+                    <p className={'py-10 text-xl w-[500px] transition hover:translate-x-6 ease-in-out duration-700 text-justify max-lg:w-11/12 text-pretty'}>
                         <span className={'py-10'}>My name is Sola</span> <br/><br/>
                         <span
                             className={'text-third_color font-bold hover:text-black transition duration-300 ease-in-out'}>
@@ -161,11 +161,11 @@ export const About = () => {
                     </p>
                 </div>
                 <Image
-                    className={'scale-110 mt-20 mx-5 transition hover:-translate-x-6 ease-in-out duration-700 max-lg:hidden rounded-2xl'}
+                    className={'mt-20 mx-5 transition hover:-translate-x-6 ease-in-out duration-700 max-lg:hidden rounded-2xl scale-50'}
                     src={'/assets/images/portrait2.webp'}
                     alt={'portrait of Sola Kabuta sitting in a chair'}
-                    width={'600'}
-                    height={'900'}/>
+                    width={'3456'}
+                    height={'4608'}/>
 
             </div>
         </section>
