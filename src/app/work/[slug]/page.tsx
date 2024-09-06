@@ -89,7 +89,7 @@ const Item = ({ params }: { params: { slug: any } }) => {
             </div>
           </div>
           {/* MOCKUP SECTION*/}
-          <div>
+          <div className={''}>
             <h2 className={'text-7xl max-md:text-4xl text-balance font-black'}>
               Here is supposed to be <br/> the part where I showcase some cool mockups but yeah... <br/>
               I'm still working on it... <br/>
