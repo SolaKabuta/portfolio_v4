@@ -75,7 +75,7 @@ export const Hero = () => {
                             alt={image.alt}
                             width={0}
                             height={0}
-                            priority
+                            loading="eager"
                         />
                     ))}
                 </div>
@@ -91,7 +91,7 @@ export const Hero = () => {
                             alt={images[1].alt}
                             width={600}
                             height={900}
-                            priority
+                            loading="eager"
                         />
                     </div>
             {/* TEXTS */}
