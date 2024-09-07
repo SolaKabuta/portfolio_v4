@@ -49,14 +49,14 @@ const Navbar = ({ className }: { className?: string }) => {
                             </MenuItem>
                         </Link>
                     </div>
-                    <MenuItem setActive={setActive} active={active} item="Services">
-                        <div className="flex flex-col space-y-4 text-sm">
-                            <HoveredLink target={'_blank'} href="mailto:solakabuta@gmail.com">Mail</HoveredLink>
-                            <HoveredLink target={'_blank'} href="https://www.linkedin.com/in/sola-kabuta/">Linkedin</HoveredLink>
-                            <HoveredLink target={'_blank'} href="https://github.com/SolaKabuta">Github</HoveredLink>
-                            <HoveredLink href="/assets/images/CV_Dev.pdf">CV</HoveredLink>
-                        </div>
-                    </MenuItem>
+                    {/*<MenuItem setActive={setActive} active={active} item="Services">*/}
+                    {/*    <div className="flex flex-col space-y-4 text-sm">*/}
+                    {/*        <HoveredLink target={'_blank'} href="mailto:solakabuta@gmail.com">Mail</HoveredLink>*/}
+                    {/*        <HoveredLink target={'_blank'} href="https://www.linkedin.com/in/sola-kabuta/">Linkedin</HoveredLink>*/}
+                    {/*        <HoveredLink target={'_blank'} href="https://github.com/SolaKabuta">Github</HoveredLink>*/}
+                    {/*        <HoveredLink href="/assets/images/CV_Dev.pdf">CV</HoveredLink>*/}
+                    {/*    </div>*/}
+                    {/*</MenuItem>*/}
 
                     <MenuItem setActive={setActive} active={active} item="Contact">
                         <div className="flex flex-col space-y-4 text-sm">
