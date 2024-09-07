@@ -2,7 +2,7 @@
 const nextConfig = {
     images: {
         unoptimized: true,
-        domains: ['aceternity.com', 'ik.imagekit.io'],
+        domains: ['aceternity.com'],
     },
     optimizeFonts: true,
 };
