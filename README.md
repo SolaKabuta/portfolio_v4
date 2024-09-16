@@ -41,9 +41,6 @@ Stay tuned!
 As I continue to develop this portfolio, I'll be adding more content and functionality. <br/>
 Feel free to reach out if you have any questions or feedback.
 
-Live preview :
-
-www.solakabuta.com
 
 
 
