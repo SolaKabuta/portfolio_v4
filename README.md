@@ -1,4 +1,4 @@
-# My Portfolio
+# Portfolio prototype
 This is my personal portfolio website built with NextJS, showcasing my skills and experience as a web developer. <br/>
 It's still in the development phase.
 
